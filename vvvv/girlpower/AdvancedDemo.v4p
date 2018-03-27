@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\VL\VL.Devices.uEye\vvvv\girlpower\AdvancedDemo.v4p" systemname="test" filename="C:\vvvv\VL.ids\test.v4p" scrollx="180" scrolly="0">
+   <PATCH nodename="C:\VL\VL.Devices.uEye\vvvv\girlpower\AdvancedDemo.v4p" systemname="test" filename="C:\vvvv\VL.ids\test.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="0" top="5265" width="6255" height="7155">
    </BOUNDS>
    <PACK Name="addonpack" Version="36.0.0">
@@ -13,7 +13,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3885" top="885" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -23,7 +23,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1395" top="810" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1280">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="640">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -113,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1995" top="870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="480">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -157,7 +157,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="810" top="360" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
