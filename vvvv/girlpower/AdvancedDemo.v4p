@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="270" top="5835" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="180" width="6240" height="5085">
+   <BOUNDS type="Window" left="0" top="165" width="17070" height="11835">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="129" srcpinname="Layer" dstnodeid="151" dstpinname="Layers">
@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1395" top="810" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="640">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -113,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1995" top="870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="480">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
