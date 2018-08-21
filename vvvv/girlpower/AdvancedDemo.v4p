@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\VL\VL.Devices.uEye\vvvv\girlpower\AdvancedDemo.v4p" systemname="test" filename="C:\vvvv\VL.ids\test.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="C:\vvvv\VLpacks\VL.Devices.uEye\vvvv\girlpower\AdvancedDemo.v4p" systemname="test" filename="C:\vvvv\VL.ids\test.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="0" top="5265" width="6255" height="7155">
    </BOUNDS>
    <PACK Name="addonpack" Version="36.0.0">
@@ -41,7 +41,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE id="56" systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow">
@@ -56,40 +56,8 @@
    <PIN pinname="Log Messages" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="435" top="5130" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="151">
-   <BOUNDS type="Node" left="270" top="5835" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="270" top="5835" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="165" width="17070" height="11835">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="129" srcpinname="Layer" dstnodeid="151" dstpinname="Layers">
-   </LINK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <NODE systemname="UploadImage (DX11.Texture Async)" filename="..\..\..\VL.VVVV.DirectX11\vvvv\nodes\plugins\VL.VVVV.DirectX11.dll" nodename="UploadImage (DX11.Texture Async)" componentmode="Hidden" id="130">
-   <BOUNDS type="Node" left="840" top="3810" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="840" top="3810" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Data" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Is Valid" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="130" srcpinname="Texture Out" dstnodeid="129" dstpinname="Texture">
-   </LINK>
    <PACK Name="dx11" Version="1.2">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="206">
@@ -135,7 +103,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="220">
@@ -157,7 +125,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="810" top="360" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -184,26 +152,128 @@
    </NODE>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
-   <NODE id="226" systemname="uEye (Devices advanced)" filename="C:\VL\VL.Devices.uEye\vvvv\girlpower\vl\uEye.Demo.Advanced.vl" nodename="uEye (Devices advanced)" componentmode="Hidden" hiddenwhenlocked="0" managers="" debug="0">
+   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="129">
+   <BOUNDS type="Node" left="840" top="5160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" filename="" nodename="Renderer (EX9)" componentmode="InAWindow" id="151">
+   <BOUNDS type="Node" left="855" top="5835" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="5835" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="825" top="0" width="6285" height="4770">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="129" srcpinname="Layer" dstnodeid="151" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="UploadImage (EX9.Texture Async)" filename="%VVVV%\lib\packs\VL.CoreLib.VVVV.0.92.17-g09d13891f9\vvvv\nodes\plugins\VL.CoreLib.VVVV.dll" nodename="UploadImage (EX9.Texture Async)" componentmode="Hidden" id="227">
+   <BOUNDS type="Node" left="840" top="3810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="840" top="3810" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Swap Count" visible="1">
+   </PIN>
+   <PIN pinname="Status" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="227" srcpinname="Texture Out" dstnodeid="129" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="230">
+   <BOUNDS type="Box" left="1755" top="4365" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1755" top="4365" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="227" srcpinname="Swap Count" dstnodeid="230" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="231">
+   <BOUNDS type="Box" left="1125" top="4830" width="2100" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1125" top="4830" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="227" srcpinname="Status" dstnodeid="231" dstpinname="Input String">
+   </LINK>
+   <NODE id="232" systemname="uEye (Devices advanced)" filename="C:\VL\VL.Devices.uEye\vvvv\girlpower\vl\uEye.Demo.Advanced.vl" nodename="uEye (Devices advanced)" componentmode="Hidden" hiddenwhenlocked="0" managers="" debug="0">
    <BOUNDS type="Node" left="825" top="2370" width="1815" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="90" top="0" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
+   <PIN pinname="ColorMode" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="221" srcpinname="Y Output Value" dstnodeid="226" dstpinname="Camera ID">
+   <LINK srcnodeid="221" srcpinname="Y Output Value" dstnodeid="232" dstpinname="Camera ID">
    </LINK>
-   <LINK srcnodeid="226" srcpinname="Camera Count" dstnodeid="219" dstpinname="Y Input Value">
+   <LINK srcnodeid="232" srcpinname="Camera Count" dstnodeid="219" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="207" srcpinname="Y Output Value" dstnodeid="226" dstpinname="Height">
+   <LINK srcnodeid="207" srcpinname="Y Output Value" dstnodeid="232" dstpinname="Height">
    </LINK>
-   <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="226" dstpinname="Width">
+   <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="232" dstpinname="Width">
    </LINK>
-   <LINK srcnodeid="226" srcpinname="Output" dstnodeid="130" dstpinname="Data">
+   <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="232" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="226" dstpinname="Enabled">
+   <LINK srcnodeid="232" srcpinname="Is Open" dstnodeid="122" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="226" srcpinname="Is Open" dstnodeid="122" dstpinname="Y Input Value">
+   <LINK srcnodeid="232" srcpinname="Output" dstnodeid="227" dstpinname="Data">
+   </LINK>
+   <NODE systemname="Info (EX9.Texture)" nodename="Info (EX9.Texture)" componentmode="Hidden" id="233">
+   <BOUNDS type="Node" left="3405" top="4065" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="227" srcpinname="Texture Out" dstnodeid="233" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="234">
+   <BOUNDS type="Box" left="3405" top="4815" width="495" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3405" top="4815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="233" srcpinname="Width" dstnodeid="234" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="235">
+   <BOUNDS type="Box" left="3570" top="4485" width="495" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3570" top="4485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="233" srcpinname="Height" dstnodeid="235" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
