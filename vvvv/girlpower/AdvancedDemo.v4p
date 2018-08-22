@@ -160,7 +160,7 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" filename="" nodename="Renderer (EX9)" componentmode="InAWindow" id="151">
+   <NODE systemname="Renderer (EX9)" filename="" nodename="Renderer (EX9)" componentmode="Hidden" id="151">
    <BOUNDS type="Node" left="855" top="5835" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="5835" width="6000" height="4500">
@@ -180,6 +180,8 @@
    <PIN pinname="Status" visible="1">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="227" srcpinname="Texture Out" dstnodeid="129" dstpinname="Texture">
@@ -221,6 +223,8 @@
    </BOUNDS>
    <PIN pinname="ColorMode" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="221" srcpinname="Y Output Value" dstnodeid="232" dstpinname="Camera ID">
    </LINK>
@@ -233,8 +237,6 @@
    <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="232" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="232" srcpinname="Is Open" dstnodeid="122" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="232" srcpinname="Output" dstnodeid="227" dstpinname="Data">
    </LINK>
    <NODE systemname="Info (EX9.Texture)" nodename="Info (EX9.Texture)" componentmode="Hidden" id="233">
    <BOUNDS type="Node" left="3405" top="4065" width="100" height="100">
