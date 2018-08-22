@@ -224,7 +224,7 @@
               </p:NodeReference>
               <Pin Id="EwKrrWUpOfQNxFMqHcBoWx" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="316,698,62,22" Id="UaODivcgR2NMbGHiDR0TG7">
+            <Node Bounds="326,698,62,22" Id="UaODivcgR2NMbGHiDR0TG7">
               <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="uEye" />
@@ -252,7 +252,7 @@
               <Pin Id="QcKvVJi3yGDPsebR830sEf" Name="S 32Mem Id" Kind="OutputPin" />
             </Node>
             <Pad Id="VSGdtpjuP8jLtxgInQXIeQ" SlotId="GoOj7b6ArdaQVJN5C972fk" Bounds="462,607" />
-            <Node Bounds="354,1035,66,13" Id="JVgO279LZutPUondjlt6qM">
+            <Node Bounds="354,1035,20,20" Id="JVgO279LZutPUondjlt6qM">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="TogEdge" />
@@ -326,7 +326,7 @@
               <Pin Id="Hs8rfDiNvpCLLGYTnbc0oj" Name="Output" Kind="StateOutputPin" />
               <Pin Id="JAyKLuC9V0nLLLG0A9eRK9" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="94,698,53,22" Id="NzdHMKhFZ86OB7iUO85CuQ">
+            <Node Bounds="95,698,53,22" Id="NzdHMKhFZ86OB7iUO85CuQ">
               <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="IsOpened" />
@@ -383,7 +383,7 @@
               <Pin Id="J63S5Oxoq69NHfIbjIT568" Name="Camera ID" Kind="OutputPin" />
             </Node>
             <Pad Id="FAsEOIuWwL0NWe8tR9PHXz" Comment="Camera ID" Bounds="-111,751,30,23" ShowValueBox="true" isIOBox="true" />
-            <ControlPoint Id="GqlwZteU5rePZKcLut4HX9" Bounds="320,773" />
+            <ControlPoint Id="GqlwZteU5rePZKcLut4HX9" Bounds="327,773" />
             <ControlPoint Id="Mr14o2ZC10hORQdZ6Ee3WF" Bounds="489,269" />
             <ControlPoint Id="NxqAnwwRTHRQH84kZcw9nE" Bounds="508,294" />
             <ControlPoint Id="EDaD02vH2QSLtLKOBUFaW9" Bounds="1581,829" />
@@ -623,7 +623,7 @@
               <Pin Id="GTfb4qKiD3gLAX2JvSGyhF" Name="Size" Kind="OutputPin" />
             </Node>
             <Pad Id="PYu8eD2vQ50ODISQPfaLm6" Comment="Position" Bounds="1119,786,45,38" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="235,852" Id="EdCrXmneoK5Ls7VIkGIdK2">
+            <Node Bounds="123,878,65,13" Id="EdCrXmneoK5Ls7VIkGIdK2">
               <p:NodeReference LastCategoryFullName="VL.Devices.uEye.Features" LastSymbolSource="VL.Devices.uEye.Features.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Binning" />
@@ -632,21 +632,23 @@
               <Pin Id="V14drfc271RPBBwH6xLgEF" Name="Camera" Kind="InputPin" />
               <Pin Id="KamGDzvEtivPxIznutJpih" Name="BinningMode 1" Kind="InputPin" />
               <Pin Id="AvTcKptUCXgQc7PXCjGhxB" Name="BinningMode2" Kind="InputPin" />
-              <Pin Id="DixpuLOjQTDPXu9oxFS7KN" Name="Current Binning" Kind="OutputPin" />
+              <Pin Id="N9NvsLmPikCNpvMhpaxySw" Name="supported Binning Modes" Kind="OutputPin" />
               <Pin Id="E9K6nkPnVxiQTTBiKfRdHA" Name="status" Kind="OutputPin" />
+              <Pin Id="DixpuLOjQTDPXu9oxFS7KN" Name="Current Binning" Kind="OutputPin" />
+              <Pin Id="EV7ZQIIlvfyLJc1ecU3n9c" Name="supported" Kind="OutputPin" />
             </Node>
-            <Pad Id="QfnBqUkbL2hP9wQfPE1vdk" Comment="Current Binning" Bounds="239,931,91,19" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="SdSloSzKBlyMLY0BJkW8bS" Comment="status" Bounds="298,893,226,19" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="ApLLNkHdXZdOXgSeaYbOq0" Comment="BinningMode2" Bounds="300,839,91,19" ShowValueBox="true" isIOBox="true" Value="&quot;Vertical2X&quot;">
+            <Pad Id="QfnBqUkbL2hP9wQfPE1vdk" Comment="Current Binning" Bounds="180,952,126,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="ApLLNkHdXZdOXgSeaYbOq0" Comment="BinningMode2" Bounds="205,854,91,19" ShowValueBox="true" isIOBox="true" Value="&quot;Horizontal2X&quot;">
               <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
                 <Choice Kind="TypeFlag" Name="BinningMode" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="P2jTYc06w6KLBTQc8on8O0" Comment="BinningMode 1" Bounds="267,813,91,19" ShowValueBox="true" isIOBox="true" Value="&quot;Horizontal2X&quot;">
+            <Pad Id="P2jTYc06w6KLBTQc8on8O0" Comment="BinningMode 1" Bounds="166,826,91,19" ShowValueBox="true" isIOBox="true" Value="&quot;Vertical2X&quot;">
               <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
                 <Choice Kind="TypeFlag" Name="BinningMode" />
               </p:TypeAnnotation>
             </Pad>
+            <Pad Id="HbVjU6wL5jBOdzutEuB7Jc" Comment="supported" Bounds="205,917,40,19" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <Patch Id="Jhoyp6h4x2mLz63zg07235" Name="Create" ParticipatingElements="KFzzRHgjvkFNRNF5yLjuiD">
             <Pin Id="RG0asSMqPHwM7yaFU08FiW" Name="Cam ID" Kind="InputPin" />
@@ -753,9 +755,9 @@
           <Link Id="DF1b3UDOG8tMzyqqvtUrCc" Ids="Ft9h4kOIohFLgDKkrvq7PZ,OD2btZxSO5lMD190VdtlaE" />
           <Link Id="Oo36oKsSVdBMc0tch36db5" Ids="IzOmeYXBxrzOefRpI7OgBH,V14drfc271RPBBwH6xLgEF" />
           <Link Id="P15MyV9qDUCQBNTJt3JjAg" Ids="DixpuLOjQTDPXu9oxFS7KN,QfnBqUkbL2hP9wQfPE1vdk" />
-          <Link Id="FHOjuWtTLbeOry97J36TtZ" Ids="E9K6nkPnVxiQTTBiKfRdHA,SdSloSzKBlyMLY0BJkW8bS" />
           <Link Id="I5weVIz4KSbNLi5rich0qk" Ids="ApLLNkHdXZdOXgSeaYbOq0,AvTcKptUCXgQc7PXCjGhxB" />
           <Link Id="TwYEIJG4G4mQBJsyTPnXi0" Ids="P2jTYc06w6KLBTQc8on8O0,KamGDzvEtivPxIznutJpih" />
+          <Link Id="TNzbU9SCBy8Lo3bA7sXDHB" Ids="EV7ZQIIlvfyLJc1ecU3n9c,HbVjU6wL5jBOdzutEuB7Jc" />
         </Patch>
       </Node>
     </Canvas>
