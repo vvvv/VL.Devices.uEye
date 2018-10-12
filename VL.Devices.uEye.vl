@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.79">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.93">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
-  <NugetDependency Id="Q18ZLENm9gzPhBnFnztPMP" Location="VL.Core" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
-    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="Devices.uEye">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="Devices.uEye" CanvasType="FullCategory">
       <!--
 
     ************************ uEyeCamera ************************
@@ -16,663 +15,107 @@
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
         <Patch Id="PECXWgOlNNzMzLmALehUrD">
-          <Canvas Id="MKNmciEsIa4PSxPlLDvq62">
-            <Pad Id="J9q0e4VgQ2cNQOZXB9UZsG" SlotId="HizyXkQYtdPOKHySEMhmSN" Bounds="328,618" />
-            <Node Bounds="322,453,46,22" Id="DpQlNSnkoHfOSF6pQN4i7n">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+          <Canvas Id="MKNmciEsIa4PSxPlLDvq62" CanvasType="Group">
+            <ControlPoint Id="HENNFWCNCzoPR4Lhx2ebun" Bounds="364,-73" />
+            <ControlPoint Id="VDAfVV2rNs8PknPc3qjBoI" Bounds="436,-73" />
+            <ControlPoint Id="Qz8lMQVVUkZLwe64GJZOIj" Bounds="483,-73" />
+            <Node Bounds="573,-9,165,13" Id="FGZeGWqaTq4LIBekBY6oks">
+              <p:NodeReference LastCategoryFullName="Devices.uEye" LastSymbolSource="VL.Devices.uEye.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Memory" />
+                <Choice Kind="ProcessAppFlag" Name="uEyeDevice" />
               </p:NodeReference>
-              <Pin Id="QJDelPPzhlYMM3oHktAqb9" Name="Input" Kind="StateInputPin" />
-              <Pin Id="OZU6zxgTZgiNNq1OJ07fI3" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="UzTquFCeGRAONPuahDgr3g" Name="Memory" Kind="OutputPin" />
+              <Pin Id="TklX2x9sZfKMqADmGDaZOt" Name="Cam ID" Kind="InputPin" />
+              <Pin Id="IkcGYwXwzfLNwnuHCWdgYe" Name="Width" Kind="InputPin" />
+              <Pin Id="IsCCJuEBb6YOLbrY8hgety" Name="Height" Kind="InputPin" />
+              <Pin Id="RmkkXEwpREOQLtjLekC9Qe" Name="Load" Kind="InputPin" />
+              <Pin Id="Gv1r4ei8P18Nk66n70yHh2" Name="Filename" Kind="InputPin" />
+              <Pin Id="GoBUJryOOWoP2F0oUnpftu" Name="Reset To Defaults" Kind="InputPin" />
+              <Pin Id="EtiKf8zMX9XL1bfo6eqgNW" Name="Black Level" Kind="InputPin" />
+              <Pin Id="JQQ24sYKa2ZNt7dMEmWGQO" Name="Gain" Kind="InputPin" />
+              <Pin Id="UosbSuqZUovOAaclwtULSW" Name="Enabled" Kind="InputPin" />
+              <Pin Id="HLDLIe06ZPNPsjYO3z2STe" Name="Frame" Kind="OutputPin" />
+              <Pin Id="BkzkBUCYK54NrheG6AuY5Z" Name="Is Open" Kind="OutputPin" />
+              <Pin Id="Dtb31h8FL9aOmJH27voIv0" Name="Camera Count" Kind="OutputPin" />
             </Node>
-            <Node Bounds="324,500,61,22" Id="H15Fgb2FheiLP1cShPYvsD">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+            <Node Bounds="519,44,94,13" Id="ROoxc8VSzPeMRl0e67x5Cu">
+              <p:NodeReference LastCategoryFullName="Devices.uEye" LastSymbolSource="VL.Devices.uEye.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Acquisition" />
+                <Choice Kind="ProcessAppFlag" Name="FrameToImage" />
               </p:NodeReference>
-              <Pin Id="UWPu3yiG0pSOJvveXWc35z" Name="Input" Kind="StateInputPin" />
-              <Pin Id="KGZbyvRXnuOMk4PgWLncj2" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="VZRNBPi9AybOINEa0gnsK4" Name="Acquisition" Kind="OutputPin" />
+              <Pin Id="Fwwrs3MXPmyNLA06PMYXrX" Name="Input" Kind="InputPin" />
+              <Pin Id="JuI7khChUGHP78q5xy0vFX" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="D1LJ1yYkHqhO5BwZGRdHMO" Bounds="392,355" />
-            <Node Bounds="322,391,45,22" Id="Ed6AsHqcjszL8BcrSeVwgM">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Init" />
-                <PinReference Kind="InputPin" Name="S 32Cam" />
-              </p:NodeReference>
-              <Pin Id="FdspBcUFOsQNpa6WxrLkXs" Name="Input" Kind="StateInputPin" />
-              <Pin Id="G1TJmaKSgUYOOKYRknoHvk" Name="S 32Cam" Kind="InputPin" />
-              <Pin Id="DhiHvqz9RXpO3knEswUdRl" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="UtD4jsAmZHkMyLpy4HL2I3" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="321,344,39,22" Id="S0fRsSPzPjALZIi9uzL3rD">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Create" />
-                <CategoryReference Kind="AssemblyCategory" Name="Camera" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="uEye" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-              </p:NodeReference>
-              <Pin Id="KFhSxLoRHFWO5pjYaKch9U" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Node Bounds="339,774,62,22" Id="PipuXUZnbJUOayaF6WJetq">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="uEye" />
-                <CategoryReference Kind="AssemblyCategory" Name="Camera" />
-                <Choice Kind="OperationCallFlag" Name="EventFrame" />
-              </p:NodeReference>
-              <Pin Id="C1ickXbofBFP72YcsmsgFx" Name="Input" Kind="StateInputPin" />
-              <Pin Id="KUe7Ksu7eyxOGSDl0VjgZM" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="510,523,85,22" Id="MTgBFk2m7MELh74H9u3fu9">
-              <p:NodeReference LastCategoryFullName="uEye.Memory" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Allocate" />
-                <PinReference Kind="InputPin" Name="S 32Bits Per Pixel" />
-                <PinReference Kind="InputPin" Name="S 32Width" />
-                <PinReference Kind="InputPin" Name="B Set Active" />
-              </p:NodeReference>
-              <Pin Id="USPIwcZaDQhO8jSZenZpR4" Name="Input" Kind="StateInputPin" />
-              <Pin Id="JMM4zUXY4CBPmzr5CTLBkO" Name="S 32Width" Kind="InputPin" />
-              <Pin Id="VKOSEjRWZUIPBE1cN8d1Tz" Name="S 32Height" Kind="InputPin" />
-              <Pin Id="LnqYOcQN6gELLaIHz5vBm2" Name="S 32Bits Per Pixel" Kind="InputPin" />
-              <Pin Id="VZw4gDWVZrhNrmtAaS1NYJ" Name="B Set Active" Kind="InputPin" />
-              <Pin Id="V0HGc1OzlY0M2yk8heCsMN" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="AcwFqLLKl8qQYrnW9Yz9De" Name="Result" Kind="OutputPin" />
-              <Pin Id="E0LHYf73EnsMSJlVfEoh8N" Name="S 32Mem Id" Kind="OutputPin" />
-            </Node>
-            <Pad Id="MjHl3jUo6CDNZtmgFjdZZ8" SlotId="NaGpg02VDKaPbn4MbFydZE" Bounds="462,607" />
-            <Node Bounds="748,658,66,13" Id="KChWaLCOuLZPzdZkP5rGzG">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-                <CategoryReference Kind="Category" Name="Control" />
-              </p:NodeReference>
-              <Pin Id="LjG8ckSJBQMLlk8hHP07Wf" Name="Value" Kind="InputPin" />
-              <Pin Id="KPCHrZp1SYsNVKZ1Bgc4xc" Name="Up Edge" Kind="OutputPin" />
-              <Pin Id="QkI05vQsSg5MpQUq0f4yCY" Name="Down Edge" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="COmWVqnATW8NrMIPO8VbvB" Bounds="749,624" />
-            <Node Bounds="748,722,87,91" Id="Kw3aUxuBx05LVmXGVFkXBk">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="HUGBpOfuTrONvZPqJjihRY" Name="Condition" Kind="InputPin" />
-              <Patch Id="CbdGBmni8rQNnWyXpPG7zy" ManuallySortedPins="true">
-                <Patch Id="I1qSGHg6C3XQTlHWKQPM6U" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="GPoWKdgWIYuNiV44TtD3oR" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="760,756,49,22" Id="HWsioDHYw2mN3bu2SvQOGp">
-                  <p:NodeReference LastCategoryFullName="uEye.Acquisition" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Capture" />
-                  </p:NodeReference>
-                  <Pin Id="AJaO2XYY6Y0LeOCh4JXWWJ" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="BXAi6LguOinOaRtF42wOKp" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="JSQ4oyQN9g7LhG2B4GZ5Fi" Name="Result" Kind="OutputPin" />
-                </Node>
-              </Patch>
-              <ControlPoint Id="JK8as140izlL2XerlhIib0" Bounds="763,728" Alignment="Top" />
-              <ControlPoint Id="OU3RXEuJ1x5K9jLBSDZnQE" Bounds="765,807" Alignment="Bottom" />
-              <ControlPoint Id="TCYPLdeJ0NXLvbP3fcD3VH" Bounds="809,807" Alignment="Bottom" />
-              <ControlPoint Id="R3FQw9yzbcrMttqoUJgAYW" Bounds="809,728" Alignment="Top" />
-            </Node>
-            <Node Bounds="906,719,88,98" Id="EadHSZNzP5eLGlyplZP4TM">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="HSv7TZhtzXlMiWy8oRney7" Name="Condition" Kind="InputPin" />
-              <Patch Id="HsfGSiiQg1KM9vGTFm2K9r" ManuallySortedPins="true">
-                <Patch Id="NFVv8G1DSpaMHvU3Uvx5eH" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="DoIjuHkkGtNO7LPt3Mmo9T" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="919,753,49,22" Id="LpuGX8ubN05P7GzEOqGKeI">
-                  <p:NodeReference LastCategoryFullName="uEye.Acquisition" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Stop" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Acquisition" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="GjyUCbYyEI6PUTN1j1Og5O" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="KtAzMfh4zCJMobiQEbjiRy" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="T6D94bn1Id1NpT5GO0jXp1" Name="Result" Kind="OutputPin" />
-                </Node>
-              </Patch>
-              <ControlPoint Id="U3L3X2VjfU4NdukrJzrml3" Bounds="921,725" Alignment="Top" />
-              <ControlPoint Id="NBGAHvNHwxwQKnHKjecAb8" Bounds="924,811" Alignment="Bottom" />
-              <ControlPoint Id="LDxzEfxc3fdNl0Yjak1hbB" Bounds="968,811" Alignment="Bottom" />
-              <ControlPoint Id="V8hyScKxSDrO0EdJSpNE3S" Bounds="968,725" Alignment="Top" />
-            </Node>
-            <Node Bounds="2,670,36,22" Id="KlfYQ8lO9DzN7QyxXaepWh">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Exit" />
-                <CategoryReference Kind="AssemblyCategory" Name="Camera" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="uEye" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-              </p:NodeReference>
-              <Pin Id="BOTgaJ7UXOYQG1DvbCEw6O" Name="Input" Kind="StateInputPin" />
-              <Pin Id="Nkgn0t3ECAJOjROJTz8swP" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="Ke4PgU9cFBNORGtJT4B5kc" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="94,698,53,22" Id="TORCMLkVXfsLFz32z06563">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="IsOpened" />
-                <CategoryReference Kind="AssemblyCategory" Name="Camera" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="uEye" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-              </p:NodeReference>
-              <Pin Id="OoL0A65wVlwMfx8Z6G18bs" Name="Input" Kind="StateInputPin" />
-              <Pin Id="RkWyNotQkdoLAmLjZOILVn" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="KzibdRndpvZNYytJRk75XU" Name="Is Opened" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="J3fToRjvfC0LgCwT4JI61P" Bounds="145,748" />
-            <Pad Id="H9WbT8FdtvPNJIXbaNrzK1" Comment="S 32Bits Per Pixel" Bounds="578,493,24,19" ShowValueBox="true" isIOBox="true" Value="32">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="UV1L7LB586qOKJAIkrZoUV" SlotId="Bi5wr4yf4CENScDMkuDKXf" Bounds="497,738" />
-            <Pad Id="UYkrcq8UfacPpWcMvgS36M" Comment="B Set Active" Bounds="718,482,40,20" ShowValueBox="true" isIOBox="true" Value="true">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="KkVIa9fpqt1MEffz4dOYWL" Comment="Value" Bounds="1230,591,40,20" ShowValueBox="true" isIOBox="true" Value="false">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Node Bounds="1087,659,129,185" Id="DCsJku1wI4NLMYc6FlPLmC">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="IwosZ7EbIoyPF36AoMxcnT" Name="Condition" Kind="InputPin" />
-              <Patch Id="JFlixwdFZMPLLDxY040Ux5" ManuallySortedPins="true">
-                <Patch Id="TwhIsuk7MrHL8fx6YCnCVa" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="LOvI9S3yKqYNYD5C1A8aFE" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1100,720,56,22" Id="I2H578SExPaO3GKy3GX6fO">
-                  <p:NodeReference LastCategoryFullName="uEye.AutoFeatures" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="AutoFeatures" />
-                    <Choice Kind="OperationCallFlag" Name="Software" />
-                  </p:NodeReference>
-                  <Pin Id="MC4oPZveHa6LMrnf0SgcrG" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="AnqQ2UMGXmtK9zQixJKPic" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="LIWjRRz5FdoNkXLJxgU6IU" Name="Software" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="1100,682,70,22" Id="GxJ3wbSEe8pLCxj1NoEHq9">
-                  <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="AutoFeatures" />
-                  </p:NodeReference>
-                  <Pin Id="Fvf6aODiDmsQPubGJvsjps" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Ksjveg9FaqEMDIbgRcWcn9" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="VjoJ43YWOTNNgGFZcWzH4C" Name="Auto Features" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="1099,761,88,22" Id="Hs4jxqNQUhvP3YiRn1UbOp">
-                  <p:NodeReference LastCategoryFullName="uEye.AutoFeaturesSoftware" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Gain" />
-                    <CategoryReference Kind="AssemblyCategory" Name="AutoFeaturesSoftware" NeedsToBeDirectParent="true" />
-                  </p:NodeReference>
-                  <Pin Id="EiAAlP4w0liNYSX8twEFc8" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="OxRaj9dvdaJNXwvS5VeRm8" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="M0mnvouQfEyMbm25v0JMvL" Name="Gain" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="1100,802,104,22" Id="M3eHxkrF9nYPucWJ7Kti8d">
-                  <p:NodeReference LastCategoryFullName="uEye.AutoFeaturesSoftwareGain" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="AutoFeaturesSoftwareGain" />
-                    <Choice Kind="OperationCallFlag" Name="SetEnabled" />
-                  </p:NodeReference>
-                  <Pin Id="O930UPjeYjQO0dQNTna7WP" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="VPY42lLyWcvLooibCMmfSc" Name="Value" Kind="InputPin" />
-                  <Pin Id="DJi5daDgcZWPxoTFvVTwWS" Name="Output" Kind="StateOutputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <Node Bounds="1086,629,50,13" Id="LSUd5Ab0EWbOroY8e6IFwC">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Changed" />
-                <CategoryReference Kind="Category" Name="Control" />
-              </p:NodeReference>
-              <Pin Id="SMb9GhK16rXOep0wzL4Wcl" Name="Value" Kind="InputPin" />
-              <Pin Id="R8tJxSYot9MLfOHmDUr7zS" Name="Result" Kind="OutputPin" />
-              <Pin Id="QqruSApcKxNPy8IFui4X2H" Name="Unchanged" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="325,549,63,22" Id="Pdhldv08tBROpvL8EkQZnq">
-              <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Information" />
-              </p:NodeReference>
-              <Pin Id="Nq5AtyrUsSrM0CO9g1Eelf" Name="Input" Kind="StateInputPin" />
-              <Pin Id="N8exIBzW04AMyalIyC7Zyn" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="FgTtymfw0XvOlf8QeDHsFz" Name="Information" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="-355,604,78,22" Id="RFNEeV3FXcDLUhbmwK4Li6">
-              <p:NodeReference LastCategoryFullName="uEye.Information" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="Information" />
-                <Choice Kind="OperationCallFlag" Name="GetCameraInfo" />
-              </p:NodeReference>
-              <Pin Id="RuXfi3XdL3dQERcKopXm1m" Name="Input" Kind="StateInputPin" />
-              <Pin Id="UHwZUY4g7aNLJPhl5gNloj" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="BKlGCtU1FbwM9QxUSQjDvv" Name="Result" Kind="OutputPin" />
-              <Pin Id="K3HDFwxcs4aPTiIa8D49cI" Name="Camera Info" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="-358,710,71,22" Id="JMxTQI7FRlJO8nBJ67fEoP">
-              <p:NodeReference LastCategoryFullName="uEye.Types.CameraInfo" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="CameraInfo" />
-                <Choice Kind="OperationCallFlag" Name="SerialNumber" />
-              </p:NodeReference>
-              <Pin Id="S5UIuOMI26pQdFe0oSfGUw" Name="Input" Kind="StateInputPin" />
-              <Pin Id="GFlUpifXlzeMLpvzkPMuoY" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="PM4DTq7EjRRQF1S0EKW1Bp" Name="Serial Number" Kind="OutputPin" />
-            </Node>
-            <Pad Id="JzMmohn6jVfLnZ2CVWgzUT" Comment="Serial Number" Bounds="-351,792,115,24" ShowValueBox="true" isIOBox="true" />
-            <Pad Id="IXyKzN5XhgHQOpaDnLtn4f" SlotId="UArFgTuqVudLVw7ukgviNV" Bounds="-162,661" />
-            <Node Bounds="-293,868,62,22" Id="PMAllaoxqdeLKTfG3yRHF4">
-              <p:NodeReference LastCategoryFullName="uEye.Types.CameraInfo" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="CameraInfo" />
-                <Choice Kind="OperationCallFlag" Name="Version" />
-              </p:NodeReference>
-              <Pin Id="KrlzkRow1IlOYuvyeThwOe" Name="Input" Kind="StateInputPin" />
-              <Pin Id="OKGDa57FA9VO8S6A7WkToE" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="SxctH8GDGlsL33MLGHwwcv" Name="Version" Kind="OutputPin" />
-            </Node>
-            <Pad Id="ELLkLfGBIgqLtnLy5SUV5q" Comment="Version" Bounds="-242,915,32,23" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="-266,985,66,22" Id="DRxbLspgBxPPSfWg5DlwwG">
-              <p:NodeReference LastCategoryFullName="uEye.Types.CameraInfo" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="CameraInfo" />
-                <Choice Kind="OperationCallFlag" Name="CameraID" />
-              </p:NodeReference>
-              <Pin Id="UTSe6kAAPQlPkkGlPL9xp5" Name="Input" Kind="StateInputPin" />
-              <Pin Id="DHPhFqTjLOgMCdO9tero87" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="E6B8JRFkJooLnzG5HSOifr" Name="Camera ID" Kind="OutputPin" />
-            </Node>
-            <Pad Id="SlgEANx29vvPyauJsceUdV" Comment="Camera ID" Bounds="-214,1029,30,23" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="-174,970,62,22" Id="Ivw4KZHsjBHOLRnNfjJqQT">
-              <p:NodeReference LastCategoryFullName="uEye.Types.CameraInfo" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="CameraInfo" />
-                <Choice Kind="OperationCallFlag" Name="ID" />
-              </p:NodeReference>
-              <Pin Id="QEmZZLIPkupQYq06H9ggRN" Name="Input" Kind="StateInputPin" />
-              <Pin Id="PGa58DZhmhNPjMGnoZxrD8" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="HcL2EynV9PpNCQDaqIwTJA" Name="ID" Kind="OutputPin" />
-            </Node>
-            <Pad Id="H0AbbG8JZ1QO74MwBX9HJK" Comment="ID" Bounds="-88,1010,65,24" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="-158,1105,70,22" Id="CrVcxSq6LFXOfoMRmFo7pc">
-              <p:NodeReference LastCategoryFullName="uEye.Types.CameraInfo" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="CameraInfo" />
-                <Choice Kind="OperationCallFlag" Name="BoardType" />
-              </p:NodeReference>
-              <Pin Id="F0Fe2frPiHzMWrsPTIkg33" Name="Input" Kind="StateInputPin" />
-              <Pin Id="T3g3frlEwWqL1VnwG59Bph" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="AfN3pUMMyYMLUh1pjV0Rli" Name="Board Type" Kind="OutputPin" />
-            </Node>
-            <Pad Id="SQht3GPIEU2PC6WAugLhK0" Comment="Board Type" Bounds="-159,1171,125,23" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="-130,513,74,22" Id="Qv975JBZK2kM45MZD3vP15">
-              <p:NodeReference LastCategoryFullName="uEye.Information" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="GetSensorInfo" />
-              </p:NodeReference>
-              <Pin Id="MhPZJmdnG0COTu7FZB8TMp" Name="Input" Kind="StateInputPin" />
-              <Pin Id="JqDh0XIMFzdN0Rt7clRGUQ" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="QQM76KhBHSFL1phLeRtS0W" Name="Result" Kind="OutputPin" />
-              <Pin Id="JGKIl7IZXNoOmlXruUuIEE" Name="Sensor Info" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="-116,621,91,22" Id="K18odDsfV24OmLPaynds2y">
-              <p:NodeReference LastCategoryFullName="uEye.Types.SensorInfo" LastSymbolSource="uEyeDotNet.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="SensorInfo" />
-                <Choice Kind="OperationCallFlag" Name="SensorName" />
-              </p:NodeReference>
-              <Pin Id="G2jhcPd3KJ1NjNTOYScvWP" Name="Input" Kind="StateInputPin" />
-              <Pin Id="FOECIrebww7N3RJcMPltIO" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="MmkkoAfCU2HNovwXxmRID2" Name="Sensor Name" Kind="OutputPin" />
-            </Node>
-            <Pad Id="LmCU16s2GdUPGCtUi5ysBP" Bounds="-66,581">
-              <p:ValueBoxSettings />
-            </Pad>
-            <Node Bounds="106,825,153,118" Id="HpnCrWrzgXgPhWxlCIvE2E">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="ES5jDL1cb8DNaDKLl54Prj" Name="Condition" Kind="InputPin" />
-              <Patch Id="G0OpE4vEea0QOvzr2HbJEy" ManuallySortedPins="true">
-                <Patch Id="IMiNZxvfdVfOmb2ebceGfc" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="UyLOtbO0aLUQQ1MNbn4wtH" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="118,854,56,22" Id="LUPnfkBkAGeQZ5GBPpjsTL">
-                  <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Parameter" />
-                  </p:NodeReference>
-                  <Pin Id="I6B6CM3yPJDPQoYQlBSKQe" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="IIuia1ruR9iQC6WyKh8wto" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="G1pGEHIYoocPOtJxecLE4P" Name="Parameter" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="163,901,45,22" Id="NU3mw6uHjaHOTvdxUdEKHq">
-                  <p:NodeReference LastCategoryFullName="uEye.Parameter" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
-                    <PinReference Kind="InputPin" Name="Str Filename" />
-                    <Choice Kind="OperationCallFlag" Name="Load" />
-                  </p:NodeReference>
-                  <Pin Id="CozhKBsn0EQM8keaA3T2Nq" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="EzJXiGzIiW8N33JMZA1ViO" Name="Str Filename" Kind="InputPin" />
-                  <Pin Id="AIDpEvJsQNRQWVFUsvxiTg" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="TmeuihZaXwyMn6iUQyhVdV" Name="Result" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="199,848,48,13" Id="PWFWVuOvXlIQBrljcaVHH0">
-                  <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="VL.CoreLib.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="ToString" />
-                    <CategoryReference Kind="Category" Name="Path" />
-                  </p:NodeReference>
-                  <Pin Id="OSwtaH9hi9LLVsLue9gDmp" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Qcd4TQkG9SkN7bnf9iIBsH" Name="Result" Kind="OutputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <ControlPoint Id="KMmdC7Pcj10NmYHxBHjwig" Bounds="101,798" />
-            <Node Bounds="88,1069,171,107" Id="CrHUQ3llB9yMNiI4jdBsmJ">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="PX9xSJ7eqYwQCtpqClRi8H" Name="Condition" Kind="InputPin" />
-              <Patch Id="EwqVcMDoya9M1uCwW4X9hQ" ManuallySortedPins="true">
-                <Patch Id="BkCLvcsAPKeO6WDEUtt2yI" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="JN7laJtn9LqPeMDD8YHwmG" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="100,1092,56,22" Id="Njnzm2YvejQM7tjkPQfQDh">
-                  <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Parameter" />
-                  </p:NodeReference>
-                  <Pin Id="M878AlOG23JLsJMOf8kjvv" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Ivf675cTcESQFXy5iiWyDK" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="BEN1e2M08xfOj64IYbHVq9" Name="Parameter" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="168,1135,80,22" Id="Ik0Ug3wEXgzOh6bYYJGPKa">
-                  <p:NodeReference LastCategoryFullName="uEye.Parameter" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
-                    <Choice Kind="OperationCallFlag" Name="ResetToDefault" />
-                  </p:NodeReference>
-                  <Pin Id="QoFeBJi5JG3M0Vv8toQwbS" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="CcMfE8jO8S7Num425pSH9r" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="SwzQoYCk4KAMdMpgfDRQ5I" Name="Result" Kind="OutputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <ControlPoint Id="Ryxix0MylkEMaDURDzil1B" Bounds="201,810" />
-            <ControlPoint Id="OKgkly6PYHGLxNgOD4tVUC" Bounds="81,1029" />
-            <Node Bounds="80,1260,172,107" Id="M8qalvN8e3tM5OxBwXUbeb">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="G8ohhIPg3XvL7Js24J4i2Y" Name="Condition" Kind="InputPin" />
-              <Patch Id="AcUl3DVtEvKQBYsgLCSc44" ManuallySortedPins="true">
-                <Patch Id="Lj8d2GXB19DNnyXUzqNOYv" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="B5pe59ElZdeQbHyQij2buG" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="92,1283,56,13" Id="GmDbwLYZOFHMAhXVOX20Q3">
-                  <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Parameter" />
-                  </p:NodeReference>
-                  <Pin Id="OO7ggP8u192MAmX2uXyKd3" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="PYchPXptxYsQNYrxcNg8BC" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="F7AmJKQZBxwMCk3an29EcE" Name="Parameter" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="160,1326,80,13" Id="E3w9sjqJslwLKqXH99AOiS">
-                  <p:NodeReference LastCategoryFullName="uEye.Parameter" LastSymbolSource="uEyeDotNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
-                    <Choice Kind="OperationCallFlag" Name="Save" />
-                    <PinReference Kind="InputPin" Name="Str Filename" />
-                  </p:NodeReference>
-                  <Pin Id="FeIO9DlSQzQNTIPlhyScxM" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="LnzTnkORyFrPnCnRf7bQHE" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="B02pjIXowM0N5xGOb0SuZd" Name="Result" Kind="OutputPin" />
-                  <Pin Id="PALb28SBBG7ODKvKRIqMpv" Name="Str Filename" Kind="InputPin" />
-                </Node>
-              </Patch>
-            </Node>
-            <Pad Id="JIPZejqmJhdOXRSDsI90Ii" Comment="Condition" Bounds="84,1211,40,19" ShowValueBox="true" isIOBox="true" Value="false">
-              <p:ValueBoxSettings>
-                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-              </p:ValueBoxSettings>
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pad>
-            <ControlPoint Id="KMl6ipYnRuyMGlPQnMyV8t" Bounds="344,851" />
-            <ControlPoint Id="LCrsA03RKLQMO0KKMCNTo6" Bounds="511,378" />
-            <ControlPoint Id="Q2blAeNgg6xPPh5KwgHjA2" Bounds="620,375" />
-            <ControlPoint Id="CbvKb62VvusNHlZJi7snSL" Bounds="534,1176" />
-            <Node Bounds="502,1060,173,89" Id="IKZvyoNqmqALIxrRdAMpch">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.Devices.uEye.vl">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="Igd7vRf9EEXNX729vhfRFk" Name="Force" Kind="InputPin" />
-              <Pin Id="QKSeriJnqkIPyNmBdbFSPN" Name="Has Changed" Kind="OutputPin" />
-              <Patch Id="HHURNn3UFKUMoFLBAuwzAE" ManuallySortedPins="true">
-                <Patch Id="EA1ULafzKd8L7fS5SDs2yN" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="T9BmzM0mOoRObi4Nf1wOW2" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="514,1083,125,13" Id="AQZZnwWJq2yLqgwoE5BaMv">
-                  <p:NodeReference LastCategoryFullName="Devices.uEye.Wrappers" LastSymbolSource="VL.Devices.uEye.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="QueryCameras" />
-                    <CategoryReference Kind="Category" Name="Wrappers" />
-                  </p:NodeReference>
-                  <Pin Id="VWs3r7mlyFxPIpL0C8Uxqr" Name="Result" Kind="OutputPin" />
-                  <Pin Id="BeO4CatFQRJQJatd43rEeR" Name="Camera Count" Kind="OutputPin" />
-                  <Pin Id="BbBv9hsWlc8OkphCKy2lB4" Name="Model" Kind="OutputPin" />
-                  <Pin Id="IF5Pz2guwvOLj8zdG0Exep" Name="Serial Number" Kind="OutputPin" />
-                  <Pin Id="HWEI5xLoDbbMU3SIpUeaJA" Name="In Use" Kind="OutputPin" />
-                </Node>
-              </Patch>
-              <ControlPoint Id="HDOLTqWIF15N3C3tSQbpK5" Bounds="538,1143" Alignment="Bottom" />
-            </Node>
-            <Node Bounds="478,905,84,13" Id="GPgf525QoneQaB3g59s1JT">
-              <p:NodeReference LastCategoryFullName="uEye.Info.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="Camera" />
-                <Choice Kind="OperationCallFlag" Name="EventNewDevice" />
-              </p:NodeReference>
-              <Pin Id="VpapIX635cMLIbR3xqy1rW" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="574,905,107,13" Id="G8u2M8A4c6LP2htK900q4t">
-              <p:NodeReference LastCategoryFullName="uEye.Info.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="EventDeviceRemoved" />
-              </p:NodeReference>
-              <Pin Id="GTERDzqBMTJPvCUAYZqmaj" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="478,947,54,13" Id="Akkho6cHmD0PtA5C6OAxvT">
-              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Merge" />
-                <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true">
-                  <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
-                </CategoryReference>
-              </p:NodeReference>
-              <Pin Id="HXdvWbsu43rLXioVV2oX5c" Name="Value" Kind="InputPin" />
-              <Pin Id="KRFAYOm6IJtPkN74xkvpuT" Name="Value 2" Kind="InputPin" />
-              <Pin Id="OiVg0UNHZLmPEY7EpoLIBb" Name="Result" Kind="OutputPin" />
-              <Pin Id="GO2WmBUqsmYL6r6xbKpXi5" Name="Changed" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="451,980,58,13" Id="RsBIUMM2F8YNzORnkFMWkR">
-              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-              </p:NodeReference>
-              <Pin Id="DXsbmpoQHaENe8DYkQLYK9" Name="Initial Result" Kind="InputPin" />
-              <Pin Id="NdU6ZmduI7ELd7ogXonJzy" Name="Async Notifications" Kind="InputPin" />
-              <Pin Id="RmgfjpZN2IxPKsV3hOVDpD" Name="Reset" Kind="InputPin" />
-              <Pin Id="Sd7Lfm5bMtAL5SqFRwBpk7" Name="Value" Kind="OutputPin" />
-              <Pin Id="ALT1RTnFAGkOR2OQEyUVQB" Name="On Data" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="502,1023,25,13" Id="O3mPt1yhGMWN0ihzg7er3Y">
-              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="OR" />
-              </p:NodeReference>
-              <Pin Id="M2LRWJZ1nDkMzHIgnQZMBv" Name="Input" Kind="StateInputPin" />
-              <Pin Id="SvvbjuCYYQnLKK1AMWpO6t" Name="Input 2" Kind="InputPin" />
-              <Pin Id="EkI2XWckjtwMlSzFl2qGOl" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Node Bounds="523,990,64,13" Id="SoHFShg98u5OKQhkX9Js4T">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.Devices.uEye.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="OnOpen" />
-              </p:NodeReference>
-              <Pin Id="S8i7zG0iRmiLJYppzIlbRw" Name="Output" Kind="OutputPin" />
-            </Node>
+            <ControlPoint Id="BSDqY24o2g3QLDZgW2F2cm" Bounds="539,-73" />
+            <ControlPoint Id="HGNYy2OKSsOOvDyS2lyrMl" Bounds="590,-73" />
+            <ControlPoint Id="VOHHMStpUApM089bRZkq0K" Bounds="655,-73" />
+            <ControlPoint Id="AVtTgrbLoI7QYPhncbp3XM" Bounds="772,-73" />
+            <ControlPoint Id="IB2oVMCbhbuNFpYCuD5hs9" Bounds="856,-73" />
+            <ControlPoint Id="MblSNqrtP87OGlZls4y4qR" Bounds="912,-73" />
+            <ControlPoint Id="P15uJScvZK1L0Jgn0su6Zd" Bounds="655,94" />
+            <ControlPoint Id="Sx0aCws0gyFObERnKaU34T" Bounds="735,91" />
+            <ControlPoint Id="GLRJuzsjVfiLjD7yaNsFlc" Bounds="521,93" />
           </Canvas>
-          <Patch Id="CttzRYNhulMNxIW7umwmua" Name="Create" ParticipatingElements="S0fRsSPzPjALZIi9uzL3rD">
-            <Pin Id="SDOCr4hQIDlNQ5sizezJHd" Name="Cam ID" Kind="InputPin" />
-            <Pin Id="VrYp4pvEa4dOzdRE3A7bU4" Name="Width" Kind="InputPin" Bounds="511,378" />
-            <Pin Id="K3rSRuvjRTXO7zmZsA6teF" Name="Height" Kind="InputPin" Bounds="621,367" />
+          <Patch Id="CttzRYNhulMNxIW7umwmua" Name="Create" ParticipatingElements="CNGsZFvxj4jMbY8UtTngAW,PCI8uj1r5eOLaYtlCGc06z,GVPPwWYGp36Lt837dUJ9cn">
+            <Pin Id="PVSTwjwRHjUM7Z6ItPaZ50" Name="Camera ID" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="DQnmxD2drqWLmOi8iLr4pM" Name="Width" Kind="InputPin" />
+            <Pin Id="Kt6om6tvVqsOO6VxMCE7Ci" Name="Height" Kind="InputPin" />
           </Patch>
           <Patch Id="SXfQsTNGXCwPRvZm8pr2ZN" Name="Update">
-            <Pin Id="LUlYlQS54DbMOdjJ64K3Rm" Name="Enabled" Kind="InputPin" />
-            <Pin Id="OtFy6kD8GP7PwgShbCq8TW" Name="Is Open" Kind="OutputPin" />
-            <Pin Id="Nx2FeKcoI1YMkej5EH1x9T" Name="Load" Kind="InputPin" />
-            <Pin Id="PAGhAfzxjnIOMaxlAEkjIR" Name="Filename" Kind="InputPin" />
-            <Pin Id="HhWWT6Ljn8ENev7riRuJAn" Name="Reset To Defaults" Kind="InputPin" />
-            <Pin Id="IowFEo0qdWIOIELX4sqA9d" Name="Frame" Kind="OutputPin" />
-            <Pin Id="NJeQ3FYC7XyLwevDRuyNb6" Name="Camera Count" Kind="OutputPin" />
+            <Pin Id="GTa5UvzawGOLzv1S5L1DHr" Name="Output" Kind="OutputPin" Bounds="521,94" />
+            <Pin Id="K7EgLjTJGceN12KqHHDZlT" Name="Load" Kind="InputPin" Bounds="697,-63" />
+            <Pin Id="KdX5B6RErVPOnXTmDoH3YK" Name="Filename" Kind="InputPin" Bounds="748,-63" />
+            <Pin Id="FPs7GrQBQi3ORV2Ka5il02" Name="Reset To Defaults" Kind="InputPin" Bounds="813,-60" />
+            <Pin Id="LexVWZveOE9OdrpO2UTbpc" Name="Is Open" Kind="OutputPin" Bounds="664,76" />
+            <Pin Id="U0kJbE6TigyMyUbwbfPVFA" Name="Camera Count" Kind="OutputPin" Bounds="741,60" />
+            <Pin Id="JENDLJ87kjvNLkTFonpxGO" Name="Black Level" Kind="InputPin" Bounds="770,-73" />
+            <Pin Id="Jnq2VeVkcZVNXEji7xHu1f" Name="Gain" Kind="InputPin" Bounds="853,-71" />
+            <Pin Id="LL9jRacArR4Qdz0MD4Git4" Name="Enabled" Kind="InputPin" Bounds="912,-72" />
           </Patch>
           <ProcessDefinition Id="CoddLrQ7yarOOHFQhp7JGg">
             <Fragment Id="S6X5wmmYdWZLL2uJC2dXkO" Patch="CttzRYNhulMNxIW7umwmua" Enabled="true" />
             <Fragment Id="TKlJkekPhymMtr2qFOTdND" Patch="SXfQsTNGXCwPRvZm8pr2ZN" Enabled="true" />
           </ProcessDefinition>
-          <Patch Id="BXRkzXKJv7NMAw1G82eLHA" Name="Destroy" ParticipatingElements="KlfYQ8lO9DzN7QyxXaepWh" />
-          <Link Id="KmHPALaz2NkMJHf0BtCieT" Ids="SDOCr4hQIDlNQ5sizezJHd,D1LJ1yYkHqhO5BwZGRdHMO" IsHidden="true" />
-          <Link Id="Do7t0OrcMKaNWHUPhgdzhz" Ids="D1LJ1yYkHqhO5BwZGRdHMO,G1TJmaKSgUYOOKYRknoHvk" />
-          <Link Id="BxY0AmOTAkBNuNWLxX3Uuh" Ids="KFhSxLoRHFWO5pjYaKch9U,FdspBcUFOsQNpa6WxrLkXs" />
-          <Slot Id="HizyXkQYtdPOKHySEMhmSN" Name="Camera" />
-          <Link Id="EKucwMuj1dnQCPDCicLVtM" Ids="DhiHvqz9RXpO3knEswUdRl,QJDelPPzhlYMM3oHktAqb9" />
-          <Link Id="FQZl8d1MIeaNn5iDD1tV2R" Ids="UzTquFCeGRAONPuahDgr3g,USPIwcZaDQhO8jSZenZpR4" />
-          <Link Id="JCdbro1MGMXLhUwhVKe34z" Ids="OZU6zxgTZgiNNq1OJ07fI3,UWPu3yiG0pSOJvveXWc35z" />
-          <Slot Id="NaGpg02VDKaPbn4MbFydZE" Name="Acquisition" />
-          <Link Id="KtVuKCakos4M6COK3Y6fAP" Ids="VZRNBPi9AybOINEa0gnsK4,MjHl3jUo6CDNZtmgFjdZZ8" />
-          <Link Id="MnWrF1Uh7tfO1l6yEJA1H7" Ids="J9q0e4VgQ2cNQOZXB9UZsG,C1ickXbofBFP72YcsmsgFx" />
-          <Link Id="CnideaAens1MfXEKHWDd5J" Ids="COmWVqnATW8NrMIPO8VbvB,LjG8ckSJBQMLlk8hHP07Wf" />
-          <Link Id="VJE38yQWC4fOBTGXSKCVpU" Ids="LUlYlQS54DbMOdjJ64K3Rm,COmWVqnATW8NrMIPO8VbvB" IsHidden="true" />
-          <Link Id="Croh8j2lV4KLnU8zKTBzd0" Ids="JK8as140izlL2XerlhIib0,OU3RXEuJ1x5K9jLBSDZnQE" IsFeedback="true" />
-          <Link Id="NcP1f9KrBqvNbh4hR1XIgs" Ids="JK8as140izlL2XerlhIib0,AJaO2XYY6Y0LeOCh4JXWWJ" />
-          <Link Id="Bcv8ZW6Sp6KMlQh2rFFOIy" Ids="MjHl3jUo6CDNZtmgFjdZZ8,JK8as140izlL2XerlhIib0" />
-          <Link Id="BgAtyACVoE0NNXZl8k2hTU" Ids="U3L3X2VjfU4NdukrJzrml3,NBGAHvNHwxwQKnHKjecAb8" IsFeedback="true" />
-          <Link Id="NUdV3cBXG2GOOrPKMTme0v" Ids="MjHl3jUo6CDNZtmgFjdZZ8,U3L3X2VjfU4NdukrJzrml3" />
-          <Link Id="KWWcOjosJ1MLg3hqmiXZvM" Ids="U3L3X2VjfU4NdukrJzrml3,GjyUCbYyEI6PUTN1j1Og5O" />
-          <Link Id="Tv0F03wTS94NbO68ZMBDb3" Ids="J9q0e4VgQ2cNQOZXB9UZsG,BOTgaJ7UXOYQG1DvbCEw6O" />
-          <Link Id="AkRPTqEd06VPL85kMoiKbe" Ids="KPCHrZp1SYsNVKZ1Bgc4xc,HUGBpOfuTrONvZPqJjihRY" />
-          <Link Id="FTCw0jX9esEPRQ1eZa2Ax2" Ids="QkI05vQsSg5MpQUq0f4yCY,HSv7TZhtzXlMiWy8oRney7" />
-          <Link Id="I2ugewRy0i9MxawVMEYcJI" Ids="J9q0e4VgQ2cNQOZXB9UZsG,OoL0A65wVlwMfx8Z6G18bs" />
-          <Link Id="Mt30vxwWxOoLTF1jbEpbPz" Ids="KzibdRndpvZNYytJRk75XU,J3fToRjvfC0LgCwT4JI61P" />
-          <Link Id="SsfYUuRd2tnM4s2gfLIr7o" Ids="J3fToRjvfC0LgCwT4JI61P,OtFy6kD8GP7PwgShbCq8TW" IsHidden="true" />
-          <Link Id="HldgTqTdZQ4N2KvI9fbcAr" Ids="R3FQw9yzbcrMttqoUJgAYW,TCYPLdeJ0NXLvbP3fcD3VH" IsFeedback="true" />
-          <Link Id="IK3NYjsUDlCPSpSvYtx6KJ" Ids="JSQ4oyQN9g7LhG2B4GZ5Fi,TCYPLdeJ0NXLvbP3fcD3VH" />
-          <Link Id="OKUBaefyRJwNIGLI7A9mfs" Ids="V8hyScKxSDrO0EdJSpNE3S,LDxzEfxc3fdNl0Yjak1hbB" IsFeedback="true" />
-          <Link Id="HwnqqAin0dPLyjy72ltJUs" Ids="T6D94bn1Id1NpT5GO0jXp1,LDxzEfxc3fdNl0Yjak1hbB" />
-          <Link Id="U5xcSKjzCWPPtZDrMR2yts" Ids="H9WbT8FdtvPNJIXbaNrzK1,LnqYOcQN6gELLaIHz5vBm2" />
-          <Slot Id="Bi5wr4yf4CENScDMkuDKXf" Name="Memory" />
-          <Link Id="GX2DzBoo5UoLVYZQxZkJDO" Ids="V0HGc1OzlY0M2yk8heCsMN,UV1L7LB586qOKJAIkrZoUV" />
-          <Link Id="QNHS2JGAotILFDFQm3K8gb" Ids="UYkrcq8UfacPpWcMvgS36M,VZw4gDWVZrhNrmtAaS1NYJ" />
-          <Link Id="NnkJ0twVdXIM0DFVh0wNs5" Ids="J9q0e4VgQ2cNQOZXB9UZsG,Fvf6aODiDmsQPubGJvsjps" />
-          <Link Id="AfPSdEyJ8kBM44SD1fW9ZM" Ids="KkVIa9fpqt1MEffz4dOYWL,VPY42lLyWcvLooibCMmfSc" />
-          <Link Id="JieLR169qgMNunzfjVm6a4" Ids="VjoJ43YWOTNNgGFZcWzH4C,MC4oPZveHa6LMrnf0SgcrG" />
-          <Link Id="Nq5KbrmZrCvLAqRd4UIhGv" Ids="LIWjRRz5FdoNkXLJxgU6IU,EiAAlP4w0liNYSX8twEFc8" />
-          <Link Id="AG8vDQStu4FMuxCzkCckDb" Ids="M0mnvouQfEyMbm25v0JMvL,O930UPjeYjQO0dQNTna7WP" />
-          <Link Id="Cy4ZUA0g1TXOV9lTuEqtNa" Ids="KkVIa9fpqt1MEffz4dOYWL,SMb9GhK16rXOep0wzL4Wcl" />
-          <Link Id="OR6dX4DgyEcN28xFcQf6vc" Ids="R8tJxSYot9MLfOHmDUr7zS,IwosZ7EbIoyPF36AoMxcnT" />
-          <Link Id="B6qz5OQa3mMNbKKwtmO8mu" Ids="KGZbyvRXnuOMk4PgWLncj2,Nq5AtyrUsSrM0CO9g1Eelf" />
-          <Link Id="BazEgrM7RvgQTZq6i53BOV" Ids="N8exIBzW04AMyalIyC7Zyn,J9q0e4VgQ2cNQOZXB9UZsG" />
-          <Link Id="L6r5XCEmBRPNxiRicLbOQd" Ids="FgTtymfw0XvOlf8QeDHsFz,RuXfi3XdL3dQERcKopXm1m" />
-          <Link Id="NQ6nr2kp9PzQSpdA5ioADy" Ids="PM4DTq7EjRRQF1S0EKW1Bp,JzMmohn6jVfLnZ2CVWgzUT" />
-          <Slot Id="UArFgTuqVudLVw7ukgviNV" Name="Camera Info" />
-          <Link Id="V0BfIzCuLmdMNmK9XvbQB7" Ids="K3HDFwxcs4aPTiIa8D49cI,IXyKzN5XhgHQOpaDnLtn4f" />
-          <Link Id="Jc8acQH0cY9PMDnySCoyK1" Ids="IXyKzN5XhgHQOpaDnLtn4f,S5UIuOMI26pQdFe0oSfGUw" />
-          <Link Id="EzRSxnseP5HOnuic7gP4D9" Ids="IXyKzN5XhgHQOpaDnLtn4f,KrlzkRow1IlOYuvyeThwOe" />
-          <Link Id="TeBXhMlD3D7LXPWuN1iBzX" Ids="SxctH8GDGlsL33MLGHwwcv,ELLkLfGBIgqLtnLy5SUV5q" />
-          <Link Id="OmqFa0usrCcQQx0IBvCWsz" Ids="IXyKzN5XhgHQOpaDnLtn4f,UTSe6kAAPQlPkkGlPL9xp5" />
-          <Link Id="MGmuq7OpYqFOBGZhyxmkQG" Ids="E6B8JRFkJooLnzG5HSOifr,SlgEANx29vvPyauJsceUdV" />
-          <Link Id="PvgekXMDJJmPOo7btlSpEk" Ids="IXyKzN5XhgHQOpaDnLtn4f,QEmZZLIPkupQYq06H9ggRN" />
-          <Link Id="CtUMz0cxhJYN1Waid7er5X" Ids="HcL2EynV9PpNCQDaqIwTJA,H0AbbG8JZ1QO74MwBX9HJK" />
-          <Link Id="EDmNjdxuyVuPKAkkaYe4mh" Ids="IXyKzN5XhgHQOpaDnLtn4f,F0Fe2frPiHzMWrsPTIkg33" />
-          <Link Id="HTzEjmoIHD0LUcUo381IUv" Ids="AfN3pUMMyYMLUh1pjV0Rli,SQht3GPIEU2PC6WAugLhK0" />
-          <Link Id="VmXFBAJI1FxQMJhslywjNq" Ids="FgTtymfw0XvOlf8QeDHsFz,MhPZJmdnG0COTu7FZB8TMp" />
-          <Link Id="JOpuc7N0m1ON8PNPy75Dcj" Ids="JGKIl7IZXNoOmlXruUuIEE,LmCU16s2GdUPGCtUi5ysBP" />
-          <Link Id="GDpa8g29dedPQnUGQwWtsl" Ids="LmCU16s2GdUPGCtUi5ysBP,G2jhcPd3KJ1NjNTOYScvWP" />
-          <Link Id="PuTVWBNahYVNSOO544YSDE" Ids="J9q0e4VgQ2cNQOZXB9UZsG,I6B6CM3yPJDPQoYQlBSKQe" />
-          <Link Id="CnUkXxsRFWMNIh9cQIvixB" Ids="G1pGEHIYoocPOtJxecLE4P,CozhKBsn0EQM8keaA3T2Nq" />
-          <Link Id="URfKO7PcPQCLkY4VVB7Bky" Ids="KMmdC7Pcj10NmYHxBHjwig,ES5jDL1cb8DNaDKLl54Prj" />
-          <Link Id="AEPoMYiSaBMQMAOoZJNeCf" Ids="Nx2FeKcoI1YMkej5EH1x9T,KMmdC7Pcj10NmYHxBHjwig" IsHidden="true" />
-          <Link Id="Nj8UPPGMmgVLHzoZgKJTZ0" Ids="BEN1e2M08xfOj64IYbHVq9,QoFeBJi5JG3M0Vv8toQwbS" />
-          <Link Id="E3oe5dpKtXnMUQFT5ajtJW" Ids="J9q0e4VgQ2cNQOZXB9UZsG,M878AlOG23JLsJMOf8kjvv" />
-          <Link Id="QkhtgMcDslAQAAMplXKYZU" Ids="PAGhAfzxjnIOMaxlAEkjIR,Ryxix0MylkEMaDURDzil1B" IsHidden="true" />
-          <Link Id="LtE04pfB8CYQJ9QUAC6M5K" Ids="Ryxix0MylkEMaDURDzil1B,OSwtaH9hi9LLVsLue9gDmp" />
-          <Link Id="HzI7n9HoskVPHp3MJSTSSY" Ids="Qcd4TQkG9SkN7bnf9iIBsH,EzJXiGzIiW8N33JMZA1ViO" />
-          <Link Id="Jh3deHKfKqxPMtTVWzDG0v" Ids="OKgkly6PYHGLxNgOD4tVUC,PX9xSJ7eqYwQCtpqClRi8H" />
-          <Link Id="OCg5KxcDjl7MCKgqtD0Tkn" Ids="HhWWT6Ljn8ENev7riRuJAn,OKgkly6PYHGLxNgOD4tVUC" IsHidden="true" />
-          <Link Id="UPlkiGgdGifPUOt5Dy05DY" Ids="F7AmJKQZBxwMCk3an29EcE,FeIO9DlSQzQNTIPlhyScxM" />
-          <Link Id="T3k46Xs4Mi3LKDzbAZBvg2" Ids="JIPZejqmJhdOXRSDsI90Ii,G8ohhIPg3XvL7Js24J4i2Y" />
-          <Link Id="TPJbHfuM572L0U9wAazHDW" Ids="J9q0e4VgQ2cNQOZXB9UZsG,OO7ggP8u192MAmX2uXyKd3" />
-          <Link Id="IPRnbOGNN8OPZwnDtvpzsp" Ids="KUe7Ksu7eyxOGSDl0VjgZM,KMl6ipYnRuyMGlPQnMyV8t" />
-          <Link Id="UEs1FP0ZAYiMACLySd5NgG" Ids="KMl6ipYnRuyMGlPQnMyV8t,IowFEo0qdWIOIELX4sqA9d" IsHidden="true" />
-          <Link Id="LH24bAysqQ9Lng7nsdlwGd" Ids="LCrsA03RKLQMO0KKMCNTo6,JMM4zUXY4CBPmzr5CTLBkO" />
-          <Link Id="FBDprf0bQFLQc09ahfOAqj" Ids="VrYp4pvEa4dOzdRE3A7bU4,LCrsA03RKLQMO0KKMCNTo6" IsHidden="true" />
-          <Link Id="RSb4tI3PZCuOZeJmMAaIVs" Ids="Q2blAeNgg6xPPh5KwgHjA2,VKOSEjRWZUIPBE1cN8d1Tz" />
-          <Link Id="RObK0vbKbJzQNT4dXk4Cjo" Ids="K3rSRuvjRTXO7zmZsA6teF,Q2blAeNgg6xPPh5KwgHjA2" IsHidden="true" />
-          <Link Id="CIWKftdoB4CLGT2ONI0Jip" Ids="CbvKb62VvusNHlZJi7snSL,NJeQ3FYC7XyLwevDRuyNb6" IsHidden="true" />
-          <Link Id="OO3kcJPotxrPxbGjvjjkGA" Ids="BeO4CatFQRJQJatd43rEeR,HDOLTqWIF15N3C3tSQbpK5" />
-          <Link Id="UZpsfa0R9VNO6HGJWh6o9r" Ids="HDOLTqWIF15N3C3tSQbpK5,CbvKb62VvusNHlZJi7snSL" />
-          <Link Id="QoyrXzGhKYdOWZWnJMpgsh" Ids="VpapIX635cMLIbR3xqy1rW,HXdvWbsu43rLXioVV2oX5c" />
-          <Link Id="E3iq4nsODobMOPElyaABu4" Ids="GTERDzqBMTJPvCUAYZqmaj,KRFAYOm6IJtPkN74xkvpuT" />
-          <Link Id="J91psyWT4zINXF2YOl3FeN" Ids="OiVg0UNHZLmPEY7EpoLIBb,NdU6ZmduI7ELd7ogXonJzy" />
-          <Link Id="AwzHM9NMIUENYmg2rgG2WW" Ids="S8i7zG0iRmiLJYppzIlbRw,SvvbjuCYYQnLKK1AMWpO6t" />
-          <Link Id="KYP9ZRT83ShLmoZddGD95R" Ids="ALT1RTnFAGkOR2OQEyUVQB,M2LRWJZ1nDkMzHIgnQZMBv" />
-          <Link Id="C1vSbeZeQzRPvrr2dbKMl6" Ids="EkI2XWckjtwMlSzFl2qGOl,Igd7vRf9EEXNX729vhfRFk" />
+          <Patch Id="BXRkzXKJv7NMAw1G82eLHA" Name="Dispose" />
+          <Link Id="KuLSgzwzvCKNw6uo6Xptkt" Ids="PVSTwjwRHjUM7Z6ItPaZ50,HENNFWCNCzoPR4Lhx2ebun" IsHidden="true" />
+          <Link Id="CNGsZFvxj4jMbY8UtTngAW" Ids="HENNFWCNCzoPR4Lhx2ebun,TklX2x9sZfKMqADmGDaZOt" />
+          <Link Id="PCI8uj1r5eOLaYtlCGc06z" Ids="VDAfVV2rNs8PknPc3qjBoI,IkcGYwXwzfLNwnuHCWdgYe" />
+          <Link Id="TUpjjWyvvWXP7pO1W4yWGF" Ids="DQnmxD2drqWLmOi8iLr4pM,VDAfVV2rNs8PknPc3qjBoI" IsHidden="true" />
+          <Link Id="GVPPwWYGp36Lt837dUJ9cn" Ids="Qz8lMQVVUkZLwe64GJZOIj,IsCCJuEBb6YOLbrY8hgety" />
+          <Link Id="RBjXg92t2nePULEeqXOrel" Ids="Kt6om6tvVqsOO6VxMCE7Ci,Qz8lMQVVUkZLwe64GJZOIj" IsHidden="true" />
+          <Link Id="UHHsbN67JZrPEVkf3hCsFG" Ids="HLDLIe06ZPNPsjYO3z2STe,Fwwrs3MXPmyNLA06PMYXrX" />
+          <Link Id="Di047yBdQaXL1dCjlSCW84" Ids="BSDqY24o2g3QLDZgW2F2cm,RmkkXEwpREOQLtjLekC9Qe" />
+          <Link Id="RtpuzIAX3vBLp9hvFZC6OS" Ids="K7EgLjTJGceN12KqHHDZlT,BSDqY24o2g3QLDZgW2F2cm" IsHidden="true" />
+          <Link Id="Ch2hcoyWFJOLlpYjIvyVpu" Ids="HGNYy2OKSsOOvDyS2lyrMl,Gv1r4ei8P18Nk66n70yHh2" />
+          <Link Id="PBMcD8p0dO5OcKug6kFytX" Ids="KdX5B6RErVPOnXTmDoH3YK,HGNYy2OKSsOOvDyS2lyrMl" IsHidden="true" />
+          <Link Id="Ohru4Mz4fsvLAR3C3tUAyU" Ids="VOHHMStpUApM089bRZkq0K,GoBUJryOOWoP2F0oUnpftu" />
+          <Link Id="TX36s2VuaPZNCyZdvz8pMF" Ids="FPs7GrQBQi3ORV2Ka5il02,VOHHMStpUApM089bRZkq0K" IsHidden="true" />
+          <Link Id="T2XdOUUnbJeOkN9wUlhMbn" Ids="AVtTgrbLoI7QYPhncbp3XM,EtiKf8zMX9XL1bfo6eqgNW" />
+          <Link Id="Stbq8pr5nklLb8jeiCWkav" Ids="JENDLJ87kjvNLkTFonpxGO,AVtTgrbLoI7QYPhncbp3XM" IsHidden="true" />
+          <Link Id="PipAWaLdbP2Och9crnJFLd" Ids="IB2oVMCbhbuNFpYCuD5hs9,JQQ24sYKa2ZNt7dMEmWGQO" />
+          <Link Id="Tllan7xm0mLME5gAPOq5fB" Ids="Jnq2VeVkcZVNXEji7xHu1f,IB2oVMCbhbuNFpYCuD5hs9" IsHidden="true" />
+          <Link Id="KzfNOiN974eOw7pLeC1Zz3" Ids="MblSNqrtP87OGlZls4y4qR,UosbSuqZUovOAaclwtULSW" />
+          <Link Id="L1iYOpCwFJBOYHmeRqDiRY" Ids="LL9jRacArR4Qdz0MD4Git4,MblSNqrtP87OGlZls4y4qR" IsHidden="true" />
+          <Link Id="NBwPIWravQFLNtVW2Hu2zQ" Ids="BkzkBUCYK54NrheG6AuY5Z,P15uJScvZK1L0Jgn0su6Zd" />
+          <Link Id="Ad2Kg0Z5MLtQONAVpwpHKp" Ids="P15uJScvZK1L0Jgn0su6Zd,LexVWZveOE9OdrpO2UTbpc" IsHidden="true" />
+          <Link Id="EmnRxBfArlbNzSdwhttTEq" Ids="Dtb31h8FL9aOmJH27voIv0,Sx0aCws0gyFObERnKaU34T" />
+          <Link Id="TueyoOAqxjhLrE4fkLMQOM" Ids="Sx0aCws0gyFObERnKaU34T,U0kJbE6TigyMyUbwbfPVFA" IsHidden="true" />
+          <Link Id="Qlg0kiX3vdMORbLxO2MR1J" Ids="JuI7khChUGHP78q5xy0vFX,GLRJuzsjVfiLjD7yaNsFlc" />
+          <Link Id="Ep6koktHAVeLiIiZwCvDnk" Ids="GLRJuzsjVfiLjD7yaNsFlc,GTa5UvzawGOLzv1S5L1DHr" IsHidden="true" />
         </Patch>
       </Node>
-      <Canvas Id="Mrfn4tVoksiPPCxePkL8rL" Name="Wrappers" Position="217,368">
+      <Canvas Id="Mrfn4tVoksiPPCxePkL8rL" Name="Wrappers" Position="213,497">
         <!--
 
     ************************ QueryCameras ************************
 
 -->
-        <Node Name="QueryCameras" Bounds="216,207,400,326" Id="URQmFuaVbzMMweDx6DhlEh">
+        <Node Name="QueryCameras" Bounds="149,207,826,320" Id="URQmFuaVbzMMweDx6DhlEh">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" Name="Operation" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
           <Patch Id="L7LwRZejlcKQH5yboKTL87" IsGeneric="true" ManuallySortedPins="true">
-            <Node Bounds="229,230,76,13" Id="TRZNa3PGThYP28qV8sX0j0">
+            <Node Bounds="229,230,78,20" Id="TRZNa3PGThYP28qV8sX0j0">
               <p:NodeReference LastCategoryFullName="uEye.Info.Camera" LastSymbolSource="uEyeDotNet.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Camera" />
@@ -684,24 +127,24 @@
             <ControlPoint Id="MVKGAsYxE0vO5h4dsc2L7D" Bounds="230,320" />
             <Link Id="AhrmMd0kPSrMlE6oD6Ibjd" Ids="UzoeuojhgZXM1ufs5CCZaw,MVKGAsYxE0vO5h4dsc2L7D" />
             <Link Id="NjViq4heSaSOasNegJ8L57" Ids="MVKGAsYxE0vO5h4dsc2L7D,U2uS445FGb9LWmys2sLYnR" IsHidden="true" />
-            <Node Bounds="302,260,87,13" Id="LSwlKAOezroM1lTFzhTcOT">
-              <p:NodeReference LastCategoryFullName="Collections.Array" LastSymbolSource="VL.CoreLib.vl">
+            <Node Bounds="331,274,87,22" Id="LSwlKAOezroM1lTFzhTcOT">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Length" />
-                <CategoryReference Kind="Category" Name="Array" />
+                <FullNameCategoryReference ID="Collections.Mutable.MutableArray" />
               </p:NodeReference>
               <Pin Id="PwJvmUYKvUDL8FIvNKH4NJ" Name="Input" Kind="StateInputPin" />
               <Pin Id="DbkJI1CQKnoQPwY8oXKO9z" Name="Output" Kind="StateOutputPin" />
               <Pin Id="VzFPHcuFCXzLk1k9I86Vfg" Name="Length" Kind="OutputPin" />
             </Node>
             <Link Id="OxEgDrjRYHsNLmlSk67J9C" Ids="QbHlAAxAZmZPbeHA9bE0ln,PwJvmUYKvUDL8FIvNKH4NJ" />
-            <ControlPoint Id="F5GsBqkudAGQF4cr5okwzx" Bounds="386,320" />
+            <ControlPoint Id="F5GsBqkudAGQF4cr5okwzx" Bounds="415,334" />
             <Link Id="M0FJHwSieazMplhsIdIRQy" Ids="VzFPHcuFCXzLk1k9I86Vfg,F5GsBqkudAGQF4cr5okwzx" />
             <Link Id="IaPwsuFxC6lLFEDvxpL6Pq" Ids="F5GsBqkudAGQF4cr5okwzx,JWh0iwEMA5cLf2s8xpaQ36" IsHidden="true" />
             <Pin Id="U2uS445FGb9LWmys2sLYnR" Name="Result" Kind="OutputPin" />
             <Pin Id="JWh0iwEMA5cLf2s8xpaQ36" Name="Camera Count" Kind="OutputPin" />
-            <Node Bounds="299,401,278,86" Id="EcBUnKTMoNsNheEBmfqAl2">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+            <Node Bounds="205,352,748,128" Id="EcBUnKTMoNsNheEBmfqAl2">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -710,8 +153,8 @@
               <Patch Id="AMDMJREx3jWPYB6khDXT0x" ManuallySortedPins="true">
                 <Patch Id="CSmsjACVEg9NsLUtvMmmXw" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Il9O1EeyNxnO60WsVFToJr" Name="Update" ManuallySortedPins="true" />
-                <Patch Id="DCHzqO8uVaSPKKwkAAko9M" Name="Destroy" ManuallySortedPins="true" />
-                <Node Bounds="311,435,79,22" Id="JOgWgajco4LNrsujoaUFSI">
+                <Patch Id="DCHzqO8uVaSPKKwkAAko9M" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="720,429,79,22" Id="JOgWgajco4LNrsujoaUFSI">
                   <p:NodeReference LastCategoryFullName="uEye.Types.CameraInformation" LastSymbolSource="uEyeDotNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="CameraInformation" />
@@ -721,7 +164,7 @@
                   <Pin Id="VfC2F1lcnK3PHoZnWsFZPi" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="TYid6FjKkSYPi80vdxygSv" Name="Model" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="398,430,79,22" Id="EzO2cKGk1WYN0Fw10kFh3S">
+                <Node Bounds="583,429,79,22" Id="EzO2cKGk1WYN0Fw10kFh3S">
                   <p:NodeReference LastCategoryFullName="uEye.Types.CameraInformation" LastSymbolSource="uEyeDotNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="CameraInformation" />
@@ -731,7 +174,7 @@
                   <Pin Id="Jqzv6Fz1hcaNDxGvXD6BM6" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="B2f9tvYkM9WMk5lnGQJDFw" Name="Serial Number" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="486,430" Id="KTkp2D2jMNOPm3CVfuSQEZ">
+                <Node Bounds="851,429,79,22" Id="KTkp2D2jMNOPm3CVfuSQEZ">
                   <p:NodeReference LastCategoryFullName="uEye.Types.CameraInformation" LastSymbolSource="uEyeDotNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="CameraInformation" />
@@ -741,31 +184,82 @@
                   <Pin Id="NzEBUa8lo9FNQWvvAR4M3h" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="SzFG3nSKoQfOPvZszoGrXe" Name="In Use" Kind="OutputPin" />
                 </Node>
+                <Node Bounds="217,428,79,22" Id="FrH6vuD3gNxMEtjPMST99F">
+                  <p:NodeReference LastCategoryFullName="uEye.Types.CameraInformation" LastSymbolSource="uEyeDotNet.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="CameraInformation" />
+                    <Choice Kind="OperationCallFlag" Name="CameraID" />
+                  </p:NodeReference>
+                  <Pin Id="PgWkkUyQGhVMei7YzYXbze" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="SbgeSAwVEu6Ou39jHEEVIG" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="TTlq67wwF8PNAwPm5ED06F" Name="Camera ID" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="328,428,79,22" Id="HdmY7mT8PbsOgCK3lhu3Ir">
+                  <p:NodeReference LastCategoryFullName="uEye.Types.CameraInformation" LastSymbolSource="uEyeDotNet.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="CameraInformation" />
+                    <Choice Kind="OperationCallFlag" Name="DeviceID" />
+                  </p:NodeReference>
+                  <Pin Id="U1ZhseuEzQWLfjGlfhmFp5" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="RTRBjdTnGfSPi79kiyU04P" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="ACq0NWdayEHPaKiwRPZcdv" Name="Device ID" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="452,432,79,22" Id="Vnf3y47utV7NVF6s1yNYvK">
+                  <p:NodeReference LastCategoryFullName="uEye.Types.CameraInformation" LastSymbolSource="uEyeDotNet.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="CameraInformation" />
+                    <Choice Kind="OperationCallFlag" Name="SensorID" />
+                  </p:NodeReference>
+                  <Pin Id="McXmIl4eofvMIeTjxKUcFy" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Tjee4XMRAk7PeRUfpoq8pl" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="OiKku9rAE8cNg46M2lH2Bx" Name="Sensor ID" Kind="OutputPin" />
+                </Node>
               </Patch>
               <ControlPoint Id="UBj8Q8LpTMzNRkLRFUO15t" Bounds="332,407" Alignment="Top" />
-              <ControlPoint Id="KWjBZQeVuv9NP2PANKlS31" Bounds="367,481" Alignment="Bottom" />
-              <ControlPoint Id="Gvl9KnYjVegNqtVEvjOyIZ" Bounds="467,481" Alignment="Bottom" />
-              <ControlPoint Id="BR1vwUDHmPUQCdR1YFGp7J" Bounds="543,481" Alignment="Bottom" />
+              <ControlPoint Id="KWjBZQeVuv9NP2PANKlS31" Bounds="796,474" Alignment="Bottom" />
+              <ControlPoint Id="Gvl9KnYjVegNqtVEvjOyIZ" Bounds="660,474" Alignment="Bottom" />
+              <ControlPoint Id="BR1vwUDHmPUQCdR1YFGp7J" Bounds="927,474" Alignment="Bottom" />
+              <ControlPoint Id="JWNoEGewMvZNhH3UeBhEdm" Bounds="293,474" Alignment="Bottom" />
+              <ControlPoint Id="RZcKbUzXGnEODxUtAUi2J5" Bounds="405,474" Alignment="Bottom" />
+              <ControlPoint Id="KDRRaKqYWR2PI1yKSSrk0o" Bounds="528,474" Alignment="Bottom" />
             </Node>
             <Link Id="JPgil0EYYbXO53QDsKWE4p" Ids="DbkJI1CQKnoQPwY8oXKO9z,UBj8Q8LpTMzNRkLRFUO15t" />
             <Link Id="TC8YjNLRULDPH4Bw9lVrUw" Ids="UBj8Q8LpTMzNRkLRFUO15t,Fzrnd2ykLMsOeFBT9SBGWA" />
             <Link Id="VQPMi6XgBS7P9se9PRDuW9" Ids="TYid6FjKkSYPi80vdxygSv,KWjBZQeVuv9NP2PANKlS31" />
-            <ControlPoint Id="QH3DhI7b3gYOFHu5VOB1ml" Bounds="373,514" />
+            <ControlPoint Id="QH3DhI7b3gYOFHu5VOB1ml" Bounds="795,508" />
             <Link Id="JDatya21iiRNQamQtbmLJg" Ids="KWjBZQeVuv9NP2PANKlS31,QH3DhI7b3gYOFHu5VOB1ml" />
             <Pin Id="GZGXwhtxRFmMfvQ3E2fgJt" Name="Model" Kind="OutputPin" />
             <Link Id="Nbu2RlxQajxMnkXpuMl1T2" Ids="QH3DhI7b3gYOFHu5VOB1ml,GZGXwhtxRFmMfvQ3E2fgJt" IsHidden="true" />
             <Link Id="A7vb1DAkHpFPs5TVvYO23P" Ids="UBj8Q8LpTMzNRkLRFUO15t,GgSem05xckROBb7CxBX1cf" />
             <Link Id="PtXxZKEDXygQQwoJh0kM2u" Ids="B2f9tvYkM9WMk5lnGQJDFw,Gvl9KnYjVegNqtVEvjOyIZ" />
             <Link Id="IE6beiT0EMGONZgw9NqCW0" Ids="Gvl9KnYjVegNqtVEvjOyIZ,DyYIVsjIj19N4ccKSfiSSW" />
-            <ControlPoint Id="DyYIVsjIj19N4ccKSfiSSW" Bounds="467,511" />
+            <ControlPoint Id="DyYIVsjIj19N4ccKSfiSSW" Bounds="658,508" />
             <Pin Id="EBhpV54lBiJLVpFlOHG6dS" Name="Serial Number" Kind="OutputPin" />
             <Link Id="MYMrkgHzbCKOEPcDxtK5NK" Ids="DyYIVsjIj19N4ccKSfiSSW,EBhpV54lBiJLVpFlOHG6dS" IsHidden="true" />
             <Link Id="VP0IUNY2NQHPeN5kvARbBM" Ids="UBj8Q8LpTMzNRkLRFUO15t,CgXYYkajqv8P2B2YYLl9AQ" />
             <Link Id="VOZulppphuzLDZDpCwznTp" Ids="SzFG3nSKoQfOPvZszoGrXe,BR1vwUDHmPUQCdR1YFGp7J" />
             <Link Id="CXsYXKRDmE5OelnIQSYJLN" Ids="BR1vwUDHmPUQCdR1YFGp7J,NWtyjlNVkJ9NrXrq36gvYb" />
-            <ControlPoint Id="NWtyjlNVkJ9NrXrq36gvYb" Bounds="567,514" />
+            <ControlPoint Id="NWtyjlNVkJ9NrXrq36gvYb" Bounds="926,508" />
             <Pin Id="O4Jc3wb2q5QOCgLoejWbO0" Name="In Use" Kind="OutputPin" />
             <Link Id="VuC2pjAQyVHNl1MHC3WiDH" Ids="NWtyjlNVkJ9NrXrq36gvYb,O4Jc3wb2q5QOCgLoejWbO0" IsHidden="true" />
+            <Link Id="Cr7W5DOK7IDOJTAvNKk69V" Ids="UBj8Q8LpTMzNRkLRFUO15t,PgWkkUyQGhVMei7YzYXbze" />
+            <Link Id="SKgG1z0r6neOaWvObEYIju" Ids="TTlq67wwF8PNAwPm5ED06F,JWNoEGewMvZNhH3UeBhEdm" />
+            <Link Id="DchbPWdivutMdK5ZpLDD6S" Ids="JWNoEGewMvZNhH3UeBhEdm,KFeDPYp8wXEMxQNwTLnigF" />
+            <ControlPoint Id="KFeDPYp8wXEMxQNwTLnigF" Bounds="292,507" />
+            <Pin Id="Eh2nDHqe4BWOO3SOoZagoX" Name="Camera ID" Kind="OutputPin" Bounds="293,516" />
+            <Link Id="FBbWe0L2DFAMRNevwUZ0I8" Ids="KFeDPYp8wXEMxQNwTLnigF,Eh2nDHqe4BWOO3SOoZagoX" IsHidden="true" />
+            <Link Id="BGIlEbPHjL0M1NeGBgM8aL" Ids="UBj8Q8LpTMzNRkLRFUO15t,U1ZhseuEzQWLfjGlfhmFp5" />
+            <Link Id="PId2jNwI7KMMkXQCwKsEVb" Ids="ACq0NWdayEHPaKiwRPZcdv,RZcKbUzXGnEODxUtAUi2J5" />
+            <ControlPoint Id="O3S7faoteTbMFQH5GChUel" Bounds="404,507" />
+            <Link Id="V1jPinOxSbELzvq8sXXAVH" Ids="RZcKbUzXGnEODxUtAUi2J5,O3S7faoteTbMFQH5GChUel" />
+            <Pin Id="Anttp3isu9wNKpbzldLX8m" Name="Device ID" Kind="OutputPin" Bounds="407,511" />
+            <Link Id="PiO3dT8pQhwNsixFCMVOAM" Ids="O3S7faoteTbMFQH5GChUel,Anttp3isu9wNKpbzldLX8m" IsHidden="true" />
+            <Link Id="GPJIS4fXHKCPxAOf1v79Wp" Ids="UBj8Q8LpTMzNRkLRFUO15t,McXmIl4eofvMIeTjxKUcFy" />
+            <Link Id="VZ5T4rw3KLVQcfN7Mdj7Oq" Ids="OiKku9rAE8cNg46M2lH2Bx,KDRRaKqYWR2PI1yKSSrk0o" />
+            <ControlPoint Id="DX88TycjQP4Nsd7KWmv6Vl" Bounds="527,507" />
+            <Link Id="TsjQRzPFLWePrhVtUkFYiG" Ids="KDRRaKqYWR2PI1yKSSrk0o,DX88TycjQP4Nsd7KWmv6Vl" />
+            <Pin Id="Hpz2qz6nTnHO4vpYgqmzzI" Name="Sensor ID" Kind="OutputPin" Bounds="530,509" />
+            <Link Id="AgivEISh4cDLJO10x4gR88" Ids="DX88TycjQP4Nsd7KWmv6Vl,Hpz2qz6nTnHO4vpYgqmzzI" IsHidden="true" />
           </Patch>
         </Node>
       </Canvas>
@@ -780,9 +274,9 @@
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="DjGJN1gFh45NSVNy4u9X5X" IsGeneric="true">
-          <Canvas Id="HePZDLSIyPhOEhwigRYDj9">
+          <Canvas Id="HePZDLSIyPhOEhwigRYDj9" CanvasType="Group">
             <Node Bounds="264,253,190,776" Id="MJBNPwOgpnZOK6frnpVhpr">
-              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                 <Choice Kind="ProcessAppFlag" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -843,17 +337,17 @@
                   <Pin Id="OMVSquwFpMiNKtbZMFEGus" Name="Finished" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="392,561,46,13" Id="F0U5nrYrpfTN0N2jl4AEz1">
-                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="VL.CoreLib.vl">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="AND" />
                   </p:NodeReference>
                   <Pin Id="IcPchH4dpPRMlysxoru1pk" Name="Input" Kind="InputPin" />
                   <Pin Id="UDDe20ucPERO4kvTplE6dd" Name="Input 2" Kind="InputPin" />
-                  <Pin Id="LJpiZdAOX0fPpZ6w6T8Y4X" Name="Output" Kind="OutputPin" />
                   <Pin Id="Qq93Mtd8LZ3MUeaRzbT4SH" Name="Input 3" Kind="InputPin" />
+                  <Pin Id="LJpiZdAOX0fPpZ6w6T8Y4X" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="312,607,131,398" Id="I5lGym29nGDPgMZlqtO2y9">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
@@ -871,9 +365,8 @@
                       <Pin Id="NYYl6Yr08qXM63U39klAZ1" Name="Result" Kind="OutputPin" />
                       <Pin Id="LVAa1VHIBvVNeIMDzwH25m" Name="S 32Mem Id" Kind="OutputPin" />
                     </Node>
-                    <Patch Id="MOrX23FCWGVQH0QFED5B4m" Name="Then" />
                     <Node Bounds="325,695,46,22" Id="OqNNPH1cjgyPCLwtZxc0Zi">
-                      <p:NodeReference LastCategoryFullName="uEye.Memory" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+                      <p:NodeReference LastCategoryFullName="uEye.Memory" LastSymbolSource="uEyeDotNet.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToIntPtr" />
                         <PinReference Kind="InputPin" Name="S 32Mem Id" />
@@ -939,15 +432,16 @@
                       <Pin Id="Hv2y0eFZqw2OnBRTFZ68zc" Name="S 32Pitch" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="326,900,25,13" Id="Lk35FWte1W6OHJlcrhyblN">
-                      <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.Devices.uEye.vl">
+                      <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="*" />
-                        <CategoryReference Kind="Category" Name="Adaptive" />
                       </p:NodeReference>
                       <Pin Id="RVwcyKVtwedQafAw3ZEIwm" Name="Input" Kind="InputPin" />
                       <Pin Id="UEvSYg70wKOOTrJrCKPuYC" Name="Input 2" Kind="InputPin" />
                       <Pin Id="FHl2N4WtrSHQQyCvI4HzPA" Name="Output" Kind="OutputPin" />
                     </Node>
+                    <Patch Id="LC0v6A25U7WMN1RcdB1tnI" Name="Create" />
+                    <Patch Id="MOrX23FCWGVQH0QFED5B4m" Name="Then" />
                   </Patch>
                   <ControlPoint Id="B3d6N2PpcLAQK6bf3xLeOm" Bounds="328,999" Alignment="Bottom" />
                   <ControlPoint Id="IevtKqTVpeRN9QoUIPIYWK" Bounds="384,613" Alignment="Top" />
@@ -962,7 +456,7 @@
                   <Pin Id="SviYMg1PKBMNP1koTSNLtG" Name="Sender" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="285,339,41,13" Id="EPPVIdBtROcNeN2KH8P0N8">
-                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="VL.CoreLib.vl">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="CastAs" />
                     <CategoryReference Kind="Category" Name="Object" />
@@ -973,7 +467,7 @@
                   <Pin Id="FwtlwcSAwq7PkNrOE9juf2" Name="Success" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="287,519,46,22" Id="PAYT1dLKCkKMe85L3qVSWi">
-                  <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+                  <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Memory" />
                   </p:NodeReference>
@@ -988,8 +482,8 @@
           </Canvas>
           <Patch Id="D5NiCw5YAQWOKdEiEqlJZS" Name="Create" />
           <Patch Id="LL4y1dMtPdIMAsXFbnnlvQ" Name="Update">
-            <Pin Id="K1JcbVrukRyNmgmHpjVZH9" Name="Input" Kind="InputPin" />
             <Pin Id="KQI07kw8frHN9BAxC7NOHx" Name="Output" Kind="OutputPin" />
+            <Pin Id="K1JcbVrukRyNmgmHpjVZH9" Name="Input" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="TUg7jHkBXJkOszXMuZ0U0v">
             <Fragment Id="T1e7VQTBYlJLZleNner0Li" Patch="D5NiCw5YAQWOKdEiEqlJZS" Enabled="true" />
@@ -1032,8 +526,821 @@
           <Link Id="VM9dt7b5c8IOTDbGIRj8Em" Ids="OgNSBYULcXWLxTcBa3UsLj,Pb5dNXhIgdYNxW9QmXLPpM" />
         </Patch>
       </Node>
+      <Canvas Id="BTwFUPl5F13Nn1ZvmAkGF9" Name="Internal" Position="213,534">
+        <!--
+
+    ************************ uEyeDevice ************************
+
+-->
+        <Node Name="uEyeDevice" Bounds="354,261" Id="LGfX5wFXpaHMWGTMWy1egZ">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+            <Choice Kind="ContainerDefinition" Name="Process" />
+          </p:NodeReference>
+          <Patch Id="FNUL1T0RzebNZqW3sVL4im">
+            <Canvas Id="LpuKtPS1voGMkyt5JQHYg3" CanvasType="Group">
+              <Pad Id="Pv2h2W7rQekN7xI9gJrQTC" SlotId="SlAC3k5H1kfOEokwXlvigH" Bounds="289,773" />
+              <Node Bounds="252,374,46,22" Id="EhXWTISUMcVO929eueuYWh">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Memory" />
+                </p:NodeReference>
+                <Pin Id="ViNl2cdoXPzNJd4nVcWNi7" Name="Input" Kind="StateInputPin" />
+                <Pin Id="JPPFfyOZ57HPgHZeYmi5Tj" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="MibpOu5nKe8MtGAP4Fe0mq" Name="Memory" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="252,440,61,22" Id="BuytnQKGgIoL5LabZyQN0F">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Acquisition" />
+                </p:NodeReference>
+                <Pin Id="MpQiFIBhPXzQPCmKUaQplQ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Pdb9BpHeIMlPJX9bAQoceD" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="K47jf8RZkXlMj6Cw2PDL27" Name="Acquisition" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="Uw5pdJvOaHQNWhpSF6N9sw" Bounds="326,167" />
+              <Node Bounds="252,203,45,22" Id="CaIAeT6iEW2OOf4Upw09Vt">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Init" />
+                  <PinReference Kind="InputPin" Name="S 32Cam" />
+                </p:NodeReference>
+                <Pin Id="I6HR8hhzKFZM7mOVKKoOSw" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PF97AORYCA1P8byzdIuK6B" Name="S 32Cam" Kind="InputPin" />
+                <Pin Id="F9v4J99yTt9QUrEL6DwoQv" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="OKB1pfGf7x5OQ2vfocZjXR" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="252,133,39,22" Id="SrpwwaIcnBUPrU1R1bxqp8">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Camera" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="AssemblyCategory" Name="uEye" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                </p:NodeReference>
+                <Pin Id="H2YQC8tsuyENxtBHZioPtj" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="552,953,62,22" Id="PQYe47A2rwPPF0o2SySHvf">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="uEye" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Camera" />
+                  <Choice Kind="OperationCallFlag" Name="EventFrame" />
+                </p:NodeReference>
+                <Pin Id="TX3hvsMUrbqOVVIYdXFjTi" Name="Input" Kind="StateInputPin" />
+                <Pin Id="V3Y6K1BCznrPGUAOpe6hJn" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="431,440,85,22" Id="DEd052AV3KjLPfdpEu2qUa">
+                <p:NodeReference LastCategoryFullName="uEye.Memory" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Allocate" />
+                  <PinReference Kind="InputPin" Name="S 32Bits Per Pixel" />
+                  <PinReference Kind="InputPin" Name="S 32Width" />
+                  <PinReference Kind="InputPin" Name="B Set Active" />
+                </p:NodeReference>
+                <Pin Id="V4DFljI4kv0PoLwXEUAilJ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TzN8liur45VOy1UQHzWj0z" Name="S 32Width" Kind="InputPin" />
+                <Pin Id="AV9vUpHw61zOToraAZmSwP" Name="S 32Height" Kind="InputPin" />
+                <Pin Id="AwqPxYhsRnbP8mly0AGyF6" Name="S 32Bits Per Pixel" Kind="InputPin" />
+                <Pin Id="NVpk2QF7P6DM1JK6OykyJ3" Name="B Set Active" Kind="InputPin" />
+                <Pin Id="LYebHCOLOrgPvuyLlV3qhm" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="PuHoOzkQDN6NDNqMg4mQhO" Name="Result" Kind="OutputPin" />
+                <Pin Id="IYp2MqZvZMmMqgXrI2RAyh" Name="S 32Mem Id" Kind="OutputPin" />
+              </Node>
+              <Pad Id="BEuEeOtJYClMcXCYWVPqrr" SlotId="BG0IHnKttezN6jK0fUWHnC" Bounds="1341,766" />
+              <ControlPoint Id="VBPkivnBfwmQNUTQZpuFjo" Bounds="1164,742" />
+              <Node Bounds="133,637,36,22" Id="EjlIO0WGYwSP5kGn1ODyUO">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Exit" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Camera" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="AssemblyCategory" Name="uEye" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                </p:NodeReference>
+                <Pin Id="EKGMz1h6CxBLPMlkzfX6dg" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MDxo753bnesPi3xQQzDIEW" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="N529tA4rp0lLm0e72egabX" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="624,955,53,22" Id="VBlWuK9PTJxLbVKwj4DvSu">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="IsOpened" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Camera" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="AssemblyCategory" Name="uEye" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                </p:NodeReference>
+                <Pin Id="L5eM2H2v35WOBNwgLM5qm6" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CKAGGTy6IsNNypU4CsDchP" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="MxwKv5mj83YN3x4M10EYLo" Name="Is Opened" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="KnN3Q4oPY3GN2mN5Om9Qim" Bounds="673,1003" />
+              <Pad Id="EqjyN6DZUOmMEwo5DEcBzH" Comment="S 32Bits Per Pixel" Bounds="538,384,24,19" ShowValueBox="true" isIOBox="true" Value="32">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="OQnprTFaKoSPREzmxhMLf7" SlotId="Lw8qnU4joEBNA9ZyCdsAkz" Bounds="434,490" />
+              <Pad Id="AZPZLAcyMLCNNfgzq7xkFB" Comment="B Set Active" Bounds="677,383,40,20" ShowValueBox="true" isIOBox="true" Value="true">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="268,959,129,185" Id="SAFfXtJnfkaMQXF9dGRjqT">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="AiacrlGfztQLtUKZd9j65h" Name="Condition" Kind="InputPin" />
+                <Patch Id="Kgd3lkqlzTlQZOc3Hc2uGn" ManuallySortedPins="true">
+                  <Patch Id="UlziMp4Zy5SN49oE3eUKI7" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="UnZ3A8kxusyOAGBIp3FGlI" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="281,1020,56,22" Id="AMvCk4pLw7CNOCdKq5YtoK">
+                    <p:NodeReference LastCategoryFullName="uEye.AutoFeatures" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="AutoFeatures" />
+                      <Choice Kind="OperationCallFlag" Name="Software" />
+                    </p:NodeReference>
+                    <Pin Id="FTwHtU7C9m8MVeUN6s7IJy" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="FWguyfyPEIFPijRktOMEwY" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="V6YJNI4WupUP7wYf1tRYBK" Name="Software" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="281,982,70,22" Id="MnGX2aUwWzQPzPsRKh53it">
+                    <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="AutoFeatures" />
+                    </p:NodeReference>
+                    <Pin Id="UjflRFb3hwLLbYBJnugl2b" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="LOvytOpRhyYMMLMFPBsSX2" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="DVjv0vhce96PDwriR89tER" Name="Auto Features" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="280,1061,88,22" Id="MmrR9nqHQ4vP8gzsflsON4">
+                    <p:NodeReference LastCategoryFullName="uEye.AutoFeaturesSoftware" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Gain" />
+                      <CategoryReference Kind="AssemblyCategory" Name="AutoFeaturesSoftware" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="SxHH7HNMSA2QdRdclYiv1X" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="T8rmYdBnqOKNfaMmvnDSmm" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="RweqHyfpIQkMJZfiAOe3J3" Name="Gain" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="281,1102,104,22" Id="PrLTq5TqK7cL5kBxMQQmOs">
+                    <p:NodeReference LastCategoryFullName="uEye.AutoFeaturesSoftwareGain" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="AutoFeaturesSoftwareGain" />
+                      <Choice Kind="OperationCallFlag" Name="SetEnabled" />
+                    </p:NodeReference>
+                    <Pin Id="NwIG4OkFGovNymOLMMIoZr" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="H3NPi2f5KXlOwzPK3RMEHF" Name="Value" Kind="InputPin" />
+                    <Pin Id="NOQSnejgqvUMAesSp7QTZN" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <Node Bounds="267,929,67,13" Id="KINAcpwxsVjPmbPgirPoqC">
+                <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Changed" />
+                  <CategoryReference Kind="Category" Name="Control" />
+                </p:NodeReference>
+                <Pin Id="BQsfXhUNbQAOXq3Ys3cATM" Name="Value" Kind="InputPin" />
+                <Pin Id="VZfza5oTOeHMiU3GIAjMf4" Name="Result" Kind="OutputPin" />
+                <Pin Id="JE0XF8CygQTLN0icWWbJW1" Name="Unchanged" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="252,528,63,22" Id="OzRqcPDZJfbQZZVazW7Psl">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Information" />
+                </p:NodeReference>
+                <Pin Id="KxIFBhNWs06QQNGtOzEF5r" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PCqQQN2PvRhMIYj7al5zQx" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="EGxmlY97hS3QQWDHMIVU9G" Name="Information" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="362,588,78,22" Id="EUby3BfsMQCOD5GR7sKJTM">
+                <p:NodeReference LastCategoryFullName="uEye.Information" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Information" />
+                  <Choice Kind="OperationCallFlag" Name="GetCameraInfo" />
+                </p:NodeReference>
+                <Pin Id="UY4P61PNq0hM0HKQ0nd5D7" Name="Input" Kind="StateInputPin" />
+                <Pin Id="SytZSOAgmakOaAjgbgWZh7" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="D6BN83N0FBkPyRz7vwvWLe" Name="Result" Kind="OutputPin" />
+                <Pin Id="L5yhtla4KAdMLIIJVBNIF0" Name="Camera Info" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-622,958,153,118" Id="HNiv8HjCFeoPdjuLXYx1eB">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="HVGP0IM9vRUNnTcu5DtfwU" Name="Condition" Kind="InputPin" />
+                <Patch Id="NgZqFwj2ig7LhOi2ydoiXv" ManuallySortedPins="true">
+                  <Patch Id="EPuMjW6yPMNLm5qAnXBYG8" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="P3Po0ZgUXftOJg2h56QZg1" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="-610,987,56,22" Id="F1E7l0wJEqbPlJRxqNuJLu">
+                    <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Parameter" />
+                    </p:NodeReference>
+                    <Pin Id="RRjxswgpkWwLgj1Jr0piOx" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QSusRHGtN0eOHLaBBVVUi5" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="VIT760YMp11PhlhTgUNtRn" Name="Parameter" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="-565,1034,45,22" Id="PsggnuKLIgbLLMurLKzixG">
+                    <p:NodeReference LastCategoryFullName="uEye.Parameter" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Parameter" NeedsToBeDirectParent="true" />
+                      <PinReference Kind="InputPin" Name="Str Filename" />
+                      <Choice Kind="OperationCallFlag" Name="Load" />
+                    </p:NodeReference>
+                    <Pin Id="UTjtOQuhtwiNfTOWuHxTnv" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="VRpH3pyoV9rP9wD7BqFWj1" Name="Str Filename" Kind="InputPin" />
+                    <Pin Id="U8gzrB6VZHhLa8FOiPTAma" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="S0o2tJ4Beh7Muau5F2pmnr" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="-529,981,48,13" Id="E74L4fNPz76PcxoOmZ92pD">
+                    <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToString" />
+                      <CategoryReference Kind="Category" Name="Path" />
+                    </p:NodeReference>
+                    <Pin Id="FbtU8ZCciGrPW9lPffYQB3" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="RF7Pr2HUxE1PS8AZHXRieW" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <ControlPoint Id="G3KcI2oqHsaQKYFdQqt3MK" Bounds="-621,931" />
+              <Node Bounds="-422,960,172,108" Id="BkJRHCTz59JNYbRapoIKKv">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="LexXoRlSAIwNGRa4XcaFyk" Name="Condition" Kind="InputPin" />
+                <Patch Id="SWj4FACY3wzMkLO6XHwqf6" ManuallySortedPins="true">
+                  <Patch Id="V7nGw89JW1YQPSJAl3oAVd" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="KRz0Z7rdG34LM7Pg56wvTB" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="-410,983,56,22" Id="MF7RPpsdkoPMPrgWl9GEwK">
+                    <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Parameter" />
+                    </p:NodeReference>
+                    <Pin Id="Hj9AcuSvu8dLbASn1UbbB9" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Og3ExscODRQMPrw9lvk4F9" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="TE1vIbiL5KWMT8PznKIfQB" Name="Parameter" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="-342,1026,80,22" Id="U1Sg3mvByvvOzTKKdYst7b">
+                    <p:NodeReference LastCategoryFullName="uEye.Parameter" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                      <Choice Kind="OperationCallFlag" Name="ResetToDefault" />
+                    </p:NodeReference>
+                    <Pin Id="DFkR4F80IAoLKAAnKkBxIt" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QVJEx9NK2NnNvXEIgIV45t" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="LH26ZkTDoTyMTw3UIKkibJ" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <ControlPoint Id="OfKVg8jTUBkLZLccn6Om3w" Bounds="-527,943" />
+              <ControlPoint Id="U57kfdtQbrIPmwKQXuBnPS" Bounds="-421,925" />
+              <Node Bounds="-225,957,172,108" Id="SU2GCENKCHUNa657qgjXUo">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="CK01ZFF4Km1LRFgjc1hoLY" Name="Condition" Kind="InputPin" />
+                <Patch Id="FBzqRAjbgZjNsWaV2m0ooN" ManuallySortedPins="true">
+                  <Patch Id="CULiNYAeGcfQL5V6XE0XKf" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="Ni8sdrgesbXQPgxmCdDvE2" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="-213,980,56,22" Id="Ku2kAykHPmSNtXg7ykPpGc">
+                    <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Parameter" />
+                    </p:NodeReference>
+                    <Pin Id="D7wnzhRNqPyLGxgvPjH9Yf" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="LOiDiqiv7D6PDAT5K2bH8P" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="A3LrdoqnJctMYyyHJoB02B" Name="Parameter" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="-145,1023,80,22" Id="OLt090mJT2SOgXzFEWHMMN">
+                    <p:NodeReference LastCategoryFullName="uEye.Parameter" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Parameter" />
+                      <Choice Kind="OperationCallFlag" Name="Save" />
+                      <PinReference Kind="InputPin" Name="Str Filename" />
+                    </p:NodeReference>
+                    <Pin Id="MSc8P5xkKW6MzObsaJoAdl" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="FDsE3Nu1vE2Oew5UOt5T20" Name="Str Filename" Kind="InputPin" />
+                    <Pin Id="IUF1n0Im5JeO4xpx5SEAZF" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="L5sVfKbBntlQbkTmYV1OiW" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <Pad Id="TpGCr9TY65ALt4PU9g9K7y" Comment="Condition" Bounds="-225,924,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+                </p:ValueBoxSettings>
+              </Pad>
+              <ControlPoint Id="EjHUR2Ukc2gP3aCxmldBRV" Bounds="553,1010" />
+              <ControlPoint Id="B23vBpfvnfPQLU4qzmvq4D" Bounds="441,381" />
+              <ControlPoint Id="LRVIYoGTLaMPnxzCPz0ccr" Bounds="487,383" />
+              <ControlPoint Id="MX2vw5fULq7LFN4mRdGb1d" Bounds="888,1038" />
+              <Node Bounds="854,918,169,86" Id="QVZSnWEOchDLClrYahFcRm">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Patch Id="AHaIrJ3b5E2O7i86N8X70i" ManuallySortedPins="true">
+                  <Patch Id="DbiGEVSmyp6MKBg6nFxIQ6" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="GHF5Py2s3vDM8Lyx6dMq1K" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="866,946,125,13" Id="NuXY9lMrtKlLfckcelIw1c">
+                    <p:NodeReference LastCategoryFullName="Devices.uEye.Wrappers" LastSymbolSource="VL.Devices.uEye.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="QueryCameras" />
+                      <CategoryReference Kind="Category" Name="Wrappers" />
+                    </p:NodeReference>
+                    <Pin Id="TwSiU9NHGmEQCsdDeb6w1Q" Name="Result" Kind="OutputPin" />
+                    <Pin Id="BGU3rlTk09BP3lmzB3foAK" Name="Camera Count" Kind="OutputPin" />
+                    <Pin Id="QPagz8hqVECLBEb1VP7h8t" Name="Model" Kind="OutputPin" />
+                    <Pin Id="QdqZtgrcO76QC5Gfl2GM5I" Name="Serial Number" Kind="OutputPin" />
+                    <Pin Id="Nqvjs95XxX4Nczh0ODc5fa" Name="In Use" Kind="OutputPin" />
+                    <Pin Id="An1jIGBUhCSMT0vtmWcTrq" Name="Camera ID" Kind="OutputPin" />
+                    <Pin Id="Qyqp8kkHnTNQQCuEQBBNHM" Name="Device ID" Kind="OutputPin" />
+                    <Pin Id="O5CWCbeZijQO6vzYr9YgKA" Name="Sensor ID" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="QBSZmlfbF4oM0K0OUTVNIR" Bounds="890,998" Alignment="Bottom" />
+                <Pin Id="HjjxUno3j3HMGyxDZ2EgCj" Name="Force" Kind="InputPin" />
+                <Pin Id="Mx6YasOyUfqP0ZWHsBS6Jz" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="DQwfw0rzVUIMB6ZhpSoT8A" Name="Has Changed" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="828,759,84,13" Id="DUSmaOKoCdUNovn2FxYlWp">
+                <p:NodeReference LastCategoryFullName="uEye.Info.Camera" LastSymbolSource="uEyeDotNet.dll" LastDependency="VL.Devices.uEye.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Camera" />
+                  <Choice Kind="OperationCallFlag" Name="EventNewDevice" />
+                </p:NodeReference>
+                <Pin Id="LRtvHZkypX6QQZ1VfMoZwa" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="924,759,107,13" Id="EBvjOAUepeLNqRn0Kptdgo">
+                <p:NodeReference LastCategoryFullName="uEye.Info.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="EventDeviceRemoved" />
+                </p:NodeReference>
+                <Pin Id="IScFuzDUrJ3OV6bEWGkEZz" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="828,801,54,13" Id="A7aHhVBqAFtO0V4wxgIpOM">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl" LastDependency="VL.Devices.uEye.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Merge" />
+                  <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                </p:NodeReference>
+                <Pin Id="BNHi0p27sJJLRRbveDgWBb" Name="Value" Kind="InputPin" />
+                <Pin Id="JVZQsjp46QTLFCx99jUB6e" Name="Value 2" Kind="InputPin" />
+                <Pin Id="LCN7KXbe04JMQp6HkR48jI" Name="Result" Kind="OutputPin" />
+                <Pin Id="SKuGyvMbsIhM71LLHIYPeF" Name="Changed" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="801,834,58,13" Id="LJ0D32LemzWMRQTtkqTenv">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+                </p:NodeReference>
+                <Pin Id="Ol1TrTU7XTCM2HApek53EV" Name="Initial Result" Kind="InputPin" />
+                <Pin Id="H9StcPCKdvCLmlbkSfN19X" Name="Async Notifications" Kind="InputPin" />
+                <Pin Id="I0pN86nmI4RPKVlcT6cODS" Name="Reset" Kind="InputPin" />
+                <Pin Id="KVUeFnYkKFxLtT2dgzEY4P" Name="Value" Kind="OutputPin" />
+                <Pin Id="Qn6F1A44iRaPZ9i7unEUnI" Name="On Data" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="854,886,25,13" Id="J8HrwrNjac7LT4Xdwzmc6Y">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="OR" />
+                </p:NodeReference>
+                <Pin Id="AvO9RVIOabqPHnRRQf3JGz" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GpK9n6B8jvlL4Uoyh2Lb5V" Name="Input 2" Kind="InputPin" />
+                <Pin Id="PXnbpgye9irL3VH1hYDoxF" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="874,850,64,13" Id="DWujPDkwQahOTDz8pg3zUm">
+                <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+                </p:NodeReference>
+                <Pin Id="IpUUqP8wVZEOE93dTKZhb6" Name="Simulate" Kind="InputPin" />
+                <Pin Id="L27W2zCu9KdPJMPwpOG7KN" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="252,263,64,22" Id="SRaIiAVcK6gMtuBGUl9Mq8">
+                <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Camera" />
+                  <Choice Kind="OperationCallFlag" Name="PixelFormat" />
+                </p:NodeReference>
+                <Pin Id="FZF6lFI712TPG3SVghqhUU" Name="Input" Kind="StateInputPin" />
+                <Pin Id="QSNaAVx58sFLyuxNM9CBmw" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="HKARwK50hroMA76NdihmGk" Name="Pixel Format" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="432,317,51,22" Id="KvcGomoBgEULbZoP2Y2c4x">
+                <p:NodeReference LastCategoryFullName="uEye.PixelFormat" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="PixelFormat" />
+                  <Choice Kind="OperationCallFlag" Name="Set" />
+                </p:NodeReference>
+                <Pin Id="QFHWuTXMRwxOoSWUumPHa7" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CEBpcVoxJJiL5G20l5xfdA" Name="Mode" Kind="InputPin" />
+                <Pin Id="BPQd4bCcxpwLtMy0AmmvVQ" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="F9TefbP6JXZQF78rPTeTNJ" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Pad Id="RUHZrLNKSnvLT84yAHwGAM" Comment="Mode" Bounds="480,283,148,19" ShowValueBox="true" isIOBox="true" Value="&quot;PreferPackedSourceFormat&quot;">
+                <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="TypeFlag" Name="ColorMode" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="ClYzERAmN5QPuRU9VBkcHA" SlotId="Rj02UrSd6a6MH2v1JUWHmD" Bounds="437,637" />
+              <Pad Id="Uoi68JlPGF8Nsu3r19Dda6" SlotId="BG0IHnKttezN6jK0fUWHnC" Bounds="437,549" />
+              <Pad Id="MxyHx4L7GCYQNF5oLV0AMm" SlotId="SlAC3k5H1kfOEokwXlvigH" Bounds="256,598" />
+              <Overlay Id="BHQTruwDdeiLHyYvHR7Kwl" Name="Camera Count" Bounds="762,675,323,417" />
+              <Overlay Id="SeVGv5gOJpGP7nQodyanB1" Name="Acquisition" Bounds="1108,674,355,417" />
+              <ControlPoint Id="R4t229DNTaPMrMuv74qeN9" Bounds="168,877" />
+              <Node Bounds="-1,913,67,13" Id="K6TgjsT3XNVQDbsbUrcU7Z">
+                <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Changed" />
+                  <CategoryReference Kind="Category" Name="Control" />
+                </p:NodeReference>
+                <Pin Id="Eqlz6W3Nzd0OGfsbobxpAq" Name="Value" Kind="InputPin" />
+                <Pin Id="JpbHG4CBeC4Mj5amHJfzq3" Name="Result" Kind="OutputPin" />
+                <Pin Id="IBz16vhuZ2WMH4ftSl73Qb" Name="Unchanged" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="-1,952,221,208" Id="Unb23Wxf72xLIFSfMtR5b5">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <Pin Id="SAJGdkrsJEVNyQQVBBXilO" Name="Condition" Kind="InputPin" />
+                <Patch Id="UbnU7R8UcyCLVqeOr3ff2S" ManuallySortedPins="true">
+                  <Patch Id="Bdda3LoYwOCMG2RT5FqFUf" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="S2MrXh06jdtM6E4vmeuy00" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="11,975,56,22" Id="MIfQwLvLiraOYzdg98pa0e">
+                    <p:NodeReference LastCategoryFullName="uEye.Camera" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Camera" />
+                      <Choice Kind="OperationCallFlag" Name="BlackLevel" />
+                    </p:NodeReference>
+                    <Pin Id="BeQ5UFJI6uPNRBbZrF7CYS" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="DOcTnbtT9d3LQXKzK2TbwS" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="SXOPsMpjBDUMVRLBKdz64H" Name="Black Level" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="101,1118,66,22" Id="Dwjzx8doUM9PBeNnXhHbYI">
+                    <p:NodeReference LastCategoryFullName="uEye.BlacklevelOffset" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="BlacklevelOffset" />
+                      <Choice Kind="OperationCallFlag" Name="Set" />
+                    </p:NodeReference>
+                    <Pin Id="MwMSRsgfAnPMHotWn1LPwv" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="UJ5pml3DBjROLPFLVccPOF" Name="Offset" Kind="InputPin" />
+                    <Pin Id="F238oHivxb2MKrlwVMnPML" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="T9cfv8pKHlxMVVjuqbtmHr" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="61,1023,45,22" Id="CjpAtIEFJDSOZnjPkQrFZH">
+                    <p:NodeReference LastCategoryFullName="uEye.BlackLevel" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="BlackLevel" />
+                      <Choice Kind="OperationCallFlag" Name="Set" />
+                    </p:NodeReference>
+                    <Pin Id="AGqeKFqCpJBQOTsx0L4fyW" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="CsPIZpLtXGILVJ1tzkK6VT" Name="Mode" Kind="InputPin" />
+                    <Pin Id="OHNLhdOOC8vNe7po2VWA8O" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="ENixRIcInJ5Lb9kzVSWWzk" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="NvPyZ8qEu7LQA0HOLiHRAy" Comment="Mode" Bounds="103,996,60,19" ShowValueBox="true" isIOBox="true" Value="&quot;On&quot;">
+                    <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="TypeFlag" Name="BlackLevelMode" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Node Bounds="61,1068,45,22" Id="IHSXhCUuQXgMXSN7rUtMZX">
+                    <p:NodeReference LastCategoryFullName="uEye.BlackLevel" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="BlackLevel" />
+                      <Choice Kind="OperationCallFlag" Name="Offset" />
+                    </p:NodeReference>
+                    <Pin Id="UZxWvyn9SYsLCtcsmf8kqd" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MLv0GdIsSxgN95FLhgbEq3" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="BfXcGuDevW4QPDVX6ENg1l" Name="Offset" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <ControlPoint Id="QvOyAnTHqCTL78r7vT09Ax" Bounds="379,880" />
+              <Node Bounds="1137,820,288,251" Id="E90llFtcqjQOj7qpDYy9Di">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="IB1NovOIgvfMVnuPrQjLjL" Name="Condition" Kind="InputPin" />
+                <Patch Id="GqyPOTLhMYHOnQJdemPKRc" ManuallySortedPins="true">
+                  <Patch Id="LdPFrWM9iipOmuYsJf2WgT" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="GCbaGSk8qxjOnx24tAE3Tm" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="1163,843,66,13" Id="IGICuALc5lcOdwwElWtRDK">
+                    <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+                      <CategoryReference Kind="Category" Name="Control" />
+                    </p:NodeReference>
+                    <Pin Id="Jbhv9njtNirLCQb2xXAsx4" Name="Value" Kind="InputPin" />
+                    <Pin Id="AOfwUwxNr5tPS0D2SOWDfW" Name="Up Edge" Kind="OutputPin" />
+                    <Pin Id="Jf6nY8Hm3JDPJz2AaJwzSG" Name="Down Edge" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1163,960,87,91" Id="FVgLs7P7MP8NNAAquiJtnM">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="EKfKW8vLCXUOb10fi4ATfZ" Name="Condition" Kind="InputPin" />
+                    <Patch Id="J9Uqq3KjX41NeLZv4WhQOd" ManuallySortedPins="true">
+                      <Patch Id="TxTubQ3Lz0GNEjV3vINow1" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="UaznSgpuNk6LrPDKfqeHsL" Name="Then" ManuallySortedPins="true" />
+                      <Node Bounds="1175,994,49,22" Id="MFW4ZdmqDnTLzQ9oPKgBvg">
+                        <p:NodeReference LastCategoryFullName="uEye.Acquisition" LastSymbolSource="uEyeDotNet.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="Capture" />
+                        </p:NodeReference>
+                        <Pin Id="SMYetF9ASOqONZtQ8qyUD9" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="KHWvp9j3FffOMFpw2DjBdd" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="ILwDkSOU3k7LRuHHiMKQw7" Name="Result" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="TWuVgafN1bhMJFkduEUGOK" Bounds="1178,966" Alignment="Top" />
+                    <ControlPoint Id="STwsi9sFADSMBYA0b2FTko" Bounds="1180,1045" Alignment="Bottom" />
+                    <ControlPoint Id="VX9yCbN9c5EMCoefRAFtqk" Bounds="1221,1045" Alignment="Bottom" />
+                    <ControlPoint Id="UKMDca0fHXKLsCA66eDifF" Bounds="1224,966" Alignment="Top" />
+                  </Node>
+                  <Node Bounds="1325,950,88,99" Id="Bdg1TCTHmXrMki76Vqitpv">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="VvRVl1OLohIPaS3Vl5mTuo" Name="Condition" Kind="InputPin" />
+                    <Patch Id="LpDaZyDWimEOgcrzdlBTSN" ManuallySortedPins="true">
+                      <Patch Id="SzuoLc8OotsMTuOFAKwdP4" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="NJBTCAIgHTMLUQRntPOYAZ" Name="Then" ManuallySortedPins="true" />
+                      <Node Bounds="1338,984,49,22" Id="ShM9DCV13sVN5sf1fyY1ib">
+                        <p:NodeReference LastCategoryFullName="uEye.Acquisition" LastSymbolSource="uEyeDotNet.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="Stop" />
+                          <CategoryReference Kind="AssemblyCategory" Name="Acquisition" NeedsToBeDirectParent="true" />
+                        </p:NodeReference>
+                        <Pin Id="OwhBzNr0nlAP5HaUbrcOLR" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="QxxfxPo28wPP0s7XpCjsM5" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="EQNR8uB01qfNPmoXqnLuRg" Name="Result" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="QSmBbNOeBj4NhSHpTcqqQR" Bounds="1340,956" Alignment="Top" />
+                    <ControlPoint Id="QvZVcflGTmEPnPuIv56Fof" Bounds="1343,1043" Alignment="Bottom" />
+                    <ControlPoint Id="NbfBNaj74niOYyxWmDdWId" Bounds="1386,1043" Alignment="Bottom" />
+                    <ControlPoint Id="Q7YxMlT4j3XM7VrKJdigO6" Bounds="1387,956" Alignment="Top" />
+                  </Node>
+                  <Node Bounds="1354,854,59,22" Id="NZjdmrit5piLfC7ogJsrZo">
+                    <p:NodeReference LastCategoryFullName="uEye.Acquisition" LastSymbolSource="uEyeDotNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Acquisition" />
+                      <Choice Kind="OperationCallFlag" Name="HasStarted" />
+                    </p:NodeReference>
+                    <Pin Id="PqWzATXaocbQPYXuv6CDbg" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Er1srOtiugQQOCAMBc332E" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="B8VkfYB5kbqNT9WNk8ijXi" Name="Result" Kind="OutputPin" />
+                    <Pin Id="ANrOFGmm4sOOLtNOezmYCW" Name="Started" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1325,914,30,13" Id="VUMZ5zb3cKZMyWG5tnMTOs">
+                    <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="AND" />
+                    </p:NodeReference>
+                    <Pin Id="LlsuIs2bpOyNse2bwSTNNc" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="UiFDgeSTUsDOxkZ4eZnFPh" Name="Input 2" Kind="InputPin" />
+                    <Pin Id="GqJvYzgwa65QGExAWsl1NK" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Node Bounds="1188,900,29,13" Id="UUZthgZfYS6PuhsIMXcSag">
+                    <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="NOT" />
+                    </p:NodeReference>
+                    <Pin Id="SSda1ppiyUDNqzfbw32Q12" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="P43hZeI2kchNNSvfdafPoV" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Node Bounds="1163,927,30,13" Id="PaoJGIsA5TGLpu1kKnALAn">
+                    <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="AND" />
+                    </p:NodeReference>
+                    <Pin Id="Pv6kIT15P1KMagbG0PL8pg" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Fof6Q9aBTtXMIxdD2qKeez" Name="Input 2" Kind="InputPin" />
+                    <Pin Id="ORslUFXKEE6PHhskbK9JlO" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <Node Bounds="1137,792,67,13" Id="HGRvGflKB6RPfeQM4jnq32">
+                <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Changed" />
+                </p:NodeReference>
+                <Pin Id="Kash1jzP2mnLzOKDn13JeD" Name="Value" Kind="InputPin" />
+                <Pin Id="EayGdiekqs9MuGPemncq7N" Name="Result" Kind="OutputPin" />
+                <Pin Id="QImINc4EmS2LCS5SYNoQ0L" Name="Unchanged" Kind="OutputPin" />
+              </Node>
+            </Canvas>
+            <Patch Id="F5uG7fVUEPGNwLrWf5Fj68" Name="Create" ParticipatingElements="SrpwwaIcnBUPrU1R1bxqp8">
+              <Pin Id="IV0AoxMrTHCOVv61SpeMKf" Name="Cam ID" Kind="InputPin" />
+              <Pin Id="FPFDEiWkBsXNLZIbh6MSWJ" Name="Width" Kind="InputPin" Bounds="511,378" />
+              <Pin Id="JOeNne554ZPOAs0XP9e3U2" Name="Height" Kind="InputPin" Bounds="621,367" />
+            </Patch>
+            <Patch Id="JHnyFxwfibVLiG4U3pI4MU" Name="Update">
+              <Pin Id="HB2GQCWLuPiPiJrSi5K5Zx" Name="Load" Kind="InputPin" />
+              <Pin Id="Deg3YdlAt3WLrQPXP3Jk30" Name="Filename" Kind="InputPin" />
+              <Pin Id="DWmb3Az1T2cLR2HsQT5GNp" Name="Reset To Defaults" Kind="InputPin" />
+              <Pin Id="CMlE1msrnTiL8GC0CJG3PS" Name="Black Level" Kind="InputPin" Bounds="179,891" />
+              <Pin Id="FlaB4PweR28MbTJAJ8yEQ3" Name="Gain" Kind="InputPin" Bounds="375,880" />
+              <Pin Id="CJlIH19Mg6mPQfazB2RyJD" Name="Frame" Kind="OutputPin" />
+              <Pin Id="R5f5XYMvPvcO2Od2BswLBo" Name="Is Open" Kind="OutputPin" />
+              <Pin Id="C8vdXeK7ExZLfcdLP6VpAI" Name="Camera Count" Kind="OutputPin" />
+              <Pin Id="KL848im4tRcLZg1XwsvgIF" Name="Enabled" Kind="InputPin" />
+            </Patch>
+            <ProcessDefinition Id="HSzHf17g4hSPwIbV4B2RaE">
+              <Fragment Id="VmObC7P68KoQWsH05qtHYg" Patch="F5uG7fVUEPGNwLrWf5Fj68" Enabled="true" />
+              <Fragment Id="FxEkDYab803O4lIQv75wvl" Patch="JHnyFxwfibVLiG4U3pI4MU" Enabled="true" />
+            </ProcessDefinition>
+            <Patch Id="Mr9fOsLjKpbPpouyp8VInl" Name="Dispose" ParticipatingElements="EjlIO0WGYwSP5kGn1ODyUO" />
+            <Slot Id="SlAC3k5H1kfOEokwXlvigH" Name="Camera" />
+            <Slot Id="BG0IHnKttezN6jK0fUWHnC" Name="Acquisition" />
+            <Slot Id="Lw8qnU4joEBNA9ZyCdsAkz" Name="Memory" />
+            <Slot Id="Rj02UrSd6a6MH2v1JUWHmD" Name="Camera Info" />
+            <Link Id="DbcLtg2Z95uN501zuOqJQf" Ids="IV0AoxMrTHCOVv61SpeMKf,Uw5pdJvOaHQNWhpSF6N9sw" IsHidden="true" />
+            <Link Id="AnHVJDjEcOFLba94YQtGEv" Ids="Uw5pdJvOaHQNWhpSF6N9sw,PF97AORYCA1P8byzdIuK6B" />
+            <Link Id="SXJqKHbvncMQPFPAPpnvwl" Ids="H2YQC8tsuyENxtBHZioPtj,I6HR8hhzKFZM7mOVKKoOSw" />
+            <Link Id="CNEEwQFqlwWNqnHQ0VIrPz" Ids="MibpOu5nKe8MtGAP4Fe0mq,V4DFljI4kv0PoLwXEUAilJ" />
+            <Link Id="C1P3ATv00APMwT1F6hHnbN" Ids="JPPFfyOZ57HPgHZeYmi5Tj,MpQiFIBhPXzQPCmKUaQplQ" />
+            <Link Id="BVYQM66z7jcPICoCgkNccD" Ids="Pv2h2W7rQekN7xI9gJrQTC,TX3hvsMUrbqOVVIYdXFjTi" />
+            <Link Id="AcSbEZKrpMaL3hvc5pkobr" Ids="VBPkivnBfwmQNUTQZpuFjo,Jbhv9njtNirLCQb2xXAsx4" />
+            <Link Id="Ct2ZSLyAFvPLPxU3TTPRff" Ids="KL848im4tRcLZg1XwsvgIF,VBPkivnBfwmQNUTQZpuFjo" IsHidden="true" />
+            <Link Id="BoFCRCsOpicOWOrXHeZQlR" Ids="BEuEeOtJYClMcXCYWVPqrr,TWuVgafN1bhMJFkduEUGOK" />
+            <Link Id="GKEcWnHP5cFPf8f1uWrYZY" Ids="BEuEeOtJYClMcXCYWVPqrr,QSmBbNOeBj4NhSHpTcqqQR" />
+            <Link Id="FyUJCAJiBbzMlDgPDfjh3C" Ids="Pv2h2W7rQekN7xI9gJrQTC,L5eM2H2v35WOBNwgLM5qm6" />
+            <Link Id="Esgn3kdxjC8O6AKvRO7IQq" Ids="MxwKv5mj83YN3x4M10EYLo,KnN3Q4oPY3GN2mN5Om9Qim" />
+            <Link Id="UdliKWN2nLpQcidDYVSyeD" Ids="KnN3Q4oPY3GN2mN5Om9Qim,R5f5XYMvPvcO2Od2BswLBo" IsHidden="true" />
+            <Link Id="JTg4l5p04y4NllFthQmvHr" Ids="EqjyN6DZUOmMEwo5DEcBzH,AwqPxYhsRnbP8mly0AGyF6" />
+            <Link Id="M4h6x7Q7xa2PpimBkju3bN" Ids="LYebHCOLOrgPvuyLlV3qhm,OQnprTFaKoSPREzmxhMLf7" />
+            <Link Id="EVafhU8JWJDNAtcaeVq0Qu" Ids="AZPZLAcyMLCNNfgzq7xkFB,NVpk2QF7P6DM1JK6OykyJ3" />
+            <Link Id="D3Bh7J8bIZNLuL7V8HOyFL" Ids="Pv2h2W7rQekN7xI9gJrQTC,UjflRFb3hwLLbYBJnugl2b" />
+            <Link Id="Paeb072bSiVLbNe7PKzCQu" Ids="DVjv0vhce96PDwriR89tER,FTwHtU7C9m8MVeUN6s7IJy" />
+            <Link Id="SGdGc4IPksKLIOV3fDAqTU" Ids="V6YJNI4WupUP7wYf1tRYBK,SxHH7HNMSA2QdRdclYiv1X" />
+            <Link Id="QrmfAvczugPLxiyeccpExN" Ids="RweqHyfpIQkMJZfiAOe3J3,NwIG4OkFGovNymOLMMIoZr" />
+            <Link Id="AH4u1PVl6cVOu9dTLEjGIw" Ids="VZfza5oTOeHMiU3GIAjMf4,AiacrlGfztQLtUKZd9j65h" />
+            <Link Id="Gqrjj6x6kSjMVUiQYgiycf" Ids="Pdb9BpHeIMlPJX9bAQoceD,KxIFBhNWs06QQNGtOzEF5r" />
+            <Link Id="MOwHMrZSZ84PePsb1z27Eb" Ids="EGxmlY97hS3QQWDHMIVU9G,UY4P61PNq0hM0HKQ0nd5D7" />
+            <Link Id="U2h1w9mb8YbML9zyhUOrjH" Ids="Pv2h2W7rQekN7xI9gJrQTC,RRjxswgpkWwLgj1Jr0piOx" />
+            <Link Id="QSSrPfSCoA1MGebMbYsGFJ" Ids="VIT760YMp11PhlhTgUNtRn,UTjtOQuhtwiNfTOWuHxTnv" />
+            <Link Id="Jhwy5sZtAmrM7ihZxQTAeN" Ids="G3KcI2oqHsaQKYFdQqt3MK,HVGP0IM9vRUNnTcu5DtfwU" />
+            <Link Id="NjwNmstINteMFwjDP3J7CN" Ids="HB2GQCWLuPiPiJrSi5K5Zx,G3KcI2oqHsaQKYFdQqt3MK" IsHidden="true" />
+            <Link Id="BNprA2283ZdP6lIYW8KKRj" Ids="TE1vIbiL5KWMT8PznKIfQB,DFkR4F80IAoLKAAnKkBxIt" />
+            <Link Id="IrBrVSiUAiRPotWhNCy8k9" Ids="Pv2h2W7rQekN7xI9gJrQTC,Hj9AcuSvu8dLbASn1UbbB9" />
+            <Link Id="DYIFmduouSwPpHmMJqCb8F" Ids="Deg3YdlAt3WLrQPXP3Jk30,OfKVg8jTUBkLZLccn6Om3w" IsHidden="true" />
+            <Link Id="FKQ82QCgvUPMmkHakkieYI" Ids="OfKVg8jTUBkLZLccn6Om3w,FbtU8ZCciGrPW9lPffYQB3" />
+            <Link Id="GHzBNoY8kBUNiIzk0VDRqb" Ids="RF7Pr2HUxE1PS8AZHXRieW,VRpH3pyoV9rP9wD7BqFWj1" />
+            <Link Id="Hlw0ySDF76KLoEDihNs3im" Ids="U57kfdtQbrIPmwKQXuBnPS,LexXoRlSAIwNGRa4XcaFyk" />
+            <Link Id="Q0YIya4dalVNBVqKQ6vskI" Ids="DWmb3Az1T2cLR2HsQT5GNp,U57kfdtQbrIPmwKQXuBnPS" IsHidden="true" />
+            <Link Id="F77pD2IRUSkLqa5wmLb5Gk" Ids="A3LrdoqnJctMYyyHJoB02B,MSc8P5xkKW6MzObsaJoAdl" />
+            <Link Id="Mo68PWHJJtQMswIrKDogNZ" Ids="TpGCr9TY65ALt4PU9g9K7y,CK01ZFF4Km1LRFgjc1hoLY" />
+            <Link Id="FLyCu3Pfn2EOdBGz26pkPq" Ids="Pv2h2W7rQekN7xI9gJrQTC,D7wnzhRNqPyLGxgvPjH9Yf" />
+            <Link Id="B2BjXGz2CNdMpoExMclihQ" Ids="V3Y6K1BCznrPGUAOpe6hJn,EjHUR2Ukc2gP3aCxmldBRV" />
+            <Link Id="RPDIK9muvkCLnjOGVUb6On" Ids="EjHUR2Ukc2gP3aCxmldBRV,CJlIH19Mg6mPQfazB2RyJD" IsHidden="true" />
+            <Link Id="QpZmhlaWPOaLnsCenBJw9q" Ids="B23vBpfvnfPQLU4qzmvq4D,TzN8liur45VOy1UQHzWj0z" />
+            <Link Id="Sha4K00HrnnMqKzKSUAcgI" Ids="FPFDEiWkBsXNLZIbh6MSWJ,B23vBpfvnfPQLU4qzmvq4D" IsHidden="true" />
+            <Link Id="L42My5A66X5Po7n4CIpQLp" Ids="LRVIYoGTLaMPnxzCPz0ccr,AV9vUpHw61zOToraAZmSwP" />
+            <Link Id="UG0aKZm5dLyMA3UXnYeZKl" Ids="JOeNne554ZPOAs0XP9e3U2,LRVIYoGTLaMPnxzCPz0ccr" IsHidden="true" />
+            <Link Id="TgG20F8YvZjNmfSJhWT4sq" Ids="MX2vw5fULq7LFN4mRdGb1d,C8vdXeK7ExZLfcdLP6VpAI" IsHidden="true" />
+            <Link Id="JV0Hp9EQK6tPwJ6EQezxay" Ids="BGU3rlTk09BP3lmzB3foAK,QBSZmlfbF4oM0K0OUTVNIR" />
+            <Link Id="GPaWQu3Q1qTOy7jhHqrRHR" Ids="QBSZmlfbF4oM0K0OUTVNIR,MX2vw5fULq7LFN4mRdGb1d" />
+            <Link Id="HhNgNPC7rD2PCFKQu325Pl" Ids="LRtvHZkypX6QQZ1VfMoZwa,BNHi0p27sJJLRRbveDgWBb" />
+            <Link Id="RLkN6NCWIqoPzbjLujFsxm" Ids="IScFuzDUrJ3OV6bEWGkEZz,JVZQsjp46QTLFCx99jUB6e" />
+            <Link Id="Unj71nHrqn7MtQok26d1Tn" Ids="LCN7KXbe04JMQp6HkR48jI,H9StcPCKdvCLmlbkSfN19X" />
+            <Link Id="Te1YFjJ9p2EPZJ3RDZ0xUI" Ids="L27W2zCu9KdPJMPwpOG7KN,GpK9n6B8jvlL4Uoyh2Lb5V" />
+            <Link Id="Fyl6Q6rixdjNiln4JuQBE8" Ids="Qn6F1A44iRaPZ9i7unEUnI,AvO9RVIOabqPHnRRQf3JGz" />
+            <Link Id="V3Iw2W5HGQwPpO10w8tgEw" Ids="PXnbpgye9irL3VH1hYDoxF,HjjxUno3j3HMGyxDZ2EgCj" />
+            <Link Id="BxKYrhE3N5fO2cuDQfZLM0" Ids="F9v4J99yTt9QUrEL6DwoQv,FZF6lFI712TPG3SVghqhUU" />
+            <Link Id="BfDP5Cw1GBTLn8004QRjqq" Ids="HKARwK50hroMA76NdihmGk,QFHWuTXMRwxOoSWUumPHa7" />
+            <Link Id="PhcP73Ny74qPg8AFjLkBfc" Ids="RUHZrLNKSnvLT84yAHwGAM,CEBpcVoxJJiL5G20l5xfdA" />
+            <Link Id="N4M4V5Idrs9O6RsL9b1aE3" Ids="QSNaAVx58sFLyuxNM9CBmw,ViNl2cdoXPzNJd4nVcWNi7" />
+            <Link Id="SzBdvH5nZNCOGB474YbxTd" Ids="L5yhtla4KAdMLIIJVBNIF0,ClYzERAmN5QPuRU9VBkcHA" />
+            <Link Id="E6b1see1s4KMycr4IYgxHW" Ids="K47jf8RZkXlMj6Cw2PDL27,Uoi68JlPGF8Nsu3r19Dda6" />
+            <Link Id="SPGe0hfd8zUNildqfC3TDV" Ids="PCqQQN2PvRhMIYj7al5zQx,MxyHx4L7GCYQNF5oLV0AMm" />
+            <Link Id="ENTLUuqK33DP9hUHMEmnwV" Ids="MxyHx4L7GCYQNF5oLV0AMm,EKGMz1h6CxBLPMlkzfX6dg" />
+            <Link Id="D9mKuVuRRHVNVoUcXG6N4C" Ids="Pv2h2W7rQekN7xI9gJrQTC,BeQ5UFJI6uPNRBbZrF7CYS" />
+            <Link Id="GztuUNEzwzrLBcRjNGbins" Ids="R4t229DNTaPMrMuv74qeN9,UJ5pml3DBjROLPFLVccPOF" />
+            <Link Id="FElSBR46lcZNlppl4aVunD" Ids="CMlE1msrnTiL8GC0CJG3PS,R4t229DNTaPMrMuv74qeN9" IsHidden="true" />
+            <Link Id="FnLwAQXiRnqMah3JFwZaRu" Ids="R4t229DNTaPMrMuv74qeN9,Eqlz6W3Nzd0OGfsbobxpAq" />
+            <Link Id="OIIWQSSwg7cNFO2fEx58Rw" Ids="SXOPsMpjBDUMVRLBKdz64H,AGqeKFqCpJBQOTsx0L4fyW" />
+            <Link Id="SCLEz6evt0WPbQMuqQekf0" Ids="NvPyZ8qEu7LQA0HOLiHRAy,CsPIZpLtXGILVJ1tzkK6VT" />
+            <Link Id="FUr58J8QNOWMUOswoaNTAC" Ids="OHNLhdOOC8vNe7po2VWA8O,UZxWvyn9SYsLCtcsmf8kqd" />
+            <Link Id="ELBtmKYgfbCOwSXwKWAc4V" Ids="BfXcGuDevW4QPDVX6ENg1l,MwMSRsgfAnPMHotWn1LPwv" />
+            <Link Id="JU6u3GZmmy6OCm9zbWLseu" Ids="JpbHG4CBeC4Mj5amHJfzq3,SAJGdkrsJEVNyQQVBBXilO" />
+            <Link Id="BWdqdiBPHvrNduiANnXwTF" Ids="QvOyAnTHqCTL78r7vT09Ax,H3NPi2f5KXlOwzPK3RMEHF" />
+            <Link Id="L8rpIpJbM91LjPvnN8oT6v" Ids="FlaB4PweR28MbTJAJ8yEQ3,QvOyAnTHqCTL78r7vT09Ax" IsHidden="true" />
+            <Link Id="Ss3QNle4H7mQUklDaLaIiP" Ids="QvOyAnTHqCTL78r7vT09Ax,BQsfXhUNbQAOXq3Ys3cATM" />
+            <Link Id="JM99SRHnQ5iMjsGbSc0RbK" Ids="BEuEeOtJYClMcXCYWVPqrr,PqWzATXaocbQPYXuv6CDbg" />
+            <Link Id="QbCG4gvXc0GMmDSWa49VL1" Ids="VBPkivnBfwmQNUTQZpuFjo,Kash1jzP2mnLzOKDn13JeD" />
+            <Link Id="NNfLhVP3SwNMn4EiIWd3oS" Ids="EayGdiekqs9MuGPemncq7N,IB1NovOIgvfMVnuPrQjLjL" />
+            <Link Id="RSn458GAl4JOiXn0XzhXUF" Ids="TWuVgafN1bhMJFkduEUGOK,STwsi9sFADSMBYA0b2FTko" IsFeedback="true" />
+            <Link Id="GBD0I3CeQwaMwAqRXMCbES" Ids="TWuVgafN1bhMJFkduEUGOK,SMYetF9ASOqONZtQ8qyUD9" />
+            <Link Id="PV0riAOTlBtNOXGonwLnj4" Ids="QSmBbNOeBj4NhSHpTcqqQR,QvZVcflGTmEPnPuIv56Fof" IsFeedback="true" />
+            <Link Id="L8Fv53KPDNPLovpfNqbYe0" Ids="QSmBbNOeBj4NhSHpTcqqQR,OwhBzNr0nlAP5HaUbrcOLR" />
+            <Link Id="BgMVxixwVcYPlBhkQwsNec" Ids="UKMDca0fHXKLsCA66eDifF,VX9yCbN9c5EMCoefRAFtqk" IsFeedback="true" />
+            <Link Id="HUuBZElatP2LOJlErjKhTs" Ids="ILwDkSOU3k7LRuHHiMKQw7,VX9yCbN9c5EMCoefRAFtqk" />
+            <Link Id="V8DZgjkzIJtQF4nSJ4mLJ1" Ids="Q7YxMlT4j3XM7VrKJdigO6,NbfBNaj74niOYyxWmDdWId" IsFeedback="true" />
+            <Link Id="DvebOSm4PXbPI6Jxc8AVrO" Ids="EQNR8uB01qfNPmoXqnLuRg,NbfBNaj74niOYyxWmDdWId" />
+            <Link Id="JpMcvuruKUPPUrxCxRFC8l" Ids="Jf6nY8Hm3JDPJz2AaJwzSG,LlsuIs2bpOyNse2bwSTNNc" />
+            <Link Id="V70mgGO2KjxNxtvRiz2ZLM" Ids="ANrOFGmm4sOOLtNOezmYCW,UiFDgeSTUsDOxkZ4eZnFPh" />
+            <Link Id="AHOO4ljY00LM96lu7PAd8P" Ids="GqJvYzgwa65QGExAWsl1NK,VvRVl1OLohIPaS3Vl5mTuo" />
+            <Link Id="DnTBCmGftUXQM0f2aACFnH" Ids="ANrOFGmm4sOOLtNOezmYCW,SSda1ppiyUDNqzfbw32Q12" />
+            <Link Id="OYWWK7UBz2ON7ssgiw25n7" Ids="AOfwUwxNr5tPS0D2SOWDfW,Pv6kIT15P1KMagbG0PL8pg" />
+            <Link Id="I63EpGKqowyQalIe9Lrek0" Ids="P43hZeI2kchNNSvfdafPoV,Fof6Q9aBTtXMIxdD2qKeez" />
+            <Link Id="Nsb69H60TCZPNWYLDHSIKz" Ids="ORslUFXKEE6PHhskbK9JlO,EKfKW8vLCXUOb10fi4ATfZ" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DeviceCounter ************************
+
+-->
+        <Node Name="DeviceCounter" Bounds="566,258" Id="HQ4tzZCpJZcNN2ii9RdOzS">
+          <p:NodeReference>
+            <Choice Kind="ClassDefinition" Name="Class" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <Patch Id="TFiOBGghEXwMRCtLJ9w05t">
+            <Canvas Id="DI9EiU8fv45LpIZf0wL6te" CanvasType="Group">
+              <Node Bounds="455,221,43,22" Id="O4GrY3bpOY3MiGvrH91MbS">
+                <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Inc" />
+                  <CategoryReference Kind="Int32Type" Name="Integer32" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="HKH5I8ERDjRPEzVpdLnsw8" Name="Input" Kind="StateInputPin" />
+                <Pin Id="FB1ysjsipmYP5rQMJwcUMj" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="444,351,43,22" Id="JYA0hI4LUOuMOzbTquuPcj">
+                <p:NodeReference LastCategoryFullName="Primitive.Integer32" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Dec" />
+                  <CategoryReference Kind="Int32Type" Name="Integer32" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="DyInqUVwxdpPYoqFDhCPDC" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LQ72aJFTIUwLYYSD6ocw0K" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <ControlPoint Id="AM4CqI7EYYGM5cidPRcyVh" Bounds="474,273" />
+              <ControlPoint Id="BGQAnsCcF0gOTFxVjNuz6T" Bounds="462,434" />
+              <Pad Id="AWBPE7R4yMjMdd7KtCfKtj" SlotId="EPXnX9bFyN0MOTCovkQedp" Bounds="424,306">
+                <p:ValueBoxSettings />
+              </Pad>
+              <Pad Id="JDe4linUBnHPMnEjEPH7T6" SlotId="EPXnX9bFyN0MOTCovkQedp" Bounds="430,184">
+                <p:ValueBoxSettings />
+              </Pad>
+              <Pad Id="AAFuPCRnb3wLv3juFedVcz" SlotId="EPXnX9bFyN0MOTCovkQedp" Bounds="425,406">
+                <p:ValueBoxSettings />
+              </Pad>
+            </Canvas>
+            <Patch Id="TMR45HYIRJzOmUeBw5YG3N" Name="Create" />
+            <Patch Id="PptYryCmPv4LS0vzbbklnm" Name="Update" />
+            <ProcessDefinition Id="FvWC5qorTcFQCe2fmunpi7" IsHidden="true">
+              <Fragment Id="LVSmUbkWf4LOQYTuh29fGW" Patch="TMR45HYIRJzOmUeBw5YG3N" Enabled="true" />
+              <Fragment Id="LpCyi9D9pKUOYnPSpL2wQa" Patch="PptYryCmPv4LS0vzbbklnm" Enabled="true" />
+              <Fragment Id="GQZ59QwiMzLL36TNjYSAhF" Patch="Bwj4uJgSYdPLjO6FMfYTJe" Enabled="true" />
+              <Fragment Id="VbyXF5TqWOONviEk0f5hLN" Patch="NWuW8r7Qj9nQEom0T1lP43" Enabled="true" />
+            </ProcessDefinition>
+            <Patch Id="Bwj4uJgSYdPLjO6FMfYTJe" Name="AddRef">
+              <Pin Id="VRJ9AoGlXyeN9ptuz44Jl9" Name="Output" Kind="OutputPin" Bounds="464,282" />
+            </Patch>
+            <Patch Id="NWuW8r7Qj9nQEom0T1lP43" Name="Release" ParticipatingElements="JYA0hI4LUOuMOzbTquuPcj">
+              <Pin Id="UU8sNzC2FP8PTxn8CMQaz3" Name="Output" Kind="OutputPin" Bounds="459,442" />
+            </Patch>
+            <Link Id="PaGo6ZfIgPTLIBAHV7KHKx" Ids="FB1ysjsipmYP5rQMJwcUMj,AM4CqI7EYYGM5cidPRcyVh" />
+            <Link Id="Dd7AfSDuUbnPXUDeh0t3Ia" Ids="AM4CqI7EYYGM5cidPRcyVh,VRJ9AoGlXyeN9ptuz44Jl9" IsHidden="true" />
+            <Link Id="P0WKANdcaKnPSX3WWw6e3x" Ids="LQ72aJFTIUwLYYSD6ocw0K,BGQAnsCcF0gOTFxVjNuz6T" />
+            <Link Id="AjtMq0M6swHP5581hPPECO" Ids="BGQAnsCcF0gOTFxVjNuz6T,UU8sNzC2FP8PTxn8CMQaz3" IsHidden="true" />
+            <Slot Id="EPXnX9bFyN0MOTCovkQedp" Name="Counter" />
+            <Link Id="DbWk1z4GHpOPLZOI3KBGBK" Ids="JDe4linUBnHPMnEjEPH7T6,HKH5I8ERDjRPEzVpdLnsw8" />
+            <Link Id="RmOHx3zdg0KPAza9RZQ1Dl" Ids="FB1ysjsipmYP5rQMJwcUMj,AWBPE7R4yMjMdd7KtCfKtj" />
+            <Link Id="FEyK1RFh2MZNOBkqAUKVGh" Ids="AWBPE7R4yMjMdd7KtCfKtj,DyInqUVwxdpPYoqFDhCPDC" />
+            <Link Id="A3iTPW4RUGNOz9KxBB6Js3" Ids="LQ72aJFTIUwLYYSD6ocw0K,AAFuPCRnb3wLv3juFedVcz" />
+          </Patch>
+        </Node>
+      </Canvas>
     </Canvas>
   </Patch>
   <PlatformDependency Id="NSR5xQeKeWwOjJd3XSQE6W" Location="./lib/uEyeDotNet.dll" />
-  <NugetDependency Id="ETHS5b3Z0ciOse228pvtsD" Location="VL.DevLib" Version="0.61.16-gc62925ead4" />
 </Document>
