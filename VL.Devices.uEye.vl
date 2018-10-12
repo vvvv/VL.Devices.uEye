@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.91">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl.html" ProjectUrl="http://vvvv.org/" Version="0.93">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
@@ -16,9 +16,9 @@
         </p:NodeReference>
         <Patch Id="PECXWgOlNNzMzLmALehUrD">
           <Canvas Id="MKNmciEsIa4PSxPlLDvq62" CanvasType="Group">
-            <ControlPoint Id="HENNFWCNCzoPR4Lhx2ebun" Bounds="522,-60" />
-            <ControlPoint Id="VDAfVV2rNs8PknPc3qjBoI" Bounds="594,-62" />
-            <ControlPoint Id="Qz8lMQVVUkZLwe64GJZOIj" Bounds="641,-63" />
+            <ControlPoint Id="HENNFWCNCzoPR4Lhx2ebun" Bounds="364,-73" />
+            <ControlPoint Id="VDAfVV2rNs8PknPc3qjBoI" Bounds="436,-73" />
+            <ControlPoint Id="Qz8lMQVVUkZLwe64GJZOIj" Bounds="483,-73" />
             <Node Bounds="573,-9,165,13" Id="FGZeGWqaTq4LIBekBY6oks">
               <p:NodeReference LastCategoryFullName="Devices.uEye" LastSymbolSource="VL.Devices.uEye.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -37,7 +37,7 @@
               <Pin Id="BkzkBUCYK54NrheG6AuY5Z" Name="Is Open" Kind="OutputPin" />
               <Pin Id="Dtb31h8FL9aOmJH27voIv0" Name="Camera Count" Kind="OutputPin" />
             </Node>
-            <Node Bounds="515,40,94,13" Id="ROoxc8VSzPeMRl0e67x5Cu">
+            <Node Bounds="519,44,94,13" Id="ROoxc8VSzPeMRl0e67x5Cu">
               <p:NodeReference LastCategoryFullName="Devices.uEye" LastSymbolSource="VL.Devices.uEye.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="FrameToImage" />
@@ -45,13 +45,32 @@
               <Pin Id="Fwwrs3MXPmyNLA06PMYXrX" Name="Input" Kind="InputPin" />
               <Pin Id="JuI7khChUGHP78q5xy0vFX" Name="Output" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="BSDqY24o2g3QLDZgW2F2cm" Bounds="539,-73" />
+            <ControlPoint Id="HGNYy2OKSsOOvDyS2lyrMl" Bounds="590,-73" />
+            <ControlPoint Id="VOHHMStpUApM089bRZkq0K" Bounds="655,-73" />
+            <ControlPoint Id="AVtTgrbLoI7QYPhncbp3XM" Bounds="772,-73" />
+            <ControlPoint Id="IB2oVMCbhbuNFpYCuD5hs9" Bounds="856,-73" />
+            <ControlPoint Id="MblSNqrtP87OGlZls4y4qR" Bounds="912,-73" />
+            <ControlPoint Id="P15uJScvZK1L0Jgn0su6Zd" Bounds="655,94" />
+            <ControlPoint Id="Sx0aCws0gyFObERnKaU34T" Bounds="735,91" />
+            <ControlPoint Id="GLRJuzsjVfiLjD7yaNsFlc" Bounds="521,93" />
           </Canvas>
           <Patch Id="CttzRYNhulMNxIW7umwmua" Name="Create" ParticipatingElements="CNGsZFvxj4jMbY8UtTngAW,PCI8uj1r5eOLaYtlCGc06z,GVPPwWYGp36Lt837dUJ9cn">
             <Pin Id="PVSTwjwRHjUM7Z6ItPaZ50" Name="Camera ID" Kind="InputPin" DefaultValue="0" />
             <Pin Id="DQnmxD2drqWLmOi8iLr4pM" Name="Width" Kind="InputPin" />
             <Pin Id="Kt6om6tvVqsOO6VxMCE7Ci" Name="Height" Kind="InputPin" />
           </Patch>
-          <Patch Id="SXfQsTNGXCwPRvZm8pr2ZN" Name="Update" />
+          <Patch Id="SXfQsTNGXCwPRvZm8pr2ZN" Name="Update">
+            <Pin Id="GTa5UvzawGOLzv1S5L1DHr" Name="Output" Kind="OutputPin" Bounds="521,94" />
+            <Pin Id="K7EgLjTJGceN12KqHHDZlT" Name="Load" Kind="InputPin" Bounds="697,-63" />
+            <Pin Id="KdX5B6RErVPOnXTmDoH3YK" Name="Filename" Kind="InputPin" Bounds="748,-63" />
+            <Pin Id="FPs7GrQBQi3ORV2Ka5il02" Name="Reset To Defaults" Kind="InputPin" Bounds="813,-60" />
+            <Pin Id="LexVWZveOE9OdrpO2UTbpc" Name="Is Open" Kind="OutputPin" Bounds="664,76" />
+            <Pin Id="U0kJbE6TigyMyUbwbfPVFA" Name="Camera Count" Kind="OutputPin" Bounds="741,60" />
+            <Pin Id="JENDLJ87kjvNLkTFonpxGO" Name="Black Level" Kind="InputPin" Bounds="770,-73" />
+            <Pin Id="Jnq2VeVkcZVNXEji7xHu1f" Name="Gain" Kind="InputPin" Bounds="853,-71" />
+            <Pin Id="LL9jRacArR4Qdz0MD4Git4" Name="Enabled" Kind="InputPin" Bounds="912,-72" />
+          </Patch>
           <ProcessDefinition Id="CoddLrQ7yarOOHFQhp7JGg">
             <Fragment Id="S6X5wmmYdWZLL2uJC2dXkO" Patch="CttzRYNhulMNxIW7umwmua" Enabled="true" />
             <Fragment Id="TKlJkekPhymMtr2qFOTdND" Patch="SXfQsTNGXCwPRvZm8pr2ZN" Enabled="true" />
@@ -64,6 +83,24 @@
           <Link Id="GVPPwWYGp36Lt837dUJ9cn" Ids="Qz8lMQVVUkZLwe64GJZOIj,IsCCJuEBb6YOLbrY8hgety" />
           <Link Id="RBjXg92t2nePULEeqXOrel" Ids="Kt6om6tvVqsOO6VxMCE7Ci,Qz8lMQVVUkZLwe64GJZOIj" IsHidden="true" />
           <Link Id="UHHsbN67JZrPEVkf3hCsFG" Ids="HLDLIe06ZPNPsjYO3z2STe,Fwwrs3MXPmyNLA06PMYXrX" />
+          <Link Id="Di047yBdQaXL1dCjlSCW84" Ids="BSDqY24o2g3QLDZgW2F2cm,RmkkXEwpREOQLtjLekC9Qe" />
+          <Link Id="RtpuzIAX3vBLp9hvFZC6OS" Ids="K7EgLjTJGceN12KqHHDZlT,BSDqY24o2g3QLDZgW2F2cm" IsHidden="true" />
+          <Link Id="Ch2hcoyWFJOLlpYjIvyVpu" Ids="HGNYy2OKSsOOvDyS2lyrMl,Gv1r4ei8P18Nk66n70yHh2" />
+          <Link Id="PBMcD8p0dO5OcKug6kFytX" Ids="KdX5B6RErVPOnXTmDoH3YK,HGNYy2OKSsOOvDyS2lyrMl" IsHidden="true" />
+          <Link Id="Ohru4Mz4fsvLAR3C3tUAyU" Ids="VOHHMStpUApM089bRZkq0K,GoBUJryOOWoP2F0oUnpftu" />
+          <Link Id="TX36s2VuaPZNCyZdvz8pMF" Ids="FPs7GrQBQi3ORV2Ka5il02,VOHHMStpUApM089bRZkq0K" IsHidden="true" />
+          <Link Id="T2XdOUUnbJeOkN9wUlhMbn" Ids="AVtTgrbLoI7QYPhncbp3XM,EtiKf8zMX9XL1bfo6eqgNW" />
+          <Link Id="Stbq8pr5nklLb8jeiCWkav" Ids="JENDLJ87kjvNLkTFonpxGO,AVtTgrbLoI7QYPhncbp3XM" IsHidden="true" />
+          <Link Id="PipAWaLdbP2Och9crnJFLd" Ids="IB2oVMCbhbuNFpYCuD5hs9,JQQ24sYKa2ZNt7dMEmWGQO" />
+          <Link Id="Tllan7xm0mLME5gAPOq5fB" Ids="Jnq2VeVkcZVNXEji7xHu1f,IB2oVMCbhbuNFpYCuD5hs9" IsHidden="true" />
+          <Link Id="KzfNOiN974eOw7pLeC1Zz3" Ids="MblSNqrtP87OGlZls4y4qR,UosbSuqZUovOAaclwtULSW" />
+          <Link Id="L1iYOpCwFJBOYHmeRqDiRY" Ids="LL9jRacArR4Qdz0MD4Git4,MblSNqrtP87OGlZls4y4qR" IsHidden="true" />
+          <Link Id="NBwPIWravQFLNtVW2Hu2zQ" Ids="BkzkBUCYK54NrheG6AuY5Z,P15uJScvZK1L0Jgn0su6Zd" />
+          <Link Id="Ad2Kg0Z5MLtQONAVpwpHKp" Ids="P15uJScvZK1L0Jgn0su6Zd,LexVWZveOE9OdrpO2UTbpc" IsHidden="true" />
+          <Link Id="EmnRxBfArlbNzSdwhttTEq" Ids="Dtb31h8FL9aOmJH27voIv0,Sx0aCws0gyFObERnKaU34T" />
+          <Link Id="TueyoOAqxjhLrE4fkLMQOM" Ids="Sx0aCws0gyFObERnKaU34T,U0kJbE6TigyMyUbwbfPVFA" IsHidden="true" />
+          <Link Id="Qlg0kiX3vdMORbLxO2MR1J" Ids="JuI7khChUGHP78q5xy0vFX,GLRJuzsjVfiLjD7yaNsFlc" />
+          <Link Id="Ep6koktHAVeLiIiZwCvDnk" Ids="GLRJuzsjVfiLjD7yaNsFlc,GTa5UvzawGOLzv1S5L1DHr" IsHidden="true" />
         </Patch>
       </Node>
       <Canvas Id="Mrfn4tVoksiPPCxePkL8rL" Name="Wrappers" Position="213,497">
@@ -889,7 +926,7 @@
                 <Pin Id="PXnbpgye9irL3VH1hYDoxF" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="874,850,64,13" Id="DWujPDkwQahOTDz8pg3zUm">
-                <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl" LastDependency="VL.Devices.uEye.vl">
+                <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="OnOpen" />
                 </p:NodeReference>
@@ -1134,11 +1171,6 @@
               <Pin Id="C8vdXeK7ExZLfcdLP6VpAI" Name="Camera Count" Kind="OutputPin" />
               <Pin Id="KL848im4tRcLZg1XwsvgIF" Name="Enabled" Kind="InputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="HSzHf17g4hSPwIbV4B2RaE">
               <Fragment Id="VmObC7P68KoQWsH05qtHYg" Patch="F5uG7fVUEPGNwLrWf5Fj68" Enabled="true" />
               <Fragment Id="FxEkDYab803O4lIQv75wvl" Patch="JHnyFxwfibVLiG4U3pI4MU" Enabled="true" />
