@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\Users\joreg\Documents\repos\vl-others\VL.Devices.uEye\vvvv\nodes\modules\uEyeCam (DX11.Texture) help.v4p" systemname="uEyeCam (DX11.Texture) help" filename="C:\Users\joreg\Documents\repos\vl-others\VL.Devices.uEye\vvvv\nodes\modules\uEyeCam (DX11.Texture) help.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha37.1.dtd" >
+   <PATCH nodename="C:\Work\VL-Libs\VL.Devices.uEye\vvvv\nodes\modules\uEyeCam (DX11.Texture) help.v4p" systemname="uEyeCam (DX11.Texture) help" filename="C:\Users\joreg\Documents\repos\vl-others\VL.Devices.uEye\vvvv\nodes\modules\uEyeCam (DX11.Texture) help.v4p">
    <BOUNDS type="Window" left="390" top="5520" width="7635" height="8595">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -45,9 +45,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4065" top="5130" width="480" height="480">
+   <BOUNDS type="Box" left="4215" top="5130" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4065" top="5130" width="0" height="0">
+   <BOUNDS type="Node" left="4215" top="5130" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -57,13 +57,13 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2550" top="3000" width="495" height="315">
+   <BOUNDS type="Box" left="2355" top="3000" width="495" height="315">
    </BOUNDS>
-   <BOUNDS type="Node" left="2550" top="3000" width="0" height="0">
+   <BOUNDS type="Node" left="2355" top="3000" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -81,9 +81,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2550" top="3420" width="495" height="330">
+   <BOUNDS type="Box" left="2520" top="3420" width="495" height="330">
    </BOUNDS>
-   <BOUNDS type="Node" left="2550" top="3420" width="0" height="0">
+   <BOUNDS type="Node" left="2520" top="3420" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -101,9 +101,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2025" top="1830" width="525" height="240">
+   <BOUNDS type="Box" left="1860" top="1830" width="525" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2025" top="1830" width="0" height="0">
+   <BOUNDS type="Node" left="1860" top="1830" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1280">
    </PIN>
@@ -117,9 +117,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2250" top="2175" width="525" height="240">
+   <BOUNDS type="Box" left="2010" top="2175" width="525" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2250" top="2175" width="0" height="0">
+   <BOUNDS type="Node" left="2010" top="2175" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
    </PIN>
@@ -133,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2190" top="5235" width="420" height="240">
+   <BOUNDS type="Box" left="2340" top="5235" width="420" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2190" top="5235" width="0" height="0">
+   <BOUNDS type="Node" left="2340" top="5235" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -143,13 +143,13 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="10">
-   <BOUNDS type="Node" left="2700" top="5250" width="1290" height="270">
+   <BOUNDS type="Node" left="2850" top="5250" width="1290" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2700" top="5250" width="1290" height="270">
+   <BOUNDS type="Box" left="2850" top="5250" width="1290" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Camera Count|">
    </PIN>
@@ -191,9 +191,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="7">
-   <BOUNDS type="Node" left="4665" top="5235" width="825" height="270">
+   <BOUNDS type="Node" left="4815" top="5235" width="825" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4665" top="5235" width="825" height="270">
+   <BOUNDS type="Box" left="4815" top="5235" width="825" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Is Open|">
    </PIN>
@@ -219,9 +219,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2490" top="2625" width="1650" height="240">
+   <BOUNDS type="Box" left="2175" top="2625" width="1650" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2490" top="2625" width="0" height="0">
+   <BOUNDS type="Node" left="2175" top="2625" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\nodes\modules\uEyeParams.ini">
    </PIN>
@@ -235,9 +235,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="22">
-   <BOUNDS type="Node" left="2745" top="1830" width="705" height="270">
+   <BOUNDS type="Node" left="2580" top="1830" width="705" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2745" top="1830" width="705" height="270">
+   <BOUNDS type="Box" left="2580" top="1830" width="705" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Width|">
    </PIN>
@@ -249,9 +249,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="23">
-   <BOUNDS type="Node" left="2925" top="2175" width="765" height="270">
+   <BOUNDS type="Node" left="2685" top="2175" width="765" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2925" top="2175" width="765" height="270">
+   <BOUNDS type="Box" left="2685" top="2175" width="765" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Height|">
    </PIN>
@@ -263,9 +263,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="24">
-   <BOUNDS type="Node" left="3105" top="3000" width="2385" height="270">
+   <BOUNDS type="Node" left="2910" top="3000" width="2385" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3105" top="3000" width="2385" height="270">
+   <BOUNDS type="Box" left="2910" top="3000" width="2385" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Load Parameters from .ini file|">
    </PIN>
@@ -277,9 +277,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="25">
-   <BOUNDS type="Node" left="3165" top="3420" width="2940" height="270">
+   <BOUNDS type="Node" left="3135" top="3420" width="2940" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3165" top="3420" width="2940" height="270">
+   <BOUNDS type="Box" left="3135" top="3420" width="2940" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Reset all Parameters do their defaults|">
    </PIN>
@@ -290,20 +290,20 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <PACK Name="dx11" Version="1.2">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="1695" top="6135" width="100" height="100">
+   <BOUNDS type="Node" left="1275" top="6195" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="Group (DX11.Layer)" id="18" systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
-   <BOUNDS type="Node" left="1695" top="6570" width="0" height="0">
+   <BOUNDS type="Node" left="1275" top="6630" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1695" top="6570" width="2400" height="1800">
+   <BOUNDS type="Box" left="1275" top="6630" width="2400" height="1800">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -313,9 +313,9 @@
    <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 1">
    </LINK>
    <NODE nodename="Renderer (DX11)" componentmode="InAWindow" id="17" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
-   <BOUNDS type="Node" left="1695" top="7005" width="0" height="0">
+   <BOUNDS type="Node" left="1275" top="7065" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1695" top="7005" width="2400" height="1800">
+   <BOUNDS type="Box" left="1275" top="7065" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="390" top="405" width="6240" height="5085">
    </BOUNDS>
@@ -327,15 +327,17 @@
    <LINK srcnodeid="18" srcpinname="Layer Out" dstnodeid="17" dstpinname="Layers">
    </LINK>
    <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="3195" top="6150" width="100" height="100">
+   <BOUNDS type="Node" left="2775" top="6210" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="uEyeCam (DX11.Texture)" filename="uEyeCam (DX11.Texture).v4p" nodename="uEyeCam (DX11.Texture)" componentmode="Hidden" id="27">
+   <NODE systemname="uEyeCam (DX11.Texture)" filename="uEyeCam (DX11.Texture).v4p" nodename="uEyeCam (DX11.Texture)" componentmode="InAWindow" id="27">
    <BOUNDS type="Node" left="1695" top="4500" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="435" top="5640" width="12435" height="5715">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Camera ID">

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\Users\joreg\Documents\repos\vl-others\VL.Devices.uEye\vvvv\nodes\modules\uEyeCam (EX9.Texture) help.v4p">
-   <BOUNDS type="Window" left="390" top="5520" width="7635" height="8595">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha37.1.dtd" >
+   <PATCH nodename="C:\Work\VL-Libs\VL.Devices.uEye\vvvv\nodes\modules\uEyeCam (EX9.Texture) help.v4p">
+   <BOUNDS type="Window" left="405" top="5520" width="7620" height="8595">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -259,6 +259,8 @@
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="..\nodes\modules\uEyeParams.ini">
    </PIN>
+   <BOUNDS type="Window" left="435" top="5640" width="14445" height="5715">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Camera ID">
    </LINK>
@@ -352,7 +354,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <PACK Name="dx11" Version="1.2">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
