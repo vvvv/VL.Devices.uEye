@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OXG4J3LB5eTMdAe5HngL1e" Version="0.93">
+<Document xmlns:p="property" Id="OXG4J3LB5eTMdAe5HngL1e" Version="0.94">
   <Patch Id="MtBX1r2G8TxMJcmyIHYYPc">
     <Canvas Id="Ri0SVV90epPOqKPIARAOce" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -56,7 +56,7 @@
               </Patch>
             </Node>
             <Node Bounds="576,406,113,13" Id="Jh43EEMM6INOybW7siLUwY">
-              <p:NodeReference LastCategoryFullName="VL.Devices.uEye.Features" LastSymbolSource="VL.Devices.uEye.Features.vl">
+              <p:NodeReference LastCategoryFullName="Devices.uEye" LastSymbolSource="VL.Devices.uEye.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="CameraDemo" />
               </p:NodeReference>
@@ -72,9 +72,13 @@
               </p:NodeReference>
               <Pin Id="SUIuTy3zXXGO7zBrZJrvGW" Name="Image" Kind="InputPin" />
               <Pin Id="TV7csdfnC2SMin34mMk1Np" Name="Position" Kind="InputPin" />
-              <Pin Id="AhnbxLDk3MNOSRzoJze3lU" Name="Size" Kind="InputPin" />
-              <Pin Id="K8gtdufwE0tNQ9TfaOZCSG" Name="Anchor" Kind="InputPin" />
+              <Pin Id="AhnbxLDk3MNOSRzoJze3lU" Name="Size" Kind="InputPin" DefaultValue="2, 2">
+                <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Vector2" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="QDxUF0N02a0LHo78Bfsh3T" Name="Size Mode" Kind="InputPin" />
+              <Pin Id="K8gtdufwE0tNQ9TfaOZCSG" Name="Anchor" Kind="InputPin" />
               <Pin Id="MHuTXpfFbtNP2sCTuDIHiw" Name="Paint" Kind="InputPin" />
               <Pin Id="NoC3PeuUltMO9pFBU1NHGs" Name="Enabled" Kind="InputPin" />
               <Pin Id="IswIHXYdxdEPJ5pfv9WT1c" Name="Output" Kind="OutputPin" />
@@ -85,15 +89,20 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="{&quot;x&quot;:66,&quot;y&quot;:173,&quot;width&quot;:562,&quot;height&quot;:381}">
+              <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="207, 56, 562, 381">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
               </Pin>
               <Pin Id="RMpIX5rnsjHPOtRWuddU2c" Name="Input" Kind="InputPin" />
               <Pin Id="B8Owp7xaBVNLR4JmwkoJ9O" Name="Color" Kind="InputPin" />
+              <Pin Id="TUI4jxP7QV9PMxVtLUE478" Name="Clear" Kind="InputPin" />
               <Pin Id="DPvxKQaJF1FPHQp4oc9wnm" Name="Space" Kind="InputPin" />
-              <Pin Id="VVI5vGHbzN5MYl5tNgKUDn" Name="Enabled" Kind="InputPin" />
+              <Pin Id="VVI5vGHbzN5MYl5tNgKUDn" Name="Enabled" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="SkX8yektD4MMxR9TMb98JS" Name="Form" Kind="OutputPin" />
             </Node>
             <Pad Id="CodoipuqVxmNC4pcIGsPON" Comment="On Data" Bounds="672,626,40,19" ShowValueBox="true" isIOBox="true" />
@@ -130,7 +139,7 @@
                 <Choice Kind="ProcessAppFlag" Name="KeyMatch" />
               </p:NodeReference>
               <Pin Id="Rd54WLZDs9yNg2Kg7GEtlY" Name="Keys" Kind="InputPin" />
-              <Pin Id="P9XcLXVwNafMINJxyTGRd9" Name="Key Name" Kind="InputPin" DefaultValue="&quot;Space&quot;">
+              <Pin Id="P9XcLXVwNafMINJxyTGRd9" Name="Key Name" Kind="InputPin" DefaultValue="Space">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -175,7 +184,6 @@
   <NugetDependency Id="B5SFTdIEecHQRbk4LR9fCR" Location="VL.Core" Version="0.93.21-g99c25bebaf" />
   <NugetDependency Id="Jjv4vjnMtIzPTXmKvQ91HE" Location="VL.CoreLib" Version="0.93.21-g99c25bebaf" />
   <NugetDependency Id="O6NTgWm1rZOLxnho4OBKpq" Location="VL.CoreLib.VVVV" Version="0.93.21-g99c25bebaf" />
-  <DocumentDependency Id="HAl8WcNxBxkP3kW73lfQM6" Location="./VL.Devices.uEye.Features.vl" />
   <DocumentDependency Id="JAvJf3DuKMQPOFmnVXu2st" Location="./VL.Devices.uEye.vl" />
   <NugetDependency Id="UisKTj7P5kMOSPMskmwKri" Location="VL.Skia" Version="0.91.163-gdf78f3f57d" />
 </Document>
