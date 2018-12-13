@@ -84,7 +84,7 @@
               <Pin Id="IswIHXYdxdEPJ5pfv9WT1c" Name="Output" Kind="OutputPin" />
               <Pin Id="D3wM9yprOPxMo9165p6aFX" Name="Actual Bounds" Kind="OutputPin" />
             </Node>
-            <Node Bounds="432,729,85,13" Id="QYmjxKeBjiuORbxmrRG6ny">
+            <Node Bounds="464,688,105,13" Id="QYmjxKeBjiuORbxmrRG6ny">
               <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -106,55 +106,6 @@
               <Pin Id="SkX8yektD4MMxR9TMb98JS" Name="Form" Kind="OutputPin" />
             </Node>
             <Pad Id="CodoipuqVxmNC4pcIGsPON" Comment="On Data" Bounds="672,626,40,19" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="448,260,65,13" Id="UGFgnPCqsxFQCWz6Jtngw2">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Console" />
-              </p:NodeReference>
-              <Pin Id="SDKHQF0bC1oL0Q9neoEn1W" Name="Output" Kind="OutputPin" />
-              <Pin Id="OobDMBurL2lPQEXmU6TR7q" Name="Mouse" Kind="OutputPin" />
-              <Pin Id="CP8lCjeOdX0PVp7nsloO2V" Name="Keyboard" Kind="OutputPin" />
-              <Pin Id="Lcx5e49NL0XOthDo1f6htG" Name="Notifications" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="452,676,37,13" Id="V64ZKeWum3pLUwxBwC7HaE">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Group" />
-              </p:NodeReference>
-              <Pin Id="BtiDgKcDKRgNZmMM43ieKH" Name="Input" Kind="InputPin" />
-              <Pin Id="TGgSm8Ra7ZGL3dqWGBYnfY" Name="Input 2" Kind="InputPin" />
-              <Pin Id="RPBe9jss0ReOgzc66tGkdN" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="488,291,92,13" Id="AhLF09qY1oBQbp7cJhE2Xw">
-              <p:NodeReference LastCategoryFullName="IO.Keyboard" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="KeyboardState" />
-              </p:NodeReference>
-              <Pin Id="TklQ566PiXANvB7xwTreaK" Name="Keyboard Device" Kind="InputPin" />
-              <Pin Id="S7jPyvh441pLFyQqn2MKYC" Name="Pressed Keys" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="488,323,70,13" Id="Er4moK4IgX3MaqR9kFFDZS">
-              <p:NodeReference LastCategoryFullName="IO.Keyboard" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="KeyMatch" />
-              </p:NodeReference>
-              <Pin Id="Rd54WLZDs9yNg2Kg7GEtlY" Name="Keys" Kind="InputPin" />
-              <Pin Id="P9XcLXVwNafMINJxyTGRd9" Name="Key Name" Kind="InputPin" DefaultValue="Space">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="String" />
-                </p:TypeAnnotation>
-              </Pin>
-              <Pin Id="RoCUAbObSN0OcsQtNA9CXK" Name="Is Down" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="488,351,66,13" Id="AdNEZUTDWMwNqqg7kZFEPI">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="TogEdge" />
-              </p:NodeReference>
-              <Pin Id="Dgoc4q9PojQObISGHKqKAN" Name="Value" Kind="InputPin" />
-              <Pin Id="UST5NIz973HL5xpOSBSziq" Name="Up Edge" Kind="OutputPin" />
-              <Pin Id="NHTS1MZPTyGOPxhE4s6h4T" Name="Down Edge" Kind="OutputPin" />
-            </Node>
           </Canvas>
           <Patch Id="FcInprgO67jLTuO2C7z5Gb" Name="Create" />
           <Patch Id="UfyKwFZo4sIP3uvbxC5rHk" Name="Update" />
@@ -171,12 +122,7 @@
           <Link Id="CdtmMJqOLQvP6njWOPjLax" Ids="NDhzucUe2r8P3A47axHjCb,OFzbY21hTD8L4h0eoKbCKn" />
           <Link Id="DCCChyIe5YJPrvvjHrs8uO" Ids="BmzZsSzNLZHP4cdWkrZLqF,SUIuTy3zXXGO7zBrZJrvGW" />
           <Link Id="IrIxFHSlblOOoF5k0pYI4Y" Ids="TXQ6gPaC34kM5RZpUSQui0,CodoipuqVxmNC4pcIGsPON" />
-          <Link Id="SBAiZIiBeOYNM6Y6OvEYlz" Ids="RPBe9jss0ReOgzc66tGkdN,RMpIX5rnsjHPOtRWuddU2c" />
-          <Link Id="P1nQqvr1iEnOkEcDjYyZFD" Ids="SDKHQF0bC1oL0Q9neoEn1W,BtiDgKcDKRgNZmMM43ieKH" />
-          <Link Id="OQhZlrrg7Z8Leyzx0cwDae" Ids="IswIHXYdxdEPJ5pfv9WT1c,TGgSm8Ra7ZGL3dqWGBYnfY" />
-          <Link Id="KN6a8F19lgxMArtT6mZiqW" Ids="S7jPyvh441pLFyQqn2MKYC,Rd54WLZDs9yNg2Kg7GEtlY" />
-          <Link Id="GJRWKZrx3QEOKdVZE6LE3i" Ids="CP8lCjeOdX0PVp7nsloO2V,TklQ566PiXANvB7xwTreaK" />
-          <Link Id="NZLgaIGyWTGPDE5WRyOeHJ" Ids="RoCUAbObSN0OcsQtNA9CXK,Dgoc4q9PojQObISGHKqKAN" />
+          <Link Id="HG7ez0dSiZzM6actu9ZfKV" Ids="IswIHXYdxdEPJ5pfv9WT1c,RMpIX5rnsjHPOtRWuddU2c" />
         </Patch>
       </Node>
     </Canvas>
