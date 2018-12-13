@@ -32,7 +32,11 @@
                 <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="CQJonXQ4EVBL5skfBNY0wE" Name="Messages" Kind="InputPin" />
-              <Pin Id="JuX1i0yLbjVQbnNuB97jjx" Name="Reset" Kind="InputPin" />
+              <Pin Id="JuX1i0yLbjVQbnNuB97jjx" Name="Reset" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="SHMpxcPmzrOOMdM9AmkNoP" Name="Result" Kind="OutputPin" />
               <Patch Id="OrGlrgqCVI2PkNgZqNMtQ2" ManuallySortedPins="true">
                 <Patch Id="Eva9dlFSCWHPESPugM8g1S" Name="Create" ManuallySortedPins="true" />
@@ -116,13 +120,13 @@
           <Link Id="NovQOOBkUBFPgyAPY37j9G" Ids="KperZeGfLwMLgA8zNOmtkR,Fzx5gtYGyy5LmBVChQGZbY" IsHidden="true" />
           <Link Id="S5c2yK6HucgMr8YlJk0R56" Ids="C3nMInOkI63P1qyiofTDkM,PdSBgVN2YQOPmj5r9RWWOF" IsHidden="true" />
           <Link Id="BZHTBaA8KjMLx6kPJ0pstw" Ids="QbznSuLFIqyNZkdhPeyxtt,C3nMInOkI63P1qyiofTDkM" />
-          <Link Id="Mtcasoi47MMQMJD9Rl32Y3" Ids="SHMpxcPmzrOOMdM9AmkNoP,FVYCy0icHD4Oyd38a2JMbh" />
           <Link Id="UyrLymOv1LbM4M6EaadLyK" Ids="Fzx5gtYGyy5LmBVChQGZbY,KmkKD6gUbxfQKYemSLnEQ0" />
-          <Link Id="V1hw43z5s2AQYYyBkIl0Dx" Ids="E4VWKhEx7BHMPVqGeGpz3w,CQJonXQ4EVBL5skfBNY0wE" />
           <Link Id="CdtmMJqOLQvP6njWOPjLax" Ids="NDhzucUe2r8P3A47axHjCb,OFzbY21hTD8L4h0eoKbCKn" />
           <Link Id="DCCChyIe5YJPrvvjHrs8uO" Ids="BmzZsSzNLZHP4cdWkrZLqF,SUIuTy3zXXGO7zBrZJrvGW" />
           <Link Id="IrIxFHSlblOOoF5k0pYI4Y" Ids="TXQ6gPaC34kM5RZpUSQui0,CodoipuqVxmNC4pcIGsPON" />
           <Link Id="HG7ez0dSiZzM6actu9ZfKV" Ids="IswIHXYdxdEPJ5pfv9WT1c,RMpIX5rnsjHPOtRWuddU2c" />
+          <Link Id="JNKjmy8Lg4NMAIdxWyrd43" Ids="E4VWKhEx7BHMPVqGeGpz3w,CQJonXQ4EVBL5skfBNY0wE" />
+          <Link Id="R07UmQVsyU4M1w4j97at0d" Ids="SHMpxcPmzrOOMdM9AmkNoP,FVYCy0icHD4Oyd38a2JMbh" />
         </Patch>
       </Node>
     </Canvas>
