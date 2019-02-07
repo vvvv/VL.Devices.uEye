@@ -4,3 +4,6 @@
 
 # Dynamic plugins .dll
 bin/
+
+/src/VL.uEye/VL.uEye/obj/
+/src/VL.uEye/.vs/
