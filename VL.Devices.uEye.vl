@@ -1717,7 +1717,6 @@
               <Pin Id="C7zd3aRQ4DhO5QRWTybkLp" Name="Output" Kind="StateOutputPin" />
               <Pin Id="TGEHgiufkSzLHpxw3kPReB" Name="Result" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="RrhTJOyqpUDP8tAtJpMKR9" Bounds="241,115" />
             <Node Bounds="241,406,25,13" Id="TVIuWOAiyYCLqQXb6L1c7C">
               <p:NodeReference LastCategoryFullName="uEye.Defines.Status" LastSymbolSource="uEyeDotNet.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1954,6 +1953,7 @@
                 <Choice Kind="TypeFlag" Name="Status" />
               </p:TypeAnnotation>
             </Pad>
+            <ControlPoint Id="FIRi5dxw2iKO6s8yxJjqbC" Bounds="242,80" />
           </Canvas>
           <Patch Id="Hc8Lm2x2X28O2SzOl75dbz" Name="Create" ParticipatingElements="DdVTWZVoKh5PR3yYMEgN5c" />
           <Patch Id="VBuc40cXrhYLeF8gYRbJFT" Name="Update" ManuallySortedPins="true">
@@ -1978,8 +1978,6 @@
             <Fragment Id="VtRbwjHCAoVO6jnCYaPems" Patch="VBuc40cXrhYLeF8gYRbJFT" Enabled="true" />
           </ProcessDefinition>
           <Link Id="DSH0wT9i1phP8e941EZ2Zl" Ids="UFGcgoawjbNPZbAWr9RYjn,LCNS1kr3u9VM2l9SwcVFFo" />
-          <Link Id="CwhPYBVJfFoMaZtpZbCQ04" Ids="RrhTJOyqpUDP8tAtJpMKR9,LLEnjAkz6WqMtndYFenXdu" />
-          <Link Id="NIOoRPMi5WEOGd4iMwB4B7" Ids="Ugf9cyWFkqWOjFks7cHN3a,RrhTJOyqpUDP8tAtJpMKR9" IsHidden="true" />
           <Link Id="NyixlUkFDo4OGMvlNAu3gX" Ids="ObzOZlQaAzhMt4zxSjR0cj,BO9a7nFxw9eOq4YjqsCwW4" />
           <Link Id="HTTHTcnvblxMRFTi4wIUG9" Ids="N8uIsdpDRdkMo5YJVpJ5rM,UCT1juvCjWAOHF8lZ2OXqr" />
           <Link Id="C8r6dw9UcepN1DOchko4zd" Ids="NAMyIf4ybX9LT11XcBBXmD,G5ETcjgzLrjMzgm9tjNX2q" />
@@ -2038,6 +2036,8 @@
           <Link Id="IRzI48CrsunMZRfKpJAA9m" Ids="MzkFa2fHewyNNDa2WOTGm4,JDZLPEDLq98MLz9EUuogrW" />
           <Link Id="VzyxihlpD7QN1Qf4KcobQx" Ids="C7zd3aRQ4DhO5QRWTybkLp,A0sIT7s71uNQJhIaTQTLr0" />
           <Link Id="OZg7cvHFznnOV5UXyX1GJB" Ids="UJ3WAdxefeEPvJeCgcNAUW,DysKbkvdzJAO3eUfVIH3Uu" />
+          <Link Id="UtRNP4eqCWgMM8VYNONA6Z" Ids="Ugf9cyWFkqWOjFks7cHN3a,FIRi5dxw2iKO6s8yxJjqbC" IsHidden="true" />
+          <Link Id="ADIEjG1QicoMZ3nYuXVkm4" Ids="FIRi5dxw2iKO6s8yxJjqbC,LLEnjAkz6WqMtndYFenXdu" />
         </Patch>
       </Node>
       <!--
