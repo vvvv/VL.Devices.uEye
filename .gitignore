@@ -7,3 +7,7 @@ bin/
 
 /src/VL.uEye/VL.uEye/obj/
 /src/VL.uEye/.vs/
+
+**/obj/*
+**/.vs/*
+/bkp/*
