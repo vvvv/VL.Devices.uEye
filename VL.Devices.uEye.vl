@@ -11357,6 +11357,95 @@
           <Link Id="TJd7UqqAdg6N0RuB1wOTAH" Ids="DdcTqhewuqpLWHf2kNNZoQ,PkkNQhEEdaBOD1ZG6yQDYc" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ UseDeviceID ************************
+
+-->
+      <Node Name="UseDeviceID" Category="Devices.uEye.Helpers" Bounds="-303,-3" Id="BHeptEOmHVpLyDwLKJTetx">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="RxP6ZDPEE37LdJeFr9758O">
+          <Canvas Id="T2gHaBjQrhUMC3Lw5dVDhw" CanvasType="Group">
+            <ControlPoint Id="MrYkoglrHE4PyzFq0T3RTU" Bounds="512,195" />
+            <ControlPoint Id="OKgoTMfMpoqPAEhkwzgz82" Bounds="512,295" />
+            <Node Bounds="498,213,49,62" Id="C4SDuGQzixyLpFEuj7PPoc">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="SXQGSs4aw9SOa1dW2SGYrv" Name="Condition" Kind="InputPin" />
+              <Patch Id="KYcERi0GnjlORODwsV56JN" ManuallySortedPins="true">
+                <Patch Id="JnPynhR2RIZL0XMVdCSCG9" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="NqgrdPmBToOLH9JmCPMP4d" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="510,236,25,19" Id="IboAnB9QcUMPVQUiuuaqUa">
+                  <p:NodeReference LastCategoryFullName="System.BitsAndBytes" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="|" />
+                  </p:NodeReference>
+                  <Pin Id="FqYOpLKoEpHMBopaRlrjMl" Name="Input" Kind="InputPin" />
+                  <Pin Id="HfhGQInpqvVMQJlFFvWjWL" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="MKRr3kKBcjHMgRgx9fLKKN" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="AXXQrGa0UD9NSO5AEC7EtU" Bounds="512,220" Alignment="Top" />
+              <ControlPoint Id="PzXXNyEkqlFOdhb4zfZ6H0" Bounds="512,270" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="QvBqa0JfnQ6PoaB5YNvdJP" Bounds="500,136" />
+            <Pad Id="AxKpRnHTDKbOV95hHrNjw8" Comment="Default" Bounds="586,155,127,15" ShowValueBox="true" isIOBox="true" Value="UseDeviceID">
+              <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
+                <Choice Kind="TypeFlag" Name="DeviceEnumeration" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="584,175,48,19" Id="HAehg2Gu6XZNGGTLmoowMB">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CastAs" />
+              </p:NodeReference>
+              <Pin Id="GC10vCf2glWLOcal9h5j71" Name="Input" Kind="StateInputPin" />
+              <Pin Id="BOCVRURpAFJMrqa7xSXDWk" Name="Default" Kind="InputPin" DefaultValue="UseDeviceID">
+                <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
+                  <Choice Kind="TypeFlag" Name="DeviceEnumeration" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="McVSsL2TemtODdZn4F4BvF" Name="Result" Kind="OutputPin" />
+              <Pin Id="Q3jfFZOG517Mfo7dRRilJG" Name="Success" Kind="OutputPin" />
+            </Node>
+            <Pad Id="V2rGFL3SNiWLWRl0Yh1wAK" Bounds="586,223,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+          </Canvas>
+          <Patch Id="FirbgnOlm3GNnNC8JDWUkV" Name="Create" ParticipatingElements="OFtqnQI0vD1MMxZfyDhzpP" />
+          <Patch Id="K6pFoa7VjrMPGrj16fHiWL" Name="Update" ManuallySortedPins="true">
+            <Pin Id="DoeRH8cZq1TQVYCsx3JR3P" Name="Input" Kind="InputPin" Bounds="512,195" />
+            <Pin Id="UCv8UlB1K3HPsQfXj2JwzG" Name="Enabled" Kind="InputPin" Bounds="700,161" />
+            <Pin Id="CM4pY5XVK9yM72ubsBcJ6u" Name="Output" Kind="OutputPin" Bounds="511,388" />
+          </Patch>
+          <ProcessDefinition Id="UOKuknEMhDIOSIlV9qoOFC">
+            <Fragment Id="Og841HaSx2DPGRHK7ox2kL" Patch="FirbgnOlm3GNnNC8JDWUkV" Enabled="true" />
+            <Fragment Id="V0wJW5Era6OOG9DVclqeqB" Patch="K6pFoa7VjrMPGrj16fHiWL" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="Tq0kAQlF96eN8PnHR5h3kd" Ids="DoeRH8cZq1TQVYCsx3JR3P,MrYkoglrHE4PyzFq0T3RTU" IsHidden="true" />
+          <Link Id="OjaerDlQgbTP0PkkvfkVKM" Ids="OKgoTMfMpoqPAEhkwzgz82,CM4pY5XVK9yM72ubsBcJ6u" IsHidden="true" />
+          <Link Id="OFtqnQI0vD1MMxZfyDhzpP" Ids="McVSsL2TemtODdZn4F4BvF,V2rGFL3SNiWLWRl0Yh1wAK" />
+          <Link Id="Dc50xQPViJQNPBbBIEBNfh" Ids="V2rGFL3SNiWLWRl0Yh1wAK,HfhGQInpqvVMQJlFFvWjWL" />
+          <Link Id="JgUrIKqPsqFMfcjMCXO2xx" Ids="AXXQrGa0UD9NSO5AEC7EtU,PzXXNyEkqlFOdhb4zfZ6H0" IsFeedback="true" />
+          <Link Id="CvJQMk8vlcdPDuGaP4V7W6" Ids="MrYkoglrHE4PyzFq0T3RTU,AXXQrGa0UD9NSO5AEC7EtU" />
+          <Link Id="RxMnimwdfF7Pl4ao72BpSl" Ids="AXXQrGa0UD9NSO5AEC7EtU,FqYOpLKoEpHMBopaRlrjMl" />
+          <Link Id="Bq31Gqh6Jp3PNXfMais9X3" Ids="MKRr3kKBcjHMgRgx9fLKKN,PzXXNyEkqlFOdhb4zfZ6H0" />
+          <Link Id="DGt1jXjWLRaK9Xb6JCy9JG" Ids="PzXXNyEkqlFOdhb4zfZ6H0,OKgoTMfMpoqPAEhkwzgz82" />
+          <Link Id="SDhAQjduRQkMayFNCrDxVN" Ids="QvBqa0JfnQ6PoaB5YNvdJP,SXQGSs4aw9SOa1dW2SGYrv" />
+          <Link Id="HgTbs7dFa6NMuVfURQ6aXy" Ids="UCv8UlB1K3HPsQfXj2JwzG,QvBqa0JfnQ6PoaB5YNvdJP" IsHidden="true" />
+          <Link Id="ImZpHzrDtp0OQf7JYzx4ZH" Ids="AxKpRnHTDKbOV95hHrNjw8,GC10vCf2glWLOcal9h5j71" />
+        </Patch>
+      </Node>
     </Canvas>
   </Patch>
   <PlatformDependency Id="NSR5xQeKeWwOjJd3XSQE6W" Location="./lib/uEyeDotNet.dll" />
