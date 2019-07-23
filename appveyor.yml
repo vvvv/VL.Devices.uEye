@@ -55,7 +55,8 @@ install:
 #   - nuget restore -DisableParallelProcessing
   
 
-after_build:
+# after_build:
+deploy_script:
   # - cd..
   - nuget pack VL.Devices.uEye.nuspec -Version %APPVEYOR_BUILD_VERSION%-alpha
   - nuget setApiKey %nuget_api_key%
