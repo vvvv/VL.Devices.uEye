@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="CC8EzGSH0vzP4ADgBP2e7M" LanguageVersion="2019.1.0-0573-g619e81f294" Version="0.128">
+  <NugetDependency Id="TVDG0ydsFEQLFuAhWr48mc" Location="VL.CoreLib" Version="2019.1.0-573" />
+  <Patch Id="E943H2XJfuBPsXEOvMdJ2g">
+    <Canvas Id="ASKFibABgNRLZOEXpCLW3o" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Ap07M2v1jLLPZeGyB5M5z0">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Bzr7ixrdAnoPQKr9fCAkq5">
+        <Canvas Id="PQjSAEzwyJbNbD3SHjpDMu" CanvasType="Group">
+          <Node Bounds="287,244,474,19" Id="IVcwmYQVGeNNg7tCUtFhPs">
+            <p:NodeReference LastCategoryFullName="Devices.uEye" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="uEyeCamera" />
+            </p:NodeReference>
+            <Pin Id="PSYVhL6t35IP7lS2ykcXy3" Name="Features" Kind="InputPin" />
+            <Pin Id="ONtRhkCpTxLOeJkBDk9kRR" Name="Features 2" Kind="InputPin" />
+            <Pin Id="NIYjVZnRsEZLcguUGTCfEj" Name="Features 3" Kind="InputPin" />
+            <Pin Id="DZw3QKXHvY8MAQkcFCcxoC" Name="keep Inspector Open" Kind="InputPin" />
+            <Pin Id="HZIHuVqLc6lNU19og5fDj5" Name="Image Out" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="287,190,145,19" Id="HmCv1PIuYpGOnkj8iKznxN">
+            <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="uEyeFeatures" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessNode" Name="Exposure" />
+            </p:NodeReference>
+            <Pin Id="EEfOu9UVyIVOWzxkJsZRXy" Name="Exposure" Kind="InputPin" />
+            <Pin Id="AwUyebGNgsMNJ0WT93qZMa" Name="Output" Kind="OutputPin" />
+            <Pin Id="VkN6xjHXTBqLMeVTt2gp8w" Name="Status" Kind="StateOutputPin" />
+            <Pin Id="GEZrbLMnEcMLWspg4WH8sT" Name="Current Exposure" Kind="OutputPin" />
+            <Pin Id="R1CsQsoqiphNHaPAMurLFy" Name="min Exposure" Kind="OutputPin" />
+            <Pin Id="G5dtcCiQShnLoNI3bnsb1X" Name="max Exposure" Kind="OutputPin" />
+            <Pin Id="EY1GJxGiC5IPHeySB0AYde" Name="UIWidget" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BfBVxxe46bRQJvTFDylIbS" Comment="Exposure" Bounds="289,137,35,15" ShowValueBox="true" isIOBox="true" Value="20">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="443,190,125,19" Id="FmqpThkGDATPtRT1RcyGgZ">
+            <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Framerate" />
+              <CategoryReference Kind="Category" Name="uEyeFeatures" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="B0Ir9MfAlSrQKQzAM0xE54" Name="Framerate" Kind="InputPin" />
+            <Pin Id="LmAbhcAO0XUNf1XKnPffUJ" Name="Output" Kind="OutputPin" />
+            <Pin Id="RblhNdmX0PIOZuItfqQU4K" Name="status" Kind="OutputPin" />
+            <Pin Id="BNxEX3KhJCxMbeOoY9TkGM" Name="Current Framerate" Kind="OutputPin" />
+            <Pin Id="CrVSA3Nlw0lOprk5ozdngW" Name="min FPS" Kind="OutputPin" />
+            <Pin Id="UIMmqGFkS57NHh75YH6023" Name="max FPS" Kind="OutputPin" />
+            <Pin Id="CeunGpKCUSlO5Ds244z7vI" Name="UIWidget" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BKDyf6d174iQEruLcQlWiE" Comment="Framerate" Bounds="445,139,35,15" ShowValueBox="true" isIOBox="true" Value="30">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="599,190,105,19" Id="Np3COP36m3cPp8YBd716RE">
+            <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AOI" />
+              <CategoryReference Kind="Category" Name="uEyeFeatures" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="UXTNuGMSkmUMRkAF1ofgSR" Name="Target AOI" Kind="InputPin" />
+            <Pin Id="G6QNeGcxxdDPqsBMRrK5XA" Name="Output" Kind="OutputPin" />
+            <Pin Id="Vgh3cSWJBxNLeYjyZfUpMm" Name="Min" Kind="OutputPin" />
+            <Pin Id="G9CnjJMWNkuMTOYtZzq2MK" Name="Max" Kind="OutputPin" />
+            <Pin Id="NbuHxYlfSo3Pn3elKBmlW1" Name="Current" Kind="OutputPin" />
+            <Pin Id="PKPNIOc7lY5Oa5g4vqLnRs" Name="Status" Kind="OutputPin" />
+            <Pin Id="A3IbLyMHb24Py25OKniM74" Name="UIWidget" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="599,156,61,19" Id="HDqfhv1sr0yLWUhqopZSBa">
+            <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Rectangle (Join)" />
+            </p:NodeReference>
+            <Pin Id="Blamfu5yacXLPWFFCsgxYa" Name="Position" Kind="InputPin" />
+            <Pin Id="Pc7nwTQVtllOwK9SfFqIPd" Name="Size" Kind="InputPin" />
+            <Pin Id="OMjWpnwNq4fN7hpZrjoT0N" Name="Anchor" Kind="InputPin" />
+            <Pin Id="Aix9P6YvUkwPqobwiLcuXO" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="LG5xW7wD3kwPyoeLNxPBFZ" Comment="Size" Bounds="629,125,55,28" ShowValueBox="true" isIOBox="true" Value="512, 512">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:unit p:Type="String">px</p:unit>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AeQIk4Grq8PNbjsdV9AoBI" Comment="keep Inspector Open" Bounds="758,207,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="U3QlvXRkkvHN6BAZw3i6zG" Name="Create" />
+        <Patch Id="H6DBMphmje3PwN8WBISkUl" Name="Update" />
+        <ProcessDefinition Id="Tunqgo5dcyMPP7U33jXcDm">
+          <Fragment Id="Ryf5jdvB25gN5yCYDu8xHB" Patch="U3QlvXRkkvHN6BAZw3i6zG" Enabled="true" />
+          <Fragment Id="L8PcccBAc2tM2U8Bjr59Wv" Patch="H6DBMphmje3PwN8WBISkUl" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="IXGdJM8zqqKLlrebKjkGKp" Ids="BfBVxxe46bRQJvTFDylIbS,EEfOu9UVyIVOWzxkJsZRXy" />
+        <Link Id="NWvzo7KZySpPczF2TkTFQq" Ids="BKDyf6d174iQEruLcQlWiE,B0Ir9MfAlSrQKQzAM0xE54" />
+        <Link Id="IhJ85dHBdTqQL8RVDAzyyT" Ids="Aix9P6YvUkwPqobwiLcuXO,UXTNuGMSkmUMRkAF1ofgSR" />
+        <Link Id="MkPyKkA18tSOfBqHJBEqZ5" Ids="LG5xW7wD3kwPyoeLNxPBFZ,Pc7nwTQVtllOwK9SfFqIPd" />
+        <Link Id="UZaWKh2iCXFOsGVFQOmzxF" Ids="AeQIk4Grq8PNbjsdV9AoBI,DZw3QKXHvY8MAQkcFCcxoC" />
+        <Link Id="HTvG6L8k6rzLVdxkLde3FT" Ids="AwUyebGNgsMNJ0WT93qZMa,PSYVhL6t35IP7lS2ykcXy3" />
+        <Link Id="A8do8pgzinJQOtuVAanm2U" Ids="G6QNeGcxxdDPqsBMRrK5XA,NIYjVZnRsEZLcguUGTCfEj" />
+        <Link Id="HUYERrcDe24PmD9o8mwurq" Ids="LmAbhcAO0XUNf1XKnPffUJ,ONtRhkCpTxLOeJkBDk9kRR" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="UiTTRhJmr8SLd6HVes5djn" Location="VL.Skia" Version="2019.1.0-0573-g619e81f294" />
+  <DocumentDependency Id="KuFv9Bl0QTkQUvxlC4ZUNo" Location="../VL.Devices.uEye.vl" />
+  <NugetDependency Id="Lhk8xk4lXDeM86W3nKHeF2" Location="VL.Lang" Version="2019.1.0-0573-g619e81f294" />
+  <NugetDependency Id="DVxkFLTWvI8O94BhgPOHvI" Location="Elementa" Version="1.1.2-CI-20190815-082248" />
+</Document>
