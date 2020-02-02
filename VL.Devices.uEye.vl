@@ -20039,7 +20039,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="KyhKK1t0dPeO1dxIe8SSNG" Name="Bounds" Kind="InputPin" DefaultValue="600, 414, 223, 190">
+              <Pin Id="KyhKK1t0dPeO1dxIe8SSNG" Name="Bounds" Kind="InputPin" DefaultValue="462, 480, 223, 125">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
