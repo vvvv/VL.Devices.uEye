@@ -254,7 +254,6 @@
                   <Pin Id="DDDkQWxhHMAPc8DHPhpV1p" Name="Mem Ids" Kind="InputPin" />
                   <Pin Id="SZxySv9IOcROmfWrUTGsG4" Name="Number Of Sequence Buffers" Kind="InputPin" />
                   <Pin Id="KFevRbXqZq5LVB1SkfVN0X" Name="is initialized" Kind="InputPin" />
-                  <Pin Id="FSgyDbjEdu9NKKxw5Q4rKg" Name="CamIsOpened" Kind="InputPin" />
                   <Pin Id="JetjUpqcPYjOASH7RNxhwi" Name="Mem Ids" Kind="OutputPin" />
                 </Node>
               </Patch>
@@ -566,7 +565,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="645, 625, 600, 406">
+            <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="1216, 601, 600, 406">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -682,7 +681,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LRLOHZcDPX2LFwY5egvOta" Comment="Inspector" Bounds="1080,522,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="LRLOHZcDPX2LFwY5egvOta" Comment="Inspector" Bounds="1080,522,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
