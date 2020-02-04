@@ -623,11 +623,11 @@
             <Pin Id="RDH8zQ9bipTNV0AFqhMLgC" Name="Force Init" Kind="InputPin" />
             <Pin Id="Mif4VW0mmIuNO103NU8NvH" Name="Cam ID" Kind="InputPin" />
             <Pin Id="BtWP6Fm6lsePbF71afAYPU" Name="keep Inspector Open" Kind="InputPin" />
-            <Pin Id="Kp13sOoUZiKMNTL22EoUZx" Name="Features" Kind="InputPin" />
-            <Pin Id="CGXloztCftGO98uMKWdxBz" Name="Features 2" Kind="InputPin" />
-            <Pin Id="HBsjxYfHiRkOEr4kTYF38j" Name="Features 3" Kind="InputPin" />
-            <Pin Id="A6rXm4PJ9PCLZuo6CNUz5w" Name="Features 4" Kind="InputPin" />
-            <Pin Id="IGnPbhY5ysHPn6neuPbg3v" Name="Features 5" Kind="InputPin" />
+            <Pin Id="Kp13sOoUZiKMNTL22EoUZx" Name="Feature" Kind="InputPin" />
+            <Pin Id="CGXloztCftGO98uMKWdxBz" Name="Feature 2" Kind="InputPin" />
+            <Pin Id="HBsjxYfHiRkOEr4kTYF38j" Name="Feature 3" Kind="InputPin" />
+            <Pin Id="A6rXm4PJ9PCLZuo6CNUz5w" Name="Feature 4" Kind="InputPin" />
+            <Pin Id="IGnPbhY5ysHPn6neuPbg3v" Name="Feature 5" Kind="InputPin" />
             <Pin Id="PRpZ3x9dGE2POmTw1sEDA6" Name="Inspector" Kind="InputPin" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -844,6 +844,15 @@
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Svz1dSjzB6dN1Ct5p1qFYi" Bounds="488,92,250,20" ShowValueBox="true" isIOBox="true" Value="these are the ported features so far:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="FcInprgO67jLTuO2C7z5Gb" Name="Create" />

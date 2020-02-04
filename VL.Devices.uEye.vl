@@ -5510,7 +5510,7 @@
           <Link Id="ELci0QAvphiO0XuWXKvBct" Ids="SDWYvggZiDMPRcJuWObk38,PjMdYbTnYsuPyqs906apuY" />
           <Link Id="MQaU9PdqzbNPZYv0Vw9iYT" Ids="PjMdYbTnYsuPyqs906apuY,Q4viQ4nBdzVOj7YVnME0C0" />
           <Patch Id="NMmggrf6NaGP509x20Lvfa" Name="ApplyFeatures">
-            <Pin Id="ARTgbHu0YT1LzSsjcIpWod" Name="Features" Kind="InputPin" IsPinGroup="true">
+            <Pin Id="ARTgbHu0YT1LzSsjcIpWod" Name="Feature" Kind="InputPin" IsPinGroup="true">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
@@ -11640,11 +11640,6 @@
             <Link Id="H6pciG2N3TSNuLnObM6Wx8" Ids="LaLztTrngUcOfjidGcWgXU,H5c35EeIkcNMRUZJfijt4Q" />
             <Link Id="MiVXUrkTjMGMVsMvDN28Ai" Ids="NzV6E8M6b7jNRBgBXuBdj1,RQAUtmrH2zlOxLa8on4IYw" />
             <Slot Id="VyUvcBRCjaVLcz71T8W8PR" Name="device removed counter" />
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="OLqOS8J5IR6QUcB4xoIeXi" HasStateOut="true">
               <Fragment Id="MDf73SPPm2mM80Gh408NQD" Patch="KNPiNWWx89yMV60lIRqYdx" Enabled="true" />
               <Fragment Id="VSbrYQc2RjBOIoFJ6Ahhr4" Patch="LSdigZt9fY3PfxyQX5Lmrp" />
