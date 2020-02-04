@@ -566,7 +566,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="1164, 589, 631, 406">
+            <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="1289, 538, 631, 423">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -793,6 +793,35 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="1046,277,75,19" Id="ROvAh5uULj7OmvPvm11lLA">
+            <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="uEyeFeatures" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="Subsampling" />
+            </p:NodeReference>
+            <Pin Id="I3k50ooCCutNG2556sfmG8" Name="Subsampling 1" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
+                <Choice Kind="TypeFlag" Name="SubsamplingMode" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="KFbh0lGJ9R7PxLCevzwdlC" Name="Subsampling 2" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="uEye.Defines" LastSymbolSource="uEyeDotNet.dll">
+                <Choice Kind="TypeFlag" Name="SubsamplingMode" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="DVhCOK3W1jAOuO0c86zv51" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="1043,321,44,19" Id="J1oYg9qlkgnNRuPn461SCh">
+            <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Mirror" />
+              <FullNameCategoryReference ID="Devices.uEye.uEyeFeatures" />
+              <PinReference Kind="OutputPin" Name="Output" />
+            </p:NodeReference>
+            <Pin Id="QxthC2Sun4rOx9q17PT6Zh" Name="Gain" Kind="InputPin" />
+            <Pin Id="EGRvaUWgWlYMJOpkHc7AcM" Name="Set" Kind="ApplyPin" />
+            <Pin Id="FTEGuhIpIfHPUVgxj1Bxqs" Name="Output" Kind="StateOutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FcInprgO67jLTuO2C7z5Gb" Name="Create" />
         <Patch Id="UfyKwFZo4sIP3uvbxC5rHk" Name="Update" />
@@ -830,10 +859,10 @@
         <Link Id="RrcdceMvNdMLD2RnJTXKb4" Ids="T4EDrEjRgJzNlKlVSTi9mL,VvmFNJUs5s8L4rQVwB1QVu" />
         <Link Id="OYIH5RdICpdLZZXbkWzcgS" Ids="Glo2oXJCLGFPF39FHP4URH,IAozJL9an7JNeNLRsFUCVA" />
         <Link Id="PzpWhXbGuwNPbs3kimJiBH" Ids="ToScyasqbhpLbj5r4K9owQ,TkJaMgbQirtMUBYCRWq9ol" />
-        <Link Id="SSPE1m6YtqIQaHkD9ST8mO" Ids="CzAyHy8RMN7Qbi1CEJfgBt,HBsjxYfHiRkOEr4kTYF38j" />
         <Link Id="RwGKZiZRmjsLiJCksSorjr" Ids="UgiBzYAiIxSMTogx17XjjS,A6rXm4PJ9PCLZuo6CNUz5w" />
         <Link Id="RHtwVxe4YLAMy2w1nyMhKQ" Ids="RKjan97BrcGMnFgmo3B7rz,IGnPbhY5ysHPn6neuPbg3v" />
         <Link Id="LcnABWFbNEqPmP1OhprGFd" Ids="GyMYHoBqqVHNE8Gc5dztep,RDH8zQ9bipTNV0AFqhMLgC" />
+        <Link Id="QZZEY3u7YbvQdgl5vdpdsZ" Ids="FTEGuhIpIfHPUVgxj1Bxqs,HBsjxYfHiRkOEr4kTYF38j" />
       </Patch>
     </Node>
   </Patch>
