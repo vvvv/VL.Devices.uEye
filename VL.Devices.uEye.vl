@@ -20168,7 +20168,7 @@
               </Node>
             </Canvas>
             <Patch Id="KNPiNWWx89yMV60lIRqYdx" Name="Create" />
-            <Patch Id="LSdigZt9fY3PfxyQX5Lmrp" Name="ApplyFeature">
+            <Patch Id="LSdigZt9fY3PfxyQX5Lmrp" Name="ApplyFeature" ParticipatingElements="H6pciG2N3TSNuLnObM6Wx8,MiVXUrkTjMGMVsMvDN28Ai">
               <Pin Id="TXNxTkEweFbPaV6RrMf6N4" Name="Camera" Kind="InputPin" />
               <Pin Id="TZ3kq8GQJiELrz8CJ3av1x" Name="Number Of Sequence Buffers" Kind="InputPin" />
             </Patch>
@@ -20176,7 +20176,7 @@
             <Link Id="JD8kOsSAOMOMmw13ZzDl0b" Ids="TZ3kq8GQJiELrz8CJ3av1x,H5yI3fOkFvsN2sZIN82Ozi" IsHidden="true" />
             <Link Id="VrRotKaaw8wMD0oKqt88aG" Ids="BngUrFldRasL2n4TKGrLi1,JZF2ekJR9JXMuTX1BMVMsp" />
             <Link Id="LEgGmviMXraLcsQafEMXvv" Ids="H5yI3fOkFvsN2sZIN82Ozi,F9IeHXG5cBgLu52O3ea5OM" />
-            <Patch Id="NT1H1n3wP6uPUIwkHPJRGH" Name="GetWidget">
+            <Patch Id="NT1H1n3wP6uPUIwkHPJRGH" Name="GetWidget" ParticipatingElements="Ra3PQNOB9vyNbOZylwAVSo,Su4evl0gY36LjC3iQ3WsSq">
               <Pin Id="C5clYwoBW90PN4pVan7NBA" MergeId="41097" Name="UIWidget" Kind="OutputPin" />
             </Patch>
             <Link Id="Ck2PV4kqDOoPwMz4AORejU" Ids="HHLnWnVAEDKMx7r4wjj2Wg,C5clYwoBW90PN4pVan7NBA" IsHidden="true" />
@@ -20185,7 +20185,6 @@
             <Link Id="H6pciG2N3TSNuLnObM6Wx8" Ids="LaLztTrngUcOfjidGcWgXU,H5c35EeIkcNMRUZJfijt4Q" />
             <Link Id="MiVXUrkTjMGMVsMvDN28Ai" Ids="NzV6E8M6b7jNRBgBXuBdj1,RQAUtmrH2zlOxLa8on4IYw" />
             <Slot Id="VyUvcBRCjaVLcz71T8W8PR" Name="device removed counter" />
-            <Patch Id="DZGC0QMm0QOPeAXGHcrRAC" Name="Update" />
             <!--
 
     ************************  ************************
@@ -20195,7 +20194,6 @@
               <Fragment Id="MDf73SPPm2mM80Gh408NQD" Patch="KNPiNWWx89yMV60lIRqYdx" Enabled="true" />
               <Fragment Id="VSbrYQc2RjBOIoFJ6Ahhr4" Patch="LSdigZt9fY3PfxyQX5Lmrp" />
               <Fragment Id="PKqVK9xXeATNKnq3Lr5FPU" Patch="NT1H1n3wP6uPUIwkHPJRGH" />
-              <Fragment Id="KmWMmfrGhGrO5ojEoAamMC" Patch="DZGC0QMm0QOPeAXGHcrRAC" Enabled="true" />
             </ProcessDefinition>
             <Link Id="NEuSQXTIcoUOAr5jxuxcM8" Ids="BngUrFldRasL2n4TKGrLi1,EQrhrEnafaZPRnXHY2JoSb" />
             <Link Id="NijRbawaXPXN3eoBCWVhda" Ids="SMI9rstt8I9LjcqTE4cX5N,T7wnpYUFs8wL0qj7PMttGP" />
