@@ -7,7 +7,7 @@ environment:
     secure: jGqjs4k5xaMCD0tVCbMeGAY7n91+CAytsDj6HrmCLwjgHMSrAZZotIUdmaEUK+45
 
 # version format
-version: 0.1.{build}
+version: 0.2.{build}
 
 # clone directory
 clone_folder: c:\projects\VL.Devices.uEye
