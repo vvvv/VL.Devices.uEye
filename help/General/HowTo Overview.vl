@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OXG4J3LB5eTMdAe5HngL1e" LanguageVersion="2019.2.0-0193-9027aa298e" Version="0.128">
+<Document xmlns:p="property" Id="OXG4J3LB5eTMdAe5HngL1e" LanguageVersion="2019.2.0-0211-186df433f9" Version="0.128">
   <Patch Id="MtBX1r2G8TxMJcmyIHYYPc">
     <Canvas Id="Ri0SVV90epPOqKPIARAOce" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -95,9 +95,14 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PixelClock" />
               </p:NodeReference>
-              <Pin Id="FdX4GCOKjUZOO5yXEvhBlP" Name="Camera" Kind="InputPin" />
               <Pin Id="ACQuLua8mUUPXDFV84jhCT" Name="PixelClock" Kind="InputPin" />
-              <Pin Id="VvxPpuLsIwxMCEeF0YhWce" Name="Status" Kind="OutputPin" />
+              <Pin Id="OtGkoh5uOAILVtcoCZmybr" Name="Output" Kind="OutputPin" />
+              <Pin Id="Icftjc4MO2UP08h5f2i2L5" Name="current Pixelclock" Kind="OutputPin" />
+              <Pin Id="L19H2fohv91MPWiLZrNN3g" Name="status" Kind="OutputPin" />
+              <Pin Id="FUia8fIyp8RQM25t4OvbG8" Name="min Pixelclock" Kind="OutputPin" />
+              <Pin Id="Ge1qS6yq2J3NxeS8ZLprJC" Name="max Pixelclock" Kind="OutputPin" />
+              <Pin Id="OeyPq6EoixgNk1qK0a1Mpy" Name="possible Values" Kind="OutputPin" />
+              <Pin Id="FdX4GCOKjUZOO5yXEvhBlP" Name="Camera" Kind="InputPin" />
               <Pin Id="NDc5sTCMRZaOHtEfOqzyDT" Name="min PixelClock" Kind="OutputPin" />
               <Pin Id="LnoWp1NcGTNOYELfblcQkJ" Name="max PixelClock" Kind="OutputPin" />
               <Pin Id="Rgnc0DByJpZPvUms8TVQGs" Name="Current PixelClock" Kind="OutputPin" />
@@ -572,7 +577,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="1289, 538, 631, 423">
+            <Pin Id="CcIzG1tLhUbQbfqloR5KGq" Name="Bounds" Kind="InputPin" DefaultValue="1274, 305, 631, 423">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -628,6 +633,7 @@
             <Pin Id="HBsjxYfHiRkOEr4kTYF38j" Name="Feature 3" Kind="InputPin" />
             <Pin Id="A6rXm4PJ9PCLZuo6CNUz5w" Name="Feature 4" Kind="InputPin" />
             <Pin Id="IGnPbhY5ysHPn6neuPbg3v" Name="Feature 5" Kind="InputPin" />
+            <Pin Id="VAFvOO71WXULfCRKgVOa9k" Name="Feature 6" Kind="InputPin" />
             <Pin Id="PRpZ3x9dGE2POmTw1sEDA6" Name="Inspector" Kind="InputPin" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -656,7 +662,7 @@
           </Pad>
           <Pad Id="Ft4JHFjyBlUNIALj45p56s" SlotId="VpjzS3NLpERMQiu6mMEo96" Bounds="457,1079" />
           <Pad Id="JWzvm3dOtldMh7nWyi5xC5" SlotId="VpjzS3NLpERMQiu6mMEo96" Bounds="427,941" />
-          <Pad Id="KYsPAXvRXL1LuG9TZJi5so" Comment="keep Inspector Open" Bounds="679,490,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="KYsPAXvRXL1LuG9TZJi5so" Comment="keep Inspector Open" Bounds="679,490,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -777,11 +783,6 @@
             <Pin Id="UgiBzYAiIxSMTogx17XjjS" Name="Output" Kind="OutputPin" />
             <Pin Id="Sdm81h3ZblkMag4XNotDeS" Name="Status" Kind="OutputPin" />
           </Node>
-          <Pad Id="ToScyasqbhpLbj5r4K9owQ" Comment="Gain" Bounds="1176,196,35,15" ShowValueBox="true" isIOBox="true" Value="50">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="1289,229,63,19" Id="HBTb2EUvPTwQPS9CvjHZyY">
             <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -854,6 +855,30 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="QNE42tS8JIbObpseZzKTNu" Comment="Gain" Bounds="1192,152,35,15" ShowValueBox="true" isIOBox="true" Value="69">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1382,247,105,19" Id="PwXITzoJ0QEOxWbvkNsehN">
+            <p:NodeReference LastCategoryFullName="Devices.uEye.uEyeFeatures" LastSymbolSource="VL.Devices.uEye.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PixelClock" />
+              <CategoryReference Kind="Category" Name="uEyeFeatures" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="EIJIWzUnnCHM3bTQ6tAl3Y" Name="PixelClock" Kind="InputPin" />
+            <Pin Id="UBQ44z6goiqNP0cGvrEQC2" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Hn0BNroCMqhQThQY1wiwbK" Name="current Pixelclock" Kind="OutputPin" />
+            <Pin Id="NTOTNZ2KrtCQL4mcebiiq1" Name="status" Kind="OutputPin" />
+            <Pin Id="UL3x7mopgxuPppyKpTdAmk" Name="min Pixelclock" Kind="OutputPin" />
+            <Pin Id="Uy271B72qhJMWn9GUFFJLu" Name="max Pixelclock" Kind="OutputPin" />
+            <Pin Id="D3mNEAAMpSsLSwvXudd5Ny" Name="possible Values" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Rr3a48Ly9HFPk7FDYWRWH4" Comment="PixelClock" Bounds="1384,224,35,15" ShowValueBox="true" isIOBox="true" Value="220">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="FcInprgO67jLTuO2C7z5Gb" Name="Create" />
         <Patch Id="UfyKwFZo4sIP3uvbxC5rHk" Name="Update" />
@@ -871,7 +896,6 @@
         <Link Id="JEZRxBJHGl9MYiA0uuXVoN" Ids="BmzZsSzNLZHP4cdWkrZLqF,PwcpRNddQUmPdfWevQLljQ" />
         <Link Id="ItxNlyPosJ4LpsjutO1C5Q" Ids="LwQzFR7JiTXQGwtKsLI82i,RMpIX5rnsjHPOtRWuddU2c" />
         <Link Id="JgAg7wUQyIOPVYzxsN1nXT" Ids="TObHP75B2lPMj4lqXlD70F,CQJonXQ4EVBL5skfBNY0wE" />
-        <Link Id="E6022cwjQAiO0VPMwNydde" Ids="KMehRLgHdjvOUeaXemwP4g,MyTZpFUTsTzL5qvJUoxtDQ" />
         <Link Id="NCL0Sjme9DROYdSkwlcTTj" Ids="J55JJycTYmNLFWy9JCtpRs,OFzbY21hTD8L4h0eoKbCKn" />
         <Slot Id="VpjzS3NLpERMQiu6mMEo96" Name="ClientBounds" />
         <Link Id="EuxcHOcGNjNLsuszhhOLdn" Ids="NuDYllFnVuUPvZffqwMSAX,Ft4JHFjyBlUNIALj45p56s" />
@@ -889,20 +913,23 @@
         <Link Id="LYKwV1NQCmeOiPjPjfwhil" Ids="TzjjyuWCa7EPShroB4PVfi,Kp13sOoUZiKMNTL22EoUZx" />
         <Link Id="P90XJ7BFO0zLbXO6RddBJH" Ids="OAeSkUNoQQcMqEiPHk9La3,Cw820SEvgFFQLtTsOLOvIC" />
         <Link Id="RrcdceMvNdMLD2RnJTXKb4" Ids="T4EDrEjRgJzNlKlVSTi9mL,VvmFNJUs5s8L4rQVwB1QVu" />
-        <Link Id="OYIH5RdICpdLZZXbkWzcgS" Ids="Glo2oXJCLGFPF39FHP4URH,IAozJL9an7JNeNLRsFUCVA" />
-        <Link Id="PzpWhXbGuwNPbs3kimJiBH" Ids="ToScyasqbhpLbj5r4K9owQ,TkJaMgbQirtMUBYCRWq9ol" />
         <Link Id="RwGKZiZRmjsLiJCksSorjr" Ids="UgiBzYAiIxSMTogx17XjjS,A6rXm4PJ9PCLZuo6CNUz5w" />
-        <Link Id="RHtwVxe4YLAMy2w1nyMhKQ" Ids="RKjan97BrcGMnFgmo3B7rz,IGnPbhY5ysHPn6neuPbg3v" />
         <Link Id="LcnABWFbNEqPmP1OhprGFd" Ids="GyMYHoBqqVHNE8Gc5dztep,RDH8zQ9bipTNV0AFqhMLgC" />
         <Link Id="QZZEY3u7YbvQdgl5vdpdsZ" Ids="FTEGuhIpIfHPUVgxj1Bxqs,HBsjxYfHiRkOEr4kTYF38j" />
         <Link Id="DQzjpiBHqiNMnqL8oU5rr5" Ids="GPtKGm36A9hMgfikyJESU9,RYEFVk5sGsTON1kJFsd2GY" />
         <Link Id="Gh5AsA8UN9oNFdAI0g3Vwy" Ids="VLFBOD4G2SqPeyXTDoybya,VZDNvF3eGpiLXzic7NaaoQ" />
+        <Link Id="UeKXu9WkVzBOJmnfgiB5LI" Ids="QNE42tS8JIbObpseZzKTNu,TkJaMgbQirtMUBYCRWq9ol" />
+        <Link Id="HFeMg8OHXDIMM4NHUBKaEJ" Ids="CzAyHy8RMN7Qbi1CEJfgBt,VAFvOO71WXULfCRKgVOa9k" />
+        <Link Id="I1lcTcX3OhVOdBxrZpjH0q" Ids="Glo2oXJCLGFPF39FHP4URH,IAozJL9an7JNeNLRsFUCVA" />
+        <Link Id="FtG846rRmT0PnAscwdJw9h" Ids="KMehRLgHdjvOUeaXemwP4g,MyTZpFUTsTzL5qvJUoxtDQ" />
+        <Link Id="IotoZmkTFIXMRFRthRGNoc" Ids="UBQ44z6goiqNP0cGvrEQC2,IGnPbhY5ysHPn6neuPbg3v" />
+        <Link Id="UmjNWGHGdBWOWcs2yGBzco" Ids="Rr3a48Ly9HFPk7FDYWRWH4,EIJIWzUnnCHM3bTQ6tAl3Y" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="B5SFTdIEecHQRbk4LR9fCR" Location="VL.Core" Version="2019.2.0-0193-g9027aa298e" />
-  <NugetDependency Id="Jjv4vjnMtIzPTXmKvQ91HE" Location="VL.CoreLib" Version="2019.2.0-0193-g9027aa298e" />
-  <NugetDependency Id="UisKTj7P5kMOSPMskmwKri" Location="VL.Skia" Version="2019.2.0-0193-g9027aa298e" />
+  <NugetDependency Id="B5SFTdIEecHQRbk4LR9fCR" Location="VL.Core" Version="2019.2.0-0211-g186df433f9" />
+  <NugetDependency Id="Jjv4vjnMtIzPTXmKvQ91HE" Location="VL.CoreLib" Version="2019.2.0-0211-g186df433f9" />
+  <NugetDependency Id="UisKTj7P5kMOSPMskmwKri" Location="VL.Skia" Version="2019.2.0-0211-g186df433f9" />
   <DocumentDependency Id="IP9rD5oYfcnQIXWCPsNrZU" Location="../../VL.Devices.uEye.vl" />
   <PlatformDependency Id="QkYlqX3aEvRMqSeUBbFje2" Location="System.Drawing" />
   <PlatformDependency Id="LFQFGHrSvBPQAXyzlkk4My" Location="System.Windows.Forms" />
