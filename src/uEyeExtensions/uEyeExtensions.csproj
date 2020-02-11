@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\lib\netstandard2.0\uEyeExtensions.xml</DocumentationFile>
+    <OutputPath>..\..\lib\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\..\lib\netstandard2.0\uEyeExtensions.xml</DocumentationFile>
+    <OutputPath>..\..\lib\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="VL.Core" Version="2019.2.0-0211-g186df433f9" />
+    <PackageReference Include="VL.CoreLib" Version="2019.2.0-0211-g186df433f9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="uEyeDotNet">
+      <HintPath>..\..\lib\net462\uEyeDotNet.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

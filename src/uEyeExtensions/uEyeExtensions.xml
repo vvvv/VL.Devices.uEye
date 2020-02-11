@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>uEyeExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:VL.Devices.uEye.FormatHelpers">
+            <summary>
+            some helper functions to convert <see cref="T:VL.Lib.Basics.Imaging.PixelFormat"/> and uEye.Defines.ColorMode
+            </summary>
+        </member>
+        <member name="M:VL.Devices.uEye.FormatHelpers.MapPixelFormat(VL.Lib.Basics.Imaging.PixelFormat)">
+            <summary>
+            finds appropriate uEye.Defines.ColorMode for given <see cref="T:VL.Lib.Basics.Imaging.PixelFormat"/>
+            </summary>
+            <param name="pixelformat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VL.Devices.uEye.FormatHelpers.MapColorMode(uEye.Defines.ColorMode)">
+            <summary>
+            finds appropriate <see cref="T:VL.Lib.Basics.Imaging.PixelFormat"/> for given uEye.Defines.ColorMode
+            </summary>
+            <param name="colormode"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
