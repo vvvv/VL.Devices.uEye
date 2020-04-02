@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -16,8 +16,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2020.1.0-0032-g1abd3594e5" />
-    <PackageReference Include="VL.CoreLib" Version="2020.1.0-0032-g1abd3594e5" />
+    <PackageReference Include="VL.Core" Version="2020.1.0" />
+    <PackageReference Include="VL.CoreLib" Version="2020.1.0" />
   </ItemGroup>
 
   <ItemGroup>
