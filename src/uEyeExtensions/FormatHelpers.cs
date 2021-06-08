@@ -58,7 +58,7 @@ namespace VL.Devices.uEye
             /// <summary>8 Bit RGBA </summary>
             RGBA8 = ColorMode.RGBA8Packed,
             /// <summary>8 Bit RGBA but packed</summary>
-            RGBA8Packed = ColorMode.RGB8Planar,
+            RGBA8Packed = ColorMode.RGBA8Packed,
             /// <summary>8 Bit BGR </summary>
             BGR8 = ColorMode.BGR8Packed,
             /// <summary>8 Bit BGRA </summary>
