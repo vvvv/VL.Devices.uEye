@@ -41,4 +41,4 @@ jobs:
         VERSION: 0.3.${{ github.event.inputs.buildnumber }}
       
     - name: Nuget Push
-      run: nuget push *.nupkg ${{secrets.NUGET_KEY}} -src https://api.nuget.org/v3/index.json -NoSymbols
+      run: nuget push *.nupkg ${{secrets.NUGET_API}} -src https://api.nuget.org/v3/index.json -NoSymbols
